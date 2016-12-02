@@ -42,15 +42,10 @@
     text-decoration: none;
     vertical-align: top;
 }
-.h1 {
-  font-family: Arial;
-  font-size: 20px;
-  margin-top: 5px;
-}
 .h2 {
   font-family: Arial;
   font-size: 14px;
-  display: inline-block;
+  display: block;
   margin-top: 0px;
   margin-bottom: 0px;
   vertical-align: top;
@@ -63,7 +58,9 @@
   margin-left: 45px;
 }
 .img__userAvatar {
+  display: inline-block;
   height: 75px;
+  vertical-align: top;
 }
 .img__userProfileAvatar {
   border-radius: 50%;
@@ -92,17 +89,24 @@
   height: 45px;
   padding: 10px 20px;
 }
+.number__of__views {
+  display: inline-block;
+  font-size: 24px;
+  float: right;
+}
 .preview__pane {
 
 }
 .searchBar {
   display: inline-block;
   height: 25px;
+  margin-right: -5px;
   vertical-align: top;
 }
 .section__1 {
   background-color: white;
   font-family: Helvetica;
+  padding: 15px;
 }
 .section__2 {
   background-color: white;
@@ -119,9 +123,38 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.subscriber__info {
+  display: inline-block;
+}
+.subscriber__info--button {
+  background-color: Gainsboro;
+  border-style: solid;
+  border-size: 1px;
+  border-radius: 1px;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Arial;
+  height: 25px;
+  padding: 0 12px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+}
+.subcriber__info--name {
+  display: block;
+  width: 90%;
+}
+.subcriber__info--number {
+  display: inline-block;
+  vertical-align: top;
+}
 .upload__button--with_avatar {
   float: right;
   vertical-align: top;
+}
+.video__details--name {
+margin-top: 0;
 }
 .wrapper {
   /*width: 1150px;*/
