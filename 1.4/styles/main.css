@@ -1,32 +1,58 @@
 video {
   width: 100%;
 }
+.body {
+  background-color: Gainsboro;
+}
 .button {
     background-color: Gainsboro;
+    border-radius: 4px;
     color: grey;
     padding: 14px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    font-family: sans-serif;
+    font-family: Arial;
     vertical-align: top;
+}
+.h1 {
+  font-family: Arial;
+  font-size: 24px;
+}
+.h2 {
+  font-family: Arial;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.img__userAvatar {
+  height: 75px;
 }
 .img__userProfileAvatar {
   display: inline-block;
   height: 45px;
+  border-radius: 50%;
 }
 .img__videoTemp {
   display: inline-block;
   height: 430px;
   width: 780px;
 }
+.main__indent {
+  margin-left: 120px;
+}
 .navBar {
+  vertical-align: top;
+  background-color: white;
   height: 45px;
 }
 .navBar__logo {
   height: 45px;
-  vertical-align: top;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 .searchBar {
   display: inline-block;
@@ -34,6 +60,23 @@ video {
   font-size: 14px;
   height: 39px;
   vertical-align: top;
+}
+.section__1 {
+  background-color: white;
+  display: inline-block;
+  font-family: Helvetica;
+  width: 780px;
+}
+.section__2 {
+  background-color: white;
+  display: inline-block;
+  font-family: Helvetica;
+  width: 780px;
+}
+/*This doesn't work*/
+.show__more__button {
+  padding-left: auto;
+  padding-right: auto;
 }
 .upload__button--with_avatar {
   float: right;
