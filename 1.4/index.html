@@ -8,7 +8,7 @@
   <body class="body">
     <!-- This opens the the main nav bar wrapper -->
     <nav class="navBar">
-      <img class="navBar__logo"
+      <img class="img__navBar__logo"
         src="assets/YouTube.png"
         alt="youTubeLogo">
       <form class="searchBar">
@@ -24,20 +24,22 @@
           name="magGlass"
           value="#magGlass.jpg">
       </form>
-      <form class="upload__button--with_avatar"]>
-        <input
-          type="button"
-          class="button"
-          name="upload"
-          value="Upload">
-        <img
-          src="assets/user-corner.jpg"
-          alt="userProfileAvatar"
-          class="img__userProfileAvatar">
-      </form>
+        <div class="upload__button--with_avatar">
+          <input
+            type="button"
+            class="button"
+            name="upload"
+            value="Upload">
+          <img
+            src="assets/user-corner.jpg"
+            alt="userProfileAvatar"
+            class="img__userProfileAvatar">
+        </div>
+      </div>
     </nav>
     <!-- This closes the main mav bar wrapper -->
-    <main class="main__indent">
+    <div class="wrapper">
+    <main class="main">
       <!-- This opens the main video view wrapper -->
         <!-- Commented out the video src to use placeholder img -->
           <!-- <video src="#" autoplay poster="posterimage.jpg">
@@ -58,20 +60,34 @@
           <h2 class="h2">Freestyler 365</h2>
         </p>
         <!-- User input buttons -->
-          <button
+          <input
             type="button"
-            name="button">Subscribe</button>
+            class="button"
+            name="button"
+            value="Subscribe">
           <output
             name="#numberSubcribers">604</output>
           <img
             src="#plus.jpg"
             alt="plus">
-            <a href="#addTo">Add to</a>
+          <input
+              type="button"
+              class="button"
+              name="button"
+              value="Add to">
           <img
             src="#arrow.jpg"
             alt="arrow">
-            <a href="#share">Share</a>
-          <a href="#more">More</a>
+          <input
+              type="button"
+              class="button"
+              name="button"
+              value="Share">
+          <input
+                type="button"
+                class="button"
+                name="button"
+                value="More">
           <img
             src="like"
             alt="like">
@@ -95,41 +111,42 @@
       </section>
       <!-- This closes the date and video description section wrapper -->
     </main>
-      <aside class="#">
-        <section>
-          <!-- This opens the banner ad section wrapper -->
-          <img
-            src="#adImage.jpg"
-            alt="adImage">
-          <!-- This closes the banner ad section wrapper -->
+    <aside class="aside">
+      <section>
+        <!-- This opens the banner ad section wrapper -->
+        <img
+          class="bannerAd__image"
+          src="assets/ipad.jpg"
+          alt="adImage">
+        <!-- This closes the banner ad section wrapper -->
+      </section>
+      <section>
+        <!-- This opens the upcoming videos section wrapper -->
+        <h2 class="h2">Up next</h2>
+        <h2>Autoplay</h2>
+        <img src="infoIcon.jpg" alt="infoIcon">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <div class="slider round"></div>
+        </label>
+        <a href="#upcomingVideo.html"> <img src="assets/suggestion-1.jpg" alt="videoPreviewPane"> </a>
+          <h3><a href="#upcomingVideo.html">The Matrix- 1999 (welcome to the real world)</a></h3>
+            <p>dimopan</p>
+            <p>463,371 views</p>
+        <a href="#upcomingVideo.html"> <img src="assets/suggestion-2.jpg" alt="videoPreviewPane"> </a>
+          <h3><a href="#upcomingVideo.html">"The Matrix" (1999)--'Construct' Scenes</a></h3>
+            <p>Galactic Archive</p>
+            <p>708,357 views</p>
+        <a href="#upcomingVideo.html"> <img src="assets/suggestion-3.jpg" alt="videoPreviewPane"> </a>
+          <h3><a href="#upcomingVideo.html">Morpheus explains what is the matrix</a></h3>
+            <p>Jason Newsted</p>
+            <p>584,308 views</p>
+        <a href="#upcomingVideo.html"> <img src="assets/suggestion-4.jpg" alt="videoPreviewPane"> </a>
+          <h3><a href="#upcomingVideo.html">Film Theory: Neo ISN'T The One in the Matrix Trilogy</a></h3>
+            <p>The Film Theories</p>
+            <p>4,992,777 views</p>
         </section>
-        <section>
-          <!-- This opens the upcoming videos section wrapper -->
-          <h2>Up next</h2>
-          <h2>Autoplay</h2>
-          <img src="infoIcon.jpg" alt="infoIcon">
-          <label class="switch">
-            <input type="checkbox" checked>
-            <div class="slider round"></div>
-          </label>
-          <a href="#upcomingVideo.html"> <img src="assets/suggestion-1.jpg" alt="videoPreviewPane"> </a>
-            <h3><a href="#upcomingVideo.html">The Matrix- 1999 (welcome to the real world)</a></h3>
-              <p>dimopan</p>
-              <p>463,371 views</p>
-          <a href="#upcomingVideo.html"> <img src="assets/suggestion-2.jpg" alt="videoPreviewPane"> </a>
-            <h3><a href="#upcomingVideo.html">"The Matrix" (1999)--'Construct' Scenes</a></h3>
-              <p>Galactic Archive</p>
-              <p>708,357 views</p>
-          <a href="#upcomingVideo.html"> <img src="assets/suggestion-3.jpg" alt="videoPreviewPane"> </a>
-            <h3><a href="#upcomingVideo.html">Morpheus explains what is the matrix</a></h3>
-              <p>Jason Newsted</p>
-              <p>584,308 views</p>
-          <a href="#upcomingVideo.html"> <img src="assets/suggestion-4.jpg" alt="videoPreviewPane"> </a>
-            <h3><a href="#upcomingVideo.html">Film Theory: Neo ISN'T The One in the Matrix Trilogy</a></h3>
-              <p>The Film Theories</p>
-              <p>4,992,777 views</p>
-        </section>
-
-      </aside>
+    </aside>
+    </div>
   </body>
 </html>

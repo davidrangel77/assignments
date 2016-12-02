@@ -1,83 +1,105 @@
 video {
   width: 100%;
 }
+.aside {
+  float: right;
+  width: 33%;
+  vertical-align: top;
+}
+.bannerAd__image {
+  height: 50px;
+  margin-top: 5px;
+}
 .body {
   background-color: Gainsboro;
+  margin: 0;
 }
 .button {
     background-color: Gainsboro;
-    border-radius: 4px;
-    color: grey;
-    padding: 14px 10px;
-    text-align: center;
-    text-decoration: none;
+    border-style: solid;
+    border-size: 0.5px;
+    border-radius: 1px;
+    color: black;
     display: inline-block;
     font-size: 11px;
     font-family: Arial;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
     vertical-align: top;
 }
 .h1 {
   font-family: Arial;
-  font-size: 24px;
+  font-size: 20px;
 }
 .h2 {
   font-family: Arial;
-  font-size: 20px;
+  font-size: 14px;
   display: inline-block;
   vertical-align: top;
 }
-.img__userAvatar {
-  height: 75px;
-}
-.img__userProfileAvatar {
-  display: inline-block;
-  height: 45px;
-  border-radius: 50%;
-}
-.img__videoTemp {
-  display: inline-block;
-  height: 430px;
-  width: 780px;
-}
-.main__indent {
-  margin-left: 120px;
-}
-.navBar {
-  vertical-align: top;
-  background-color: white;
-  height: 45px;
-}
-.navBar__logo {
+.img__navBar__logo {
   height: 45px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 60px;
   margin-left: 60px;
 }
+.img__userAvatar {
+  height: 75px;
+}
+.img__userProfileAvatar {
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.img__videoTemp {
+  margin-top: 5px;
+  display: inline-block;
+  width: 780px;
+}
+.main {
+  float: left;
+  width: 66%;
+}
+.navBar {
+  vertical-align: top;
+  background-color: white;
+  height: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .searchBar {
   display: inline-block;
-  margin: auto;
-  font-size: 14px;
-  height: 39px;
+  height: 20px;
   vertical-align: top;
 }
 .section__1 {
   background-color: white;
   display: inline-block;
   font-family: Helvetica;
-  width: 780px;
+  width: 66%;
 }
 .section__2 {
   background-color: white;
   display: inline-block;
   font-family: Helvetica;
-  width: 780px;
+  margin-top: 5px;
 }
 /*This doesn't work*/
 .show__more__button {
   padding-left: auto;
   padding-right: auto;
+  float: center;
 }
 .upload__button--with_avatar {
   float: right;
+  vertical-align: top;
+}
+.wrapper {
+  /*width: 1150px;*/
+  margin: 0 auto;
 }
