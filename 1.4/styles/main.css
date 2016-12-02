@@ -1,9 +1,22 @@
-video {
+* {
+  box-sizing: border-box;
+  }video {
   width: 100%;
 }
 .aside {
+  background-color: white;
   float: right;
+  margin-top: 10px;
   width: 33%;
+  vertical-align: top;
+}
+.aside__header {
+  margin-top: 5px;
+  margin=bottom: 5px;
+  vertical-align: middle;
+}
+.autoplay {
+  float: right;
   vertical-align: top;
 }
 .bannerAd__image {
@@ -17,13 +30,14 @@ video {
 .button {
     background-color: Gainsboro;
     border-style: solid;
-    border-size: 0.5px;
+    border-size: 1px;
     border-radius: 1px;
     color: black;
     display: inline-block;
-    font-size: 11px;
+    font-size: 14px;
     font-family: Arial;
-    padding: 5px;
+    height: 25px;
+    padding: 0 12px;
     text-align: center;
     text-decoration: none;
     vertical-align: top;
@@ -31,19 +45,22 @@ video {
 .h1 {
   font-family: Arial;
   font-size: 20px;
+  margin-top: 5px;
 }
 .h2 {
   font-family: Arial;
   font-size: 14px;
   display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
   vertical-align: top;
 }
 .img__navBar__logo {
   height: 45px;
-  margin-top: 0px;
+  margin-top: -10px;
   margin-bottom: 0px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 .img__userAvatar {
   height: 75px;
@@ -51,15 +68,19 @@ video {
 .img__userProfileAvatar {
   border-radius: 50%;
   display: inline-block;
-  height: 20px;
+  height: 25px;
   margin-left: 10px;
   margin-right: 20px;
   vertical-align: top;
 }
 .img__videoTemp {
-  margin-top: 5px;
+  margin-top: 10px;
   display: inline-block;
-  width: 780px;
+  width: 842.156px;
+}
+.infoIcon {
+  width: 15px;
+  vertical-align: top;
 }
 .main {
   float: left;
@@ -69,31 +90,34 @@ video {
   vertical-align: top;
   background-color: white;
   height: 45px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px 20px;
+}
+.preview__pane {
+
 }
 .searchBar {
   display: inline-block;
-  height: 20px;
+  height: 25px;
   vertical-align: top;
 }
 .section__1 {
   background-color: white;
-  display: inline-block;
   font-family: Helvetica;
-  width: 66%;
 }
 .section__2 {
   background-color: white;
-  display: inline-block;
   font-family: Helvetica;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 /*This doesn't work*/
 .show__more__button {
   padding-left: auto;
   padding-right: auto;
   float: center;
+}
+.slider__round {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .upload__button--with_avatar {
   float: right;
