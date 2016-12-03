@@ -89,31 +89,41 @@
                 </i>
                 <input
                     type="button"
-                    class="button"
+                    class="section__2--button"
                     name="button"
                     value="Add to">
                 <i class="fa fa-share" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
                 </i>
                 <input
                   type="button"
-                  class="button"
+                  class="section__2--button"
                   name="button"
                   value="Share">
                 <i class="fa fa-ellipsis-h" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
                 </i>
                 <input
                   type="button"
-                  class="button"
+                  class="section__2--button"
                   name="button"
                   value="More">
                 </div>
                 <div id="right__section__2" class="thumbs__buttons">
                   <i class="fa fa-thumbs-up" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
                   </i>
-                  <output name="#likeResults" style=font-size: 16px; font-family: "Arial">1,698</output>
+                  <!-- <output name="#likeResults" style=font-size: 24px; font-family: "Arial">1,698</output> -->
+                  <input
+                    type="button"
+                    class="section__2--button"
+                    name="button"
+                    value="1,698">
                   <i class="fa fa-thumbs-down" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
                   </i>
-                  <output name="#dislikeResults">19</output>
+                  <!-- <output name="#dislikeResults">19</output> -->
+                  <input
+                    type="button"
+                    class="section__2--button"
+                    name="button"
+                    value="19">
                 </div>
           </section>
             <!-- This opens the video title and user actions section wrapper -->
@@ -146,67 +156,96 @@
           <section class="section__4">
             <!-- This opens the upcoming videos section wrapper -->
             <!-- @TO DO: Can't get the aside header to work so commented out -->
-            <!-- <div class="autoplay">
+            <div class="autoplay">
             <header class="aside__header">
               <h2 class="autoplay__header--text">Up next</h2>
-                <h2 class="autoplay__header--text">Autoplay</h2>
-                <img src="assets/info_512pxGREY.png" alt="infoIcon" class="infoIcon">
-                <label class="switch">
-                  <input type="checkbox" checked>
-                  <div class="slider__round"></div>
-                </label>
+                <div class="autoplay__text--slider"
+                  <h2 class="autoplay__header--text">Autoplay</h2>
+                  <img src="assets/info_512pxGREY.png" alt="infoIcon" class="infoIcon">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <div class="slider__round"></div>
+                  </label>
+                </div>
             </header>
-            </div> -->
+            </div>
             <div class="upcoming__videos">
+              <div id=upcoming__video1>
+                <div id=upcoming__video1--preview>
+                  <a href="#upcomingVideo.html">
+                    <img class="upcoming__video--preview"
+                      src="assets/suggestion-1.jpg"
+                      alt="videoPreviewPane">
+                  </a>
+                </div>
+                <div id=upcoming__video1--title>
+                  <a class="upcoming__video--title"
+                    href="#upcomingVideo.html">
+                    The Matrix- 1999 (welcome to the real world)
+                  </a>
+                </div>
+            </div>
               <div>
-              <a href="#upcomingVideo.html">
-                <img class="upcoming__video--preview"
-                  src="assets/suggestion-1.jpg"
-                  alt="videoPreviewPane">
-              </a>
-              <a class="upcoming__video--title"
-                href="#upcomingVideo.html">
-                The Matrix- 1999 (welcome to the real world)
-              </a>
+              <p class=upcoming__video--user>dimopan</p>
+              <p class=upcoming__video--user>463,371 views</p>
+              </div>
+              <div id=upcoming__video2>
+                <div id=upcoming__video2--preview>
+                  <a href="#upcomingVideo.html">
+                    <img class="upcoming__video--preview"
+                      src="assets/suggestion-2.jpg"
+                      alt="videoPreviewPane">
+                  </a>
+                </div>
+                <div id=upcoming__video2--title>
+                  <a class="upcoming__video--title"
+                    href="#upcomingVideo.html">
+                    "The Matrix" (1999) -- 'Construct' Scenes
+                  </a>
+                </div>
             </div>
                 <div>
-                <p class=upcoming__video--user>dimopan</p>
-                <p class=upcoming__video--user>463,371 views</p>
-                </div>
-              <a href="#upcomingVideo.html">
-                <img class="upcoming__video--preview"
-                  src="assets/suggestion-2.jpg"
-                  alt="videoPreviewPane">
-              </a>
-              <a class="upcoming__video--title"
-                href="#upcomingVideo.html">
-                "The Matrix" (1999)--'Construct' Scenes
-              </a>
                 <p class=upcoming__video--user>Galactic Archive</p>
                 <p class=upcoming__video--user>708,357 views</p>
-              <a href="#upcomingVideo.html">
-                <img class="upcoming__video--preview"
-                  src="assets/suggestion-3.jpg"
-                  alt="videoPreviewPane">
-              </a>
-              <a class="upcoming__video--title"
-                href="#upcomingVideo.html">
-                Morpheus explains what is the matrix
-              </a>
+                </div>
+              <div id=upcoming__video3>
+                <div id=upcoming__video3--preview>
+                  <a href="#upcomingVideo.html">
+                    <img class="upcoming__video--preview"
+                      src="assets/suggestion-3.jpg"
+                      alt="videoPreviewPane">
+                  </a>
+                </div>
+                <div id=upcoming__video3--title>
+                  <a class="upcoming__video--title"
+                    href="#upcomingVideo.html">
+                    Morpheus explains what is in the matrix
+                  </a>
+                </div>
+            </div>
+                <div>
                 <p class=upcoming__video--user>Jason Newsted</p>
                 <p class=upcoming__video--user>584,308 views</p>
-              <a href="#upcomingVideo.html">
-                <img class="upcoming__video--preview"
-                  src="assets/suggestion-4.jpg"
-                  alt="videoPreviewPane">
-              </a>
-              <a class="upcoming__video--title"
-                href="#upcomingVideo.html">
-                Film Theory: Neo ISN'T The One in the Matrix Trilogy
-              </a>
-                <p class="upcoming__video--user">The Film Theories</p>
-                <p class="upcoming__video--user">4,992,777 views</p>
+                </div>
+              <div id=upcoming__video4>
+                <div id=upcoming__video4--preview>
+                  <a href="#upcomingVideo.html">
+                    <img class="upcoming__video--preview"
+                      src="assets/suggestion-4.jpg"
+                      alt="videoPreviewPane">
+                  </a>
+                </div>
+                <div id=upcoming__video4--title>
+                  <a class="upcoming__video--title"
+                    href="#upcomingVideo.html">
+                    Film Theory: Neo ISN'T The One in The Matrix Trilogy
+                  </a>
+                </div>
             </div>
+                <div>
+                <p class=upcoming__video--user>The Film Theorists</p>
+                <p class=upcoming__video--user>4,992,777 views</p>
+                </div>
             </section>
         </aside>
       </div>
