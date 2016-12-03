@@ -44,10 +44,11 @@
 }
 .h2 {
   font-family: Arial;
-  font-size: 14px;
+  font-size: 24px;
   display: block;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-bottom: 15px;
   vertical-align: top;
 }
 .img__navBar__logo {
@@ -60,7 +61,7 @@
 .img__userAvatar {
   display: inline-block;
   height: 75px;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 .img__userProfileAvatar {
   border-radius: 50%;
@@ -90,9 +91,16 @@
   padding: 10px 20px;
 }
 .number__of__views {
+  border-bottom: 3px solid Blue;
   display: inline-block;
   font-size: 24px;
   float: right;
+  padding: 0 5px;
+}
+.number__of__views2 {
+  display: block;
+  font-size: 24px;
+  padding-left: 80px;
 }
 .preview__pane {
 
@@ -124,7 +132,10 @@
   margin-bottom: 0px;
 }
 .subscriber__info {
+  border-bottom: 2px solid Gainsboro;
   display: inline-block;
+  width: 800px;
+  vertical-align: top;
 }
 .subscriber__info--button {
   background-color: Gainsboro;
@@ -142,16 +153,31 @@
   vertical-align: top;
 }
 .subcriber__info--name {
-  display: block;
+  display: inline-block;
   width: 90%;
 }
 .subcriber__info--number {
   display: inline-block;
   vertical-align: top;
 }
+.subscriber__info--subscribe {
+  width: 15%;
+  vertical-align: bottom;
+}
+.subscriber__name--followers {
+  display: block;
+  font-size: 24px;
+  vertical-align: top;
+}
+.subcriber__number {
+  vertical-align: top;
+}
 .upload__button--with_avatar {
   float: right;
   vertical-align: top;
+}
+.viewer__input--buttons {
+
 }
 .video__details--name {
 margin-top: 0;
