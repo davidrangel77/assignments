@@ -3,11 +3,43 @@
   }video {
   width: 100%;
 }
+#left__section__2 {
+  float: left;
+  margin: 0;
+  padding-left: 15px;
+  width: 84%;
+  overflow: hidden;
+}
+#left__main__aside {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 66%;
+}
+#right__section__2 {
+  margin: 0;
+  overflow: hidden;
+}
+#right__main__aside {
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: top;
+  width: 33%;
+}
+#wrapper_section__2 {
+  padding-bottom: 10px;
+}
+#wrapper__main__aside {
+
+}
 .aside {
   background-color: white;
+  display: inline-block;
   float: right;
   margin-top: 10px;
-  width: 33.25%;
+  width: 100%;
   vertical-align: top;
 }
 .aside__header {
@@ -57,10 +89,11 @@
 }
 .button__mag {
     background-color: Gainsboro;
+    border-color: Silver;
     border-style: solid;
     border-size: 1px;
     border-radius: 1px;
-    color: black;
+    color: Gainsboro;
     display: inline-block;
     font-size: 14px;
     font-family: Arial;
@@ -110,7 +143,6 @@
 }
 .main {
   float: left;
-  width: 66%;
 }
 .navBar {
   vertical-align: top;
@@ -151,17 +183,18 @@
 .section__2 {
   background-color: white;
   float: left;
-  width: 66%;
+  padding-bottom: 15px;
+  width: 100%;
 }
 .section__3 {
   background-color: white;
   font-family: Helvetica;
   float:left;
   margin-top: 10px;
-  width: 66%;
 }
 .section__4 {
-  display: block;
+  display: inline-block;
+  float: left;
 }
 /*This doesn't work*/
 .show__more {
@@ -229,6 +262,13 @@
 .subcriber__number {
   vertical-align: top;
 }
+.thumbs_buttons {
+  display: inline;
+  float: right;
+  font-family: Arial;
+  font-size: 16px;
+  margin: 0;
+}
 .upcoming__video--preview {
   width: 200px
 }
@@ -249,7 +289,9 @@
   vertical-align: top;
 }
 .user__input--buttons {
-  display: inline;
+}
+.user__input--add--share--more {
+
 }
 .video__description--uploadDate {
   font-family: Arial;
@@ -268,6 +310,5 @@
 margin-top: 0;
 }
 .wrapper {
-  /*width: 1150px;*/
   margin: 0 auto;
 }

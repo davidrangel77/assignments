@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>YouTubeScreenShot1.4</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://use.fontawesome.com/e176ab6ee2.js"></script>
   </head>
   <body class="body">
     <!-- This opens the the main nav bar wrapper -->
@@ -19,10 +20,10 @@
           value="the matrix pill"
           size="80">
         <input
-          type="button"
+          type="image"
           class="button__mag"
-          name="magGlass"
-          value="#magGlass.jpg">
+          name="submit"
+          src="assets/magGlass.jpg">
       </form>
         <div class="upload__button--with_avatar">
           <input
@@ -35,176 +36,180 @@
             alt="userProfileAvatar"
             class="img__userProfileAvatar">
         </div>
-      </div>
     </nav>
     <!-- This closes the main mav bar wrapper -->
-    <div class="wrapper">
-    <main class="main">
-      <!-- This opens the main video view wrapper -->
-        <!-- Commented out the video src to use placeholder img -->
-          <!-- <video src="#" autoplay poster="posterimage.jpg">
-          </video> -->
-      <!-- Added the image.png to hold for valid video element -->
-      <img
-        src="assets/PtbGQ.png"
-        alt="videoGenGraphic"
-        class="img__videoTemp">
-      <!-- This closes the main video view wrapper -->
-      <section class="section__1">
-        <!-- This opens the video title and user actions section wrapper -->
-          <header>
-            <h1 class="video__details--name">The Matrix (1999) - The Pill scene</h1>
-          </header>
-          <div class="subscriber__info">
-            <img class="img__userAvatar"
-              src="assets/user.jpg"
-              alt="userAvatar">
-            <div class="subcriber__info--name">
-              <h2 class="h2">Freestyler 365
-              </h2>
-              <div class="subscriber__name--followers">
-                <a href="subscribe">
-                  <img
-                  src="assets/Subscribe-PNG-12.png"
-                  alt="subscribe"
-                  class="subscriber__info--subscribe">
-                </a>
-                <output
-                  name="#numberSubcribers">604</output
-                  class="subscriber__number">
-              </div>
-            </div>
-                <div class="number__of__views">
-                <output
-                  name="#number__of__views">342,456</output class="number__of__views">
+    <div id="wrapper__main__aside">
+      <div id="left__main__aside">
+        <div class="wrapper">
+        <main class="main">
+          <!-- This opens the main video view wrapper -->
+            <!-- Commented out the video src to use placeholder img -->
+              <!-- <video src="#" autoplay poster="posterimage.jpg">
+              </video> -->
+          <!-- Added the image.png to hold for valid video element -->
+          <img
+            src="assets/PtbGQ.png"
+            alt="videoGenGraphic"
+            class="img__videoTemp">
+          <!-- This closes the main video view wrapper -->
+          <section class="section__1">
+            <!-- This opens the video title and user actions section wrapper -->
+              <header>
+                <h1 class="video__details--name">The Matrix (1999) - The Pill scene</h1>
+              </header>
+              <div class="subscriber__info">
+                <img class="img__userAvatar"
+                  src="assets/user.jpg"
+                  alt="userAvatar">
+                <div class="subcriber__info--name">
+                  <h2 class="h2">Freestyler 365
+                  </h2>
+                  <div class="subscriber__name--followers">
+                    <a href="subscribe">
+                      <img
+                      src="assets/Subscribe-PNG-12.png"
+                      alt="subscribe"
+                      class="subscriber__info--subscribe">
+                    </a>
+                    <output
+                      name="#numberSubcribers">604</output
+                      class="subscriber__number">
+                  </div>
                 </div>
-            </div>
-          </div>
-      </section>
-      <section class="section__2">
-          <div class="user__input--buttons">
-            <img
-              src="#plus.jpg"
-              alt="plus">
-            <input
-                type="button"
-                class="button"
-                name="button"
-                value="Add to">
-            <img
-              src="#arrow.jpg"
-              alt="arrow">
-            <input
-                type="button"
-                class="button"
-                name="button"
-                value="Share">
-            <input
+                    <div class="number__of__views">
+                    <output
+                      name="#number__of__views">342,456</output class="number__of__views">
+                    </div>
+                </div>
+              </div>
+          </section>
+          <section class="section__2">
+              <div id="left__section__2" class="user__input--add--share--more">
+                <i class="fa fa-plus" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                </i>
+                <input
+                    type="button"
+                    class="button"
+                    name="button"
+                    value="Add to">
+                <i class="fa fa-share" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                </i>
+                <input
+                  type="button"
+                  class="button"
+                  name="button"
+                  value="Share">
+                <i class="fa fa-ellipsis-h" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                </i>
+                <input
                   type="button"
                   class="button"
                   name="button"
                   value="More">
-            <img
-              src="like"
-              alt="like">
-            <output name="#likeResults">1,698</output>
-            <img
-              src="dislike"
-              alt="dislike">
-            <output name="#dislikeResults">19</output>
-          </div>
-      </section>
-        <!-- This opens the video title and user actions section wrapper -->
-      <section class="section__3">
-        <!-- This opens the date and video description section wrapper -->
-        <h2 class="video__description--uploadDate">Uploaded on May 18, 2011</h2>
-          <p class="p__1">Neo is offered the choice between between the Blue Pill and continuing to live in a synthesized, fictional, computer generated world, or taking the Red Pill and joining the real world and escape from the Matrix.
-          </p>
-        <div class="show__more">
-        <input
-          type="button"
-          class="show__more__button"
-          name="showMore"
-          value="SHOW MORE">
-        </div>
-      </section>
-      <!-- This closes the date and video description section wrapper -->
-    </main>
-    <aside class="aside">
-      <section class="banner__ad">
-        <!-- This opens the banner ad section wrapper -->
-        <img
-          class="bannerAd__image"
-          src="assets/ipad.jpg"
-          alt="adImage">
-        <!-- This closes the banner ad section wrapper -->
-      </section>
-      <section class="section__4">
-        <!-- This opens the upcoming videos section wrapper -->
-        <!-- @TO DO: Can't get the aside header to work so commented out -->
-        <!-- <div class="autoplay">
-        <header class="aside__header">
-          <h2 class="autoplay__header--text">Up next</h2>
-            <h2 class="autoplay__header--text">Autoplay</h2>
-            <img src="assets/info_512pxGREY.png" alt="infoIcon" class="infoIcon">
-            <label class="switch">
-              <input type="checkbox" checked>
-              <div class="slider__round"></div>
-            </label>
-        </header>
-        </div> -->
-        <div class="upcoming__videos">
-          <div>
-          <a href="#upcomingVideo.html">
-            <img class="upcoming__video--preview"
-              src="assets/suggestion-1.jpg"
-              alt="videoPreviewPane">
-          </a>
-          <a class="upcoming__video--title"
-            href="#upcomingVideo.html">
-            The Matrix- 1999 (welcome to the real world)
-          </a>
-        </div>
-            <div>
-            <p class=upcoming__video--user>dimopan</p>
-            <p class=upcoming__video--user>463,371 views</p>
+                </div>
+                <div id="right__section__2" class="thumbs__buttons">
+                  <i class="fa fa-thumbs-up" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                  </i>
+                  <output name="#likeResults" style=font-size: 16px; font-family: "Arial">1,698</output>
+                  <i class="fa fa-thumbs-down" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                  </i>
+                  <output name="#dislikeResults">19</output>
+                </div>
+          </section>
+            <!-- This opens the video title and user actions section wrapper -->
+          <section class="section__3">
+            <!-- This opens the date and video description section wrapper -->
+            <h2 class="video__description--uploadDate">Uploaded on May 18, 2011</h2>
+              <p class="p__1">Neo is offered the choice between between the Blue Pill and continuing to live in a synthesized, fictional, computer generated world, or taking the Red Pill and joining the real world and escape from the Matrix.
+              </p>
+            <div class="show__more">
+            <input
+              type="button"
+              class="show__more__button"
+              name="showMore"
+              value="SHOW MORE">
             </div>
-          <a href="#upcomingVideo.html">
-            <img class="upcoming__video--preview"
-              src="assets/suggestion-2.jpg"
-              alt="videoPreviewPane">
-          </a>
-          <a class="upcoming__video--title"
-            href="#upcomingVideo.html">
-            "The Matrix" (1999)--'Construct' Scenes
-          </a>
-            <p class=upcoming__video--user>Galactic Archive</p>
-            <p class=upcoming__video--user>708,357 views</p>
-          <a href="#upcomingVideo.html">
-            <img class="upcoming__video--preview"
-              src="assets/suggestion-3.jpg"
-              alt="videoPreviewPane">
-          </a>
-          <a class="upcoming__video--title"
-            href="#upcomingVideo.html">
-            Morpheus explains what is the matrix
-          </a>
-            <p class=upcoming__video--user>Jason Newsted</p>
-            <p class=upcoming__video--user>584,308 views</p>
-          <a href="#upcomingVideo.html">
-            <img class="upcoming__video--preview"
-              src="assets/suggestion-4.jpg"
-              alt="videoPreviewPane">
-          </a>
-          <a class="upcoming__video--title"
-            href="#upcomingVideo.html">
-            Film Theory: Neo ISN'T The One in the Matrix Trilogy
-          </a>
-            <p class="upcoming__video--user">The Film Theories</p>
-            <p class="upcoming__video--user">4,992,777 views</p>
-        </div>
-        </section>
-    </aside>
+          </section>
+          <!-- This closes the date and video description section wrapper -->
+        </main>
+      </div>
+      <div id="right__main__aside">
+        <aside class="aside">
+          <section class="banner__ad">
+            <!-- This opens the banner ad section wrapper -->
+            <img
+              class="bannerAd__image"
+              src="assets/ipad.jpg"
+              alt="adImage">
+            <!-- This closes the banner ad section wrapper -->
+          </section>
+          <section class="section__4">
+            <!-- This opens the upcoming videos section wrapper -->
+            <!-- @TO DO: Can't get the aside header to work so commented out -->
+            <!-- <div class="autoplay">
+            <header class="aside__header">
+              <h2 class="autoplay__header--text">Up next</h2>
+                <h2 class="autoplay__header--text">Autoplay</h2>
+                <img src="assets/info_512pxGREY.png" alt="infoIcon" class="infoIcon">
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <div class="slider__round"></div>
+                </label>
+            </header>
+            </div> -->
+            <div class="upcoming__videos">
+              <div>
+              <a href="#upcomingVideo.html">
+                <img class="upcoming__video--preview"
+                  src="assets/suggestion-1.jpg"
+                  alt="videoPreviewPane">
+              </a>
+              <a class="upcoming__video--title"
+                href="#upcomingVideo.html">
+                The Matrix- 1999 (welcome to the real world)
+              </a>
+            </div>
+                <div>
+                <p class=upcoming__video--user>dimopan</p>
+                <p class=upcoming__video--user>463,371 views</p>
+                </div>
+              <a href="#upcomingVideo.html">
+                <img class="upcoming__video--preview"
+                  src="assets/suggestion-2.jpg"
+                  alt="videoPreviewPane">
+              </a>
+              <a class="upcoming__video--title"
+                href="#upcomingVideo.html">
+                "The Matrix" (1999)--'Construct' Scenes
+              </a>
+                <p class=upcoming__video--user>Galactic Archive</p>
+                <p class=upcoming__video--user>708,357 views</p>
+              <a href="#upcomingVideo.html">
+                <img class="upcoming__video--preview"
+                  src="assets/suggestion-3.jpg"
+                  alt="videoPreviewPane">
+              </a>
+              <a class="upcoming__video--title"
+                href="#upcomingVideo.html">
+                Morpheus explains what is the matrix
+              </a>
+                <p class=upcoming__video--user>Jason Newsted</p>
+                <p class=upcoming__video--user>584,308 views</p>
+              <a href="#upcomingVideo.html">
+                <img class="upcoming__video--preview"
+                  src="assets/suggestion-4.jpg"
+                  alt="videoPreviewPane">
+              </a>
+              <a class="upcoming__video--title"
+                href="#upcomingVideo.html">
+                Film Theory: Neo ISN'T The One in the Matrix Trilogy
+              </a>
+                <p class="upcoming__video--user">The Film Theories</p>
+                <p class="upcoming__video--user">4,992,777 views</p>
+            </div>
+            </section>
+        </aside>
+      </div>
     </div>
   </body>
 </html>
