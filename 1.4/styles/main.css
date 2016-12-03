@@ -7,7 +7,7 @@
   background-color: white;
   float: right;
   margin-top: 10px;
-  width: 33%;
+  width: 33.25%;
   vertical-align: top;
 }
 .aside__header {
@@ -19,8 +19,21 @@
   float: right;
   vertical-align: top;
 }
+.autoplay__header--text {
+  font-family: Arial;
+  font-size: 16px;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+.banner__ad {
+  display: inline-block;
+}
 .bannerAd__image {
   height: 50px;
+  width: 300px;
   margin-top: 5px;
 }
 .body {
@@ -28,6 +41,21 @@
   margin: 0;
 }
 .button {
+    background-color: Gainsboro;
+    border-style: solid;
+    border-size: 1px;
+    border-radius: 1px;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial;
+    height: 25px;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+}
+.button__mag {
     background-color: Gainsboro;
     border-style: solid;
     border-size: 1px;
@@ -102,6 +130,10 @@
   font-size: 24px;
   padding-left: 80px;
 }
+.p__1 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
 .preview__pane {
 
 }
@@ -118,14 +150,39 @@
 }
 .section__2 {
   background-color: white;
+  float: left;
+  width: 66%;
+}
+.section__3 {
+  background-color: white;
   font-family: Helvetica;
+  float:left;
   margin-top: 10px;
+  width: 66%;
+}
+.section__4 {
+  display: block;
 }
 /*This doesn't work*/
+.show__more {
+  display: inline-block;
+  margin-left: 380px;
+  margin-right: 380px;
+}
 .show__more__button {
-  padding-left: auto;
-  padding-right: auto;
-  float: center;
+  background-color: Gainsboro;
+  border-style: solid;
+  border-size: 1px;
+  border-radius: 1px;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Arial;
+  height: 25px;
+  padding: 0 12px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
 }
 .slider__round {
   margin-top: 0px;
@@ -172,8 +229,36 @@
 .subcriber__number {
   vertical-align: top;
 }
+.upcoming__video--preview {
+  width: 200px
+}
+.upcoming__video--title {
+  font-family: Arial;
+  vertical-align: top;
+}
+.upcoming__video--user {
+  font-family: Arial;
+  vertical-align: top;
+  margin: 0;
+}
+.upcoming__videos {
+
+}
 .upload__button--with_avatar {
   float: right;
+  vertical-align: top;
+}
+.user__input--buttons {
+  display: inline;
+}
+.video__description--uploadDate {
+  font-family: Arial;
+  font-size: 24px;
+  display: block;
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+  padding-top: 15px;
   vertical-align: top;
 }
 .viewer__input--buttons {
