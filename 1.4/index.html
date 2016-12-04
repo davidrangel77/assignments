@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>YouTubeScreenShot1.4</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <script src="https://use.fontawesome.com/e176ab6ee2.js"></script>
   </head>
   <body class="body">
@@ -44,7 +45,7 @@
         <main class="main">
           <!-- This opens the main video view wrapper -->
             <!-- Commented out the video src to use placeholder img -->
-            <iframe width="842" height="470" src="https://www.youtube.com/embed/zQ1_IbFFbzA" frameborder="0" allowfullscreen></iframe>
+            <iframe width="718" height="470" src="https://www.youtube.com/embed/zQ1_IbFFbzA" frameborder="0" allowfullscreen></iframe>
             <!-- <iframe width="842" height="470"
               src="https://www.youtube.com/embed/XGSy3_Czz8k?controls=1">
             </iframe> -->
@@ -64,44 +65,47 @@
                   src="assets/user.jpg"
                   alt="userAvatar">
                 <div class="subcriber__info--name">
-                  <h2 class="h2">Freestyler 365
+                  <h2 class="user__name">Freestyler 365
                   </h2>
                   <div class="subscriber__name--followers">
-                    <a href="subscribe">
+                  <div class="subscribe__button--followers">
+                    <a href="subscribe" class="subscribe__link">
                       <img
                       src="assets/Subscribe-PNG-12.png"
                       alt="subscribe"
                       class="subscriber__info--subscribe">
                     </a>
-                    <output
+                    <p class="subscriber__number">604</p>
+                    <!-- <output
                       name="#numberSubcribers">604</output
-                      class="subscriber__number">
+                      class="subscriber__number"> -->
+                  </div>
                   </div>
                 </div>
                     <div class="number__of__views">
                     <output
-                      name="#number__of__views">342,456</output class="number__of__views">
+                      name="#number__of__views">342,456 views</output class="number__of__views">
                     </div>
                 </div>
               </div>
           </section>
           <section class="section__2">
               <div id="left__section__2" class="user__input--add--share--more">
-                <i class="fa fa-plus" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                <i class="fa fa-plus" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 22px;">
                 </i>
                 <input
                     type="button"
                     class="section__2--button"
                     name="button"
-                    value="Add to">
-                <i class="fa fa-share" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                    value="Add to" style="margin-right: 20px;">
+                <i class="fa fa-share" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 22px;">
                 </i>
                 <input
                   type="button"
                   class="section__2--button"
                   name="button"
-                  value="Share">
-                <i class="fa fa-ellipsis-h" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 24px;">
+                  value="Share" style="margin-right: 20px;">
+                <i class="fa fa-ellipsis-h" aria-hidden="true" style="color: grey; vertical-align: center; font-size: 22px;">
                 </i>
                 <input
                   type="button"
@@ -157,7 +161,7 @@
           </section>
           <section class="section__4">
             <!-- This opens the upcoming videos section wrapper -->
-            <!-- @TO DO: Can't get the aside header to work so commented out -->
+            <!-- this opens the autplay header div wrapper -->
             <div class="autoplay">
             <header class="aside__header">
               <h2 class="autoplay__header--text">Up next</h2>
@@ -171,6 +175,9 @@
                 </div>
             </header>
             </div>
+            <!-- this closes the autplay header div wrapper -->
+            <!-- this opens the upcoming video list -->
+            <ul class="upcoming__video--unordered--list">
             <div class="upcoming__videos">
               <div id=upcoming__video1>
                 <div id=upcoming__video1--preview>
@@ -186,11 +193,9 @@
                     The Matrix- 1999 (welcome to the real world)
                   </a>
                 </div>
-            </div>
-              <div>
               <p class=upcoming__video--user>dimopan</p>
               <p class=upcoming__video--user>463,371 views</p>
-              </div>
+            </div>
               <div id=upcoming__video2>
                 <div id=upcoming__video2--preview>
                   <a href="https://www.youtube.com/watch?v=AGZiLMGdCE0" target="_blank">
@@ -205,11 +210,9 @@
                     "The Matrix" (1999) -- 'Construct' Scenes
                   </a>
                 </div>
-            </div>
-                <div>
                 <p class=upcoming__video--user>Galactic Archive</p>
                 <p class=upcoming__video--user>708,357 views</p>
-                </div>
+              </div>
               <div id=upcoming__video3>
                 <div id=upcoming__video3--preview>
                   <a href="https://www.youtube.com/watch?v=cqxwtEdxOCw"
@@ -226,11 +229,9 @@
                     Morpheus explains what is in the matrix
                   </a>
                 </div>
-            </div>
-                <div>
                 <p class=upcoming__video--user>Jason Newsted</p>
                 <p class=upcoming__video--user>584,308 views</p>
-                </div>
+              </div>
               <div id=upcoming__video4>
                 <div id=upcoming__video4--preview>
                   <a href="https://www.youtube.com/watch?v=VkMU1mKdwPI" target="_blank">
@@ -245,14 +246,16 @@
                     Film Theory: Neo ISN'T The One in The Matrix Trilogy
                   </a>
                 </div>
-            </div>
-                <div>
                 <p class=upcoming__video--user>The Film Theorists</p>
                 <p class=upcoming__video--user>4,992,777 views</p>
-                </div>
-            </section>
+              </div>
+            </ul>
+            <!-- this closes the upcoming video list -->
+          </section>
         </aside>
       </div>
+      </ul>
+      <!-- this closes the upcoming video list -->
     </div>
   </body>
 </html>

@@ -9,7 +9,7 @@
   float: left;
   margin: 0;
   padding-left: 15px;
-  width: 82%;
+  width: 80%;
   overflow: hidden;
 }
 #left__main__aside {
@@ -28,21 +28,24 @@
   overflow: hidden;
   padding: 0;
   vertical-align: top;
-  width: 33.5%;
+  width: 33%;
 }
 #upcoming__video1 {
   margin: auto;
+  height: 85px;
+  margin-bottom: 15px;
 }
 #upcoming__video2 {
-  margin: auto;
+  margin-bottom: 15px;
+  height: 85px;
 }
 #upcoming__video3 {
-  margin: auto;
-  padding-top: 18px;
+  margin-bottom: 15px;
+  height: 85px;
 }
 #upcoming__video4 {
-  margin: auto;
-  padding-top: 30px;
+  margin-bottom: 15px;
+  height: 85px;
 }
 #upcoming__video1--preview {
   display: block;
@@ -53,35 +56,31 @@
   display: block;
   float: left;
   overflow: hidden;
-  padding-top: 10px;
 }
 #upcoming__video3--preview {
   display: block;
   float: left;
   overflow: hidden;
-  padding-top: 10px;
 }
 #upcoming__video4--preview {
   display: block;
   float: left;
   overflow: hidden;
-  padding-top: 10px;
+}
+#upcoming__video1--title {
 }
 #upcoming__video2--title {
-  padding-top: 30px;
 }
 #upcoming__video3--title {
-  margin-top: 35px;
-  padding-top: 0px;
-}#upcoming__video4--title {
-  margin-top: 15px;
+}
+#upcoming__video4--title {
 }
 #wrapper_section__2 {
   padding-bottom: 10px;
 }
 #wrapper__main__aside {
   margin: auto;
-  width: 100%;
+  width: 85%;
 }
 .aside {
   background-color: white;
@@ -89,16 +88,19 @@
   float: right;
   margin-top: 10px;
   width: 100%;
-  height: 869px;
+  height: 842px;
   vertical-align: top;
 }
 .aside__header {
+  display: block;
   margin-top: 5px;
   margin=bottom: 5px;
   vertical-align: middle;
+  width: 100;
 }
 .autoplay {
   display: block;
+  padding-left: 10px;
   vertical-align: top;
 }
 .autoplay__header--text {
@@ -171,8 +173,8 @@
 }
 .img__userAvatar {
   display: inline-block;
-  height: 75px;
-  vertical-align: bottom;
+  height: 60px;
+  vertical-align: top;
 }
 .img__userProfileAvatar {
   border-radius: 50%;
@@ -194,6 +196,7 @@
 .main {
   float: left;
   padding-top: 10px;
+  width: 100%;
 }
 .navBar {
   vertical-align: top;
@@ -202,11 +205,15 @@
   padding: 10px 20px;
 }
 .number__of__views {
-  border-bottom: 3px solid Blue;
-  display: inline-block;
-  font-size: 24px;
-  float: right;
-  padding: 0 5px;
+  border-bottom: 3px solid #98d9e6;
+  color: grey;
+  display: inline;
+  font-size: 22px;
+  margin-left: 505px;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 40px;
 }
 .number__of__views2 {
   display: block;
@@ -214,8 +221,11 @@
   padding-left: 80px;
 }
 .p__1 {
-  margin-left: 16px;
-  margin-right: 16px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .preview__pane {
 
@@ -238,12 +248,12 @@
   border-right-color: #EEEEEE;
   height: 25px;
   margin-right: -5px;
-  width: 500px;
+  width: 450px;
 
 }
 .section__1 {
   background-color: white;
-  font-family: Helvetica;
+  font-family: Arial;
   margin-top: 5px;
   padding: 15px;
 }
@@ -271,14 +281,16 @@
 
 .section__3 {
   background-color: white;
-  font-family: Helvetica;
+  font-family: Arial;
   float:left;
   height: 150px;
   margin-top: 10px;
+  width: 100%;
 }
 .section__4 {
   display: inline-block;
   float: left;
+  width: 100%;
 }
 /*This doesn't work*/
 .show__more {
@@ -296,21 +308,28 @@
   display: inline-block;
   font-size: 14px;
   font-family: Arial;
+  font-weight: bold;
   height: 25px;
   padding: 0 12px;
   text-align: center;
   text-decoration: none;
   vertical-align: top;
-  width: 842px;
+  width: 716px;
 }
 .slider__round {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.subscribe__button--followers {
+  display: inline;
+}
+.subscribe__link {
+  text-decoration: none;
+}
 .subscriber__info {
   border-bottom: 2px solid Gainsboro;
   display: inline-block;
-  width: 800px;
+  width: 100%;
   vertical-align: top;
 }
 .subscriber__info--button {
@@ -337,16 +356,28 @@
   vertical-align: top;
 }
 .subscriber__info--subscribe {
-  width: 15%;
-  vertical-align: bottom;
+  height: 28px;
+  width: 93px;
+  vertical-align: top;
+  margin: 0;
+  padding; 0;
 }
 .subscriber__name--followers {
-  display: block;
+  border: 2px solid #EEEEEE;
+  display: inline;
   font-size: 24px;
+  font-weight: bold;
   vertical-align: top;
 }
-.subcriber__number {
-  vertical-align: top;
+.subscriber__number {
+  display: inline-block;
+  color: grey;
+  font-size: 22px;
+  font-weight: lighter;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  padding-bottom: 5px;
 }
 .thumbs_buttons {
   display: inline;
@@ -355,17 +386,27 @@
   font-size: 16px;
   margin: 0;
 }
+.upcoming__video--unordered--list {
+  padding-left: 15px;
+}
 .upcoming__video--preview {
-  width: 200px
+  width: 145px
 }
 .upcoming__video--title {
   display: block;
+  color: black;
   font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
   padding-bottom: 5px;
+  text-decoration: none;
   vertical-align: top;
 }
 .upcoming__video--user {
+  color: grey;
   font-family: Arial;
+  font-size: 11px;
+  font-weight: 600;
   vertical-align: top;
   margin: 0;
 }
@@ -380,21 +421,30 @@
 .user__input--add--share--more {
 
 }
+.user__name {
+  color: #393939;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
 .video__description--uploadDate {
   font-family: Arial;
-  font-size: 24px;
+  font-size: 14px;
   display: block;
   margin-top: 0px;
-  margin-left: 16px;
+  margin-left: 15px;
   margin-bottom: 0px;
   padding-top: 15px;
   vertical-align: top;
 }
-.viewer__input--buttons {
-
-}
 .video__details--name {
-margin-top: 0;
+  font-size: 20px;
+  margin-top: 0;
+}
+.viewer__input--buttons {
 }
 .wrapper {
   margin: 0 auto;
