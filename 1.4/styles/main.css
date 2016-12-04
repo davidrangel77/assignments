@@ -134,9 +134,7 @@
 }
 .button {
     background-color: Gainsboro;
-    border-style: solid;
-    border-size: 1px;
-    border-radius: 1px;
+    border: 2px solid Silver;
     color: black;
     display: inline-block;
     font-size: 14px;
@@ -149,20 +147,12 @@
 }
 /*This is the button just for the nav bar search input*/
 .button__mag {
-    background-color: Gainsboro;
-    border-color: Silver;
-    border-style: solid;
-    border-size: 1px;
-    border-radius: 1px;
-    color: Gainsboro;
-    display: inline-block;
-    font-size: 14px;
-    font-family: Arial;
-    height: 25px;
-    padding: 0 12px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: top;
+  background-color: Gainsboro;
+  border: 2px solid Silver;
+  color: Gainsboro;
+  display: inline-block;
+  padding: 0 12px;
+  vertical-align: top;
 }
 .h2 {
   font-family: Arial;
@@ -204,6 +194,7 @@
 }
 .main {
   float: left;
+  padding-top: 10px;
 }
 .navBar {
   vertical-align: top;
