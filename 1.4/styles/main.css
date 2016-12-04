@@ -129,12 +129,12 @@
   margin-top: 5px;
 }
 .body {
-  background-color: Gainsboro;
+  background-color: #F1F1F1;
   margin: auto;
 }
 .button {
-    background-color: Gainsboro;
-    border: 2px solid Silver;
+    background-color: #F8F8F8;
+    border: 2px solid #EEEEEE;
     color: black;
     display: inline-block;
     font-size: 14px;
@@ -147,11 +147,10 @@
 }
 /*This is the button just for the nav bar search input*/
 .button__mag {
-  background-color: Gainsboro;
-  border: 2px solid Silver;
+  background-color: #F8F8F8;
+  border: 2px solid #EEEEEE;
   color: Gainsboro;
   display: inline-block;
-  padding: 0 12px;
   vertical-align: top;
 }
 .h2 {
@@ -227,6 +226,21 @@
   margin-right: -5px;
   vertical-align: top;
 }
+.searchBar__bar--only {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 1px;
+  border-bottom-color: #CFCFCF;
+  border-top-color: #DDDDDD;
+  border-left-width: 2px;
+  border-style: solid;
+  border-left-color: #EEEEEE;
+  border-right-color: #EEEEEE;
+  height: 25px;
+  margin-right: -5px;
+  width: 500px;
+
+}
 .section__1 {
   background-color: white;
   font-family: Helvetica;
@@ -244,7 +258,7 @@
   border-style: none;
   border-size: 1px;
   border-radius: 1px;
-  color: grey;
+  color: #808080;
   display: inline-block;
   font-size: 16px;
   font-family: Arial;
