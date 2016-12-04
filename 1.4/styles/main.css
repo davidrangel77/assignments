@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
-  }video {
+  }
+  video {
   width: 100%;
 }
+/* I used ID's instead of classes to organize my divs in other divs. It's not right, but I was getting frustrated and it's the easiest way I could figure out to get it done*/
 #left__section__2 {
   float: left;
   margin: 0;
@@ -87,6 +89,7 @@
   float: right;
   margin-top: 10px;
   width: 100%;
+  height: 869px;
   vertical-align: top;
 }
 .aside__header {
@@ -127,7 +130,7 @@
 }
 .body {
   background-color: Gainsboro;
-  margin: 0;
+  margin: auto;
 }
 .button {
     background-color: Gainsboro;
@@ -144,6 +147,7 @@
     text-decoration: none;
     vertical-align: top;
 }
+/*This is the button just for the nav bar search input*/
 .button__mag {
     background-color: Gainsboro;
     border-color: Silver;
@@ -264,6 +268,7 @@
   background-color: white;
   font-family: Helvetica;
   float:left;
+  height: 150px;
   margin-top: 10px;
 }
 .section__4 {
