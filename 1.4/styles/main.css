@@ -26,7 +26,7 @@
   overflow: hidden;
   padding: 0;
   vertical-align: top;
-  width: 33%;
+  width: 33.5%;
 }
 #upcoming__video1 {
   margin: auto;
@@ -79,6 +79,7 @@
 }
 #wrapper__main__aside {
   margin: auto;
+  width: 100%;
 }
 .aside {
   background-color: white;
@@ -272,14 +273,15 @@
 /*This doesn't work*/
 .show__more {
   display: inline-block;
-  margin-left: 380px;
-  margin-right: 380px;
 }
 .show__more__button {
-  background-color: Gainsboro;
+  background-color: white;
   border-style: solid;
   border-size: 1px;
   border-radius: 1px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
   color: black;
   display: inline-block;
   font-size: 14px;
@@ -289,6 +291,7 @@
   text-align: center;
   text-decoration: none;
   vertical-align: top;
+  width: 842px;
 }
 .slider__round {
   margin-top: 0px;
