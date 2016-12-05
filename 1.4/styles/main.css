@@ -4,7 +4,9 @@
   video {
   width: 100%;
 }
+
 /* I used ID's instead of classes to organize my divs in other divs. It's not right, but I was getting frustrated and it's the easiest way I could figure out to get it done*/
+
 #left__section__2 {
   float: left;
   margin: 0;
@@ -78,17 +80,23 @@
 #wrapper_section__2 {
   padding-bottom: 10px;
 }
+
+/*In order to get mine to look a little more like a retina display, I decreased the whole wrapper for the main and the aside to 85%.*/
+
 #wrapper__main__aside {
   margin: auto;
   width: 85%;
 }
+
+/*I set a pixel height just to make it line up at the bottom with the main section*/
+
 .aside {
   background-color: white;
   display: inline-block;
   float: right;
   margin-top: 10px;
   width: 100%;
-  height: 842px;
+  height: 800px;
   vertical-align: top;
 }
 .aside__header {
@@ -131,12 +139,13 @@
   margin-top: 5px;
 }
 .body {
-  background-color: #F1F1F1;
+  background-color: #EEEEEE;
   margin: auto;
 }
 .button {
     background-color: #F8F8F8;
     border: 2px solid #EEEEEE;
+    border-radius: 2px;
     color: black;
     display: inline-block;
     font-size: 14px;
@@ -148,11 +157,14 @@
     vertical-align: top;
 }
 /*This is the button just for the nav bar search input*/
+
 .button__mag {
   background-color: #F8F8F8;
   border: 2px solid #EEEEEE;
+  border-radius: 2px;
   color: Gainsboro;
   display: inline-block;
+  height: 25px;
   vertical-align: top;
 }
 .h2 {
@@ -237,15 +249,17 @@
   vertical-align: top;
 }
 .searchBar__bar--only {
-  border-top-width: 2px;
-  border-right-width: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: #CFCFCF;
-  border-top-color: #DDDDDD;
+  border-bottom-color: #C6C6C6;
   border-left-width: 2px;
-  border-style: solid;
   border-left-color: #EEEEEE;
+  border-right-width: 2px;
   border-right-color: #EEEEEE;
+  border-top-width: 2px;
+  border-top-color: #EEEEEE;
+  border-radius: 2px;
+  border-style: solid;
+  border-bottom-width: 1px;
   height: 25px;
   margin-right: -5px;
   width: 450px;
@@ -283,7 +297,6 @@
   background-color: white;
   font-family: Arial;
   float:left;
-  height: 150px;
   margin-top: 10px;
   width: 100%;
 }
@@ -296,26 +309,29 @@
 /*This doesn't work*/
 .show__more {
   display: inline-block;
+  width: 100%;
 }
 .show__more__button {
   background-color: white;
   border-style: solid;
-  border-size: 1px;
-  border-radius: 1px;
+  border-top-color: #EEEEEE;
+  border-width: 2px;
+  border-radius: 2px;
   border-left: none;
   border-right: none;
   border-bottom: none;
-  color: black;
-  display: inline-block;
+  color: grey;
+  display: inline;
   font-size: 14px;
   font-family: Arial;
   font-weight: bold;
   height: 25px;
+  margin-left: 15px;
   padding: 0 12px;
   text-align: center;
   text-decoration: none;
   vertical-align: top;
-  width: 716px;
+  width: 690px;
 }
 .slider__round {
   margin-top: 0px;
@@ -328,7 +344,7 @@
   text-decoration: none;
 }
 .subscriber__info {
-  border-bottom: 2px solid Gainsboro;
+  border-bottom: 2px solid #EEEEEE;
   display: inline-block;
   width: 100%;
   vertical-align: top;
@@ -336,8 +352,8 @@
 .subscriber__info--button {
   background-color: Gainsboro;
   border-style: solid;
-  border-size: 1px;
-  border-radius: 1px;
+  border-size: 2px;
+  border-radius: 2px;
   color: black;
   display: inline-block;
   font-size: 14px;
