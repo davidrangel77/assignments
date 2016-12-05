@@ -181,8 +181,8 @@
   height: 45px;
   margin-top: -10px;
   margin-bottom: 0px;
-  margin-right: 45px;
-  margin-left: 45px;
+  margin-left: 0px;
+  margin-right: 65px;
 }
 .img__userAvatar {
   display: inline-block;
@@ -334,10 +334,6 @@
   text-decoration: none;
   vertical-align: top;
   width: 690px;
-}
-.slider__round {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .subscribe__button--followers {
   display: inline;
