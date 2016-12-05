@@ -21,6 +21,7 @@
   width: 66%;
 }
 #right__section__2 {
+  display: inline-block;
   margin: 0;
   overflow: hidden;
 }
@@ -84,7 +85,8 @@
 /*In order to get mine to look a little more like a retina display, I decreased the whole wrapper for the main and the aside to 85%.*/
 
 #wrapper__main__aside {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
 }
 
@@ -395,7 +397,7 @@
   padding-bottom: 5px;
 }
 .thumbs_buttons {
-  display: inline;
+  display: inline-block;
   float: right;
   font-family: Arial;
   font-size: 16px;
