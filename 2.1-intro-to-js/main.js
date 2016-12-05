@@ -37,6 +37,7 @@ math = high - "5";
 // Q: What is `math` set to?
 // A: 'math' is set to the difference of 'high' and the string "5".
 
+console.log(math);
 
 /* =========================================================
      Part 3: Expressions
@@ -53,6 +54,8 @@ var today = 2015;
 var timsCurrentAge = today - born;
 var toDisplayTimsCurrentage= "Tim is " + timsCurrentAge + "years old"
 
+console.log(toDisplayTimsCurrentage);
+
 
 // Store some information following in variables.
 var yourName
@@ -66,3 +69,5 @@ var instructorName= "Jason Vanderslice";
 
 // Final Statement
 var statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
+
+console.log(statement);
