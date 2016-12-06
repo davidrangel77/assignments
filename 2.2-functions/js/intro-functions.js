@@ -12,7 +12,13 @@ var myObject = {
  */
 
 function max(a, b){
-    // YOUR CODE HERE
+
+    if (a > b) {
+      return a;
+    }
+    else {
+      return b;
+    }
 }
 
 console.assert(max(1,3) === 3);
@@ -30,7 +36,16 @@ console.assert(isNaN(max("aaa","bbb")));
  */
 
 function maxOfThree(a, b, c){
-    // YOUR CODE HERE
+  if (a > b, a > c) {
+    return a;
+    if (b > a > c) {
+      return b;
+        else {
+         return c;
+       }
+     }
+
+  }
 }
 
 console.assert(maxOfThree(1,3,2) === 3);
