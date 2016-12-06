@@ -36,18 +36,24 @@ console.assert(isNaN(max("aaa","bbb")));
  */
 
 function maxOfThree(a, b, c){
-  if (a > b, a > c) {
-    return a;
-    if (b > a > c) {
+  if (a > b) {
+    if (a > c){
+      return a;
+    }else {
+      if (b > c) {
+        return b;
+      }else {
+        return c;
+      }
+    }
+  }else{
+    if (b > c){
       return b;
-        else {
-         return c;
-       }
-     }
-
+    }else {
+      return c;
+    }
   }
 }
-
 console.assert(maxOfThree(1,3,2) === 3);
 console.assert(maxOfThree(0,3,-1) === 3);
 console.assert(maxOfThree(10,3,50) === 50);
@@ -63,7 +69,7 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-    // YOUR CODE HERE
+
 }
 
 console.assert(isVowel(0) === false);
