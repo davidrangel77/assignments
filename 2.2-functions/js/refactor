@@ -260,8 +260,8 @@ var accelerate = function(amount) {
 
 // The function below allows you to call another
 // function at a later time. It takes 2 params, an
-// amount of miliseconds and a function. It will
-// call the function that many miliseconds later.
+// amount of milliseconds and a function. It will
+// call the function that many milliseconds later.
 // Refactor it so that is has a default timeout.
 
 // This is more advanced than the default param on
