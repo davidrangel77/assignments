@@ -69,8 +69,13 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-
-}
+  var vowels = ["a","A","e","E","i","I","o","O","u","U"]
+  if (vowels.indexOf(char) === -1){
+    return false;
+  }else {
+    return true;
+    }
+  }
 
 console.assert(isVowel(0) === false);
 console.assert(isVowel("B") === false);
