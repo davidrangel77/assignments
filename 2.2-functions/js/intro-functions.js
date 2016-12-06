@@ -99,7 +99,7 @@ function rovarspraket(text){
 
   var vowels = ["a","e","i","o","u"];
   // var textasString = text.toString();
-  
+
 
   for(var i = 0; i < text.length; i++) {
     // determine if it is  consonant
@@ -136,7 +136,7 @@ console.assert(rovarspraket(0) === "0")
  */
 
 function reverse(str){
-    // YOUR CODE HERE
+    return str.split("").reverse().join("");
 }
 
 console.assert(reverse("books") === "skoob")
