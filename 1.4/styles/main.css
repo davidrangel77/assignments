@@ -10,28 +10,37 @@
 #left__section__2 {
   float: left;
   margin: 0;
-  padding-left: 15px;
-  width: 80%;
+  width: 50%;
   overflow: hidden;
 }
 #left__main__aside {
-  display: inline;
-  float: left;
+  display: inline-block;
+  /*float: left;*/
   overflow: hidden;
   width: 66%;
 }
 #right__section__2 {
   display: inline-block;
+  float: right;
   margin: 0;
   overflow: hidden;
 }
 #right__main__aside {
-  float: right;
+  display: inline-block;
+  /*float: right;*/
   margin: 0;
   overflow: hidden;
   padding: 0;
   vertical-align: top;
   width: 33%;
+}
+#section__2 {
+  background-color: white;
+  float: left;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 #upcoming__video1 {
   margin: auto;
@@ -97,7 +106,6 @@
   display: inline-block;
   float: right;
   margin-top: 10px;
-  width: 100%;
   height: 800px;
   vertical-align: top;
 }
@@ -134,6 +142,7 @@
   vertical-align: top;
 }
 .banner__ad {
+  background-color: white;
   display: block;
 }
 .bannerAd__image {
@@ -222,13 +231,14 @@
 .number__of__views {
   border-bottom: 3px solid #98d9e6;
   color: grey;
-  display: inline;
   font-size: 22px;
-  margin-left: 505px;
   padding-top: 0px;
   padding-right: 5px;
   padding-bottom: 0px;
   padding-left: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .number__of__views2 {
   display: block;
@@ -240,8 +250,6 @@
   font-family: Arial;
   font-size: 12px;
   font-weight: 400;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .preview__pane {
 
@@ -275,12 +283,6 @@
   margin-top: 5px;
   padding: 15px;
 }
-.section__2 {
-  background-color: white;
-  float: left;
-  padding-bottom: 15px;
-  width: 100%;
-}
 .section__2--button {
   background-color: white;
   border-style: none;
@@ -302,9 +304,11 @@
   font-family: Arial;
   float:left;
   margin-top: 10px;
+  padding: 15px;
   width: 100%;
 }
 .section__4 {
+  background-color: white;
   display: inline-block;
   float: left;
   width: 100%;
@@ -330,12 +334,11 @@
   font-family: Arial;
   font-weight: bold;
   height: 25px;
-  margin-left: 15px;
   padding: 0 12px;
   text-align: center;
   text-decoration: none;
   vertical-align: top;
-  width: 690px;
+  width: 100%;
 }
 .subscribe__button--followers {
   display: inline;
@@ -346,6 +349,7 @@
 .subscriber__info {
   border-bottom: 2px solid #EEEEEE;
   display: inline-block;
+  position: relative;
   width: 100%;
   vertical-align: top;
 }
@@ -366,7 +370,7 @@
 }
 .subcriber__info--name {
   display: inline-block;
-  width: 90%;
+  width: 25%;
 }
 .subcriber__info--number {
   display: inline-block;
@@ -456,7 +460,6 @@
   font-size: 14px;
   display: block;
   margin-top: 0px;
-  margin-left: 15px;
   margin-bottom: 0px;
   padding-top: 15px;
   vertical-align: top;
