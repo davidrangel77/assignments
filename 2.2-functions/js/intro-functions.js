@@ -69,7 +69,7 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-  var vowels = ["a","A","e","E","i","I","o","O","u","U"]
+  var vowels = ["a","A","e","E","i","I","o","O","u","U"];
   if (vowels.indexOf(char) === -1){
     return false;
   }else {
@@ -96,8 +96,29 @@ console.assert(isVowel("E") === true);
  */
 
 function rovarspraket(text){
-    // YOUR CODE HERE
+
+  var vowels = ["a","e","i","o","u"];
+  // var textasString = text.toString();
+  
+
+  for(var i = 0; i < text.length; i++) {
+    // determine if it is  consonant
+    // var text = text.split("");
+    var currentLetter = vowels[i];
+
+    if (vowels.indexOf(currentLetter) === -1){
+    // referance consonant
+    var consonant = currentLetter;
+    // double with "o" in between
+    var doubledText = "o" + consonant;
+    // splice back in array of consonant
+    // text.splice(i, 0, doubledText);
+    }
+  // Then take that output and find each doubled consonant and ad an "o"
+  }
 }
+// I feel like I can understand what all these things are supposed to do
+// but I can't make it work.
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
