@@ -17,15 +17,62 @@ console.assert(squareDance([3,6,9,3])[0] === 9)
 
 // PART 1: write a function called nicer(). It should clean up the language in its input sentence.
 
+function nicer(sentence) {
+  // made a var to hold the nonBadwordsSentence return until was built
+  var nonBadwordsSentence = ""
+  // seperate the sentence string into an array
+  var sentenceArray = sentence.split(" ")
+  // make an array of the bad words
+  var badWordsArray = ["heck", "darn", "crappy", "dang"]
+  // loop over array to find bad words
+  for (var i = 0; i < sentenceArray.length; i++) {
+    // set var currentWord to hold the check in the loop of sentenceArray
+    var currentWord = sentenceArray[i]
+    // indexOf to check if current word is in the badWordsArray
+      if (badWordsArray.indexOf(currentWord) === -1) {
+        // set 'if' if current iternation equals the end of sentenceArray array to NOT add a space to the last iteration.
+        if (i === sentenceArray.length-1) {
+        nonBadwordsSentence += currentWord;
+        // added the ELSE to take all the other iterations and add a " " between them.
+      }else {
+        nonBadwordsSentence += currentWord + " "
+      }
+    }
+    // return nonBadwordsSentence should log the NON bad words concatenated with spaces EXCEPT for the last word without one.
+  }return nonBadwordsSentence
+}
+// remove bad words from sentence string
+// return new sentence with the words ommitted
+
 console.assert(nicer("dad get the heck in here and bring me a darn sandwich.") === "dad get the in here and bring me a sandwich.")
 
 console.assert(nicer("here son, your crappy sandwich is on the dang plate.") === "here son, your sandwich is on the plate.")
 
 // PART 2: write a function called capitalizeAll(). It should take as input a sentence and capitalize the first letter of every word in the sentence.
 
+function capitalizeAll (nonCapsSentence){
+  // make an array of every word in a string
+  var sentenceArray = nonCapsSentence.split(" ")
+  // make a loop to find the first letter of every word
+  for(i = 0; i < sentenceArray.length; i++){
+    var currentWord = sentenceArray[i];
+    var currentWordArray = currentWord.split("");
+    currentWordArray[0] = currentWordArray[0].toUpperCase();
+    var capitalizedWord = currentWordArray.join("")
+    sentenceArray[i] = capitalizedWord
+  }
+  // replace that letter with a capital letter with splice
+  var capitalizedSentence = sentenceArray.join(" ")
+  return capitalizedSentence;
+}
+
 console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like Sunday.')
 
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
+
+function properSentences {
+  // make the input a string
+}
 
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
 
