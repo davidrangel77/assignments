@@ -58,7 +58,7 @@ function capitalizeAll (nonCapsSentence){
     var currentWord = sentenceArray[i];
     var currentWordArray = currentWord.split("");
     currentWordArray[0] = currentWordArray[0].toUpperCase();
-    var capitalizedWord = currentWordArray.join("")
+    var capitalizedWord = currentWordArray.join("");
     sentenceArray[i] = capitalizedWord
   }
   // replace that letter with a capital letter with splice
@@ -70,11 +70,24 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 
-function properSentences {
-  // make the input a string
+var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
+
+function properSentences (paragraph){
+  // make the input an array of the paragraph
+  var sentenceArray = paragraph.split(". ");
+
+  for(var i = 0; i < sentenceArray.length; i++) {
+    var currentSentenceArray = sentenceArray[i];
+    var uncapitalizedSentenceArray = currentSentenceArray.split(" ");
+      var currentWord = uncapitalizedSentenceArray[i];
+      var currentWordArray = currentSentenceArray.split("");
+      currentWordArray[0] = currentWord[0].toUpperCase();
+      console.log(currentWordArray);
+      var capitalizedSentence = currentWordArray.join("");
+      console.log(capitalizedSentence);
+  }
 }
 
-var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
 
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
