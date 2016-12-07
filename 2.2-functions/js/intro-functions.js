@@ -142,18 +142,32 @@ function reverse(str){
 console.assert(reverse("books") === "skoob")
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
 
+// I found this as a built in function and used it.
+
 /**
  * Part 5
  *
- * Write a function findLongestWord() that takes an
- * string returns the first, longest word in the array.
+ * Write a function findLongestWord() that takes any
+ * string and returns the first, longest word in the array.
  *
  * i.e. findLongestWord("book dogs") should return "book"
  */
 
 function findLongestWord(sentence){
-    // YOUR CODE HERE
-}
+  // Make a variable for the text input array
+  // Make that variable into a seperated array by words
+  var sentenceString = sentence.split("");
+  // Inspect that array for length of words with a for loop
+  var longestWord = 0
 
+  for(var i = 0; i <= sentenceString.length; i++) {
+    if(longestWord < sentenceString[i].length) {
+      longestWord = sentenceString[i].length;
+    }
+  }
+  // Return the longest word
+  return longestWord;
+}
+// I got it to revlieve the errors but I had to look it up to add the "=" to the for loop to include the first word. 
 console.assert(findLongestWord("book dogs") === "book")
 console.assert(findLongestWord("don't mess with Texas") === "Texas")
