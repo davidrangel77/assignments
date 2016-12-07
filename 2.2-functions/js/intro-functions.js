@@ -157,17 +157,18 @@ function findLongestWord(sentence){
   // Make a variable for the text input array
   // Make that variable into a seperated array by words
   var sentenceString = sentence.split("");
-  // Inspect that array for length of words with a for loop
-  var longestWord = 0
 
-  for(var i = 0; i <= sentenceString.length; i++) {
-    if(longestWord < sentenceString[i].length) {
+  // Inspect that array for length of words with a for loop
+  var longestWord = 0;
+
+  for (var i = 0; i <= sentenceString.length; i++) {
+    if (longestWord < sentenceString[i].length) {
       longestWord = sentenceString[i].length;
     }
   }
   // Return the longest word
   return longestWord;
 }
-// I got it to revlieve the errors but I had to look it up to add the "=" to the for loop to include the first word. 
+// I got it to revlieve the errors but I had to look it up to add the "=" to the for loop to include the first word.
 console.assert(findLongestWord("book dogs") === "book")
 console.assert(findLongestWord("don't mess with Texas") === "Texas")
