@@ -19,7 +19,7 @@
   background: #7FC180;
   border-color: #86C487;
   border-style: solid;
-  color: white;
+  color: black;
   font-size: 28px;
   font-family: Arial;
   height: 80px;
@@ -43,7 +43,6 @@
 .tableMain {
   border-collapse: collapse;
   margin-left: 40%;
-  margin-right: 50%;
 }
 .tableRow {
 }
