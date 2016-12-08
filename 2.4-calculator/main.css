@@ -1,0 +1,19 @@
+.body {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  background: #5FB363;
+  border-color: #86C487;
+  margin: -2px;
+  width: 75px;
+  height: 75px;
+}
+.tableMain {
+  border-collapse: collapse;
+  margin-left: 40%;
+  margin-right: 50%;
+}
+.tableRow {
+}
