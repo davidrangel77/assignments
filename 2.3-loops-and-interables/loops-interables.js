@@ -82,9 +82,8 @@ function properSentences (paragraph){
       var currentWord = uncapitalizedSentenceArray[i];
       var currentWordArray = currentSentenceArray.split("");
       currentWordArray[0] = currentWord[0].toUpperCase();
-      console.log(currentWordArray);
       var capitalizedSentence = currentWordArray.join("");
-      console.log(capitalizedSentence);
+      // I don't know why it made some characters change. but I'll let it go for now.
   }
 }
 
@@ -92,7 +91,24 @@ function properSentences (paragraph){
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
+// @TODO: see below:
+// insert "fun" to the array.
+//  join the array back together.
+function iPutTheFunIn (text){
+  // Make the text an array.
+  var textArray = text.split("");
+  // count the characters in the array and find the middle.
+  var middlePoint = Math.floor((0+textArray.length)/2);
+  console.log(middlePoint);
+  // I'm trying to splice the "fun" into the middle of the array. I don't think it works like that but I can't concenptualize using a loop to make it work.
 
+  // created a for loop to add the text to the middle point of the text.
+  // I need the look to stop at the middle point and add the "fun".
+  for (var i = 0; i < textArray.length; i++) {
+    var middlePoint = ;
+
+  }
+}
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
 console.assert(iPutTheFunIn("reds") === "refunds")
 
