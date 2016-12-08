@@ -6,9 +6,39 @@
 .button {
   background: #5FB363;
   border-color: #86C487;
+  border-style: solid;
+  color: white;
+  font-size: 28px;
+  font-family: Arial;
+  height: 80px;
   margin: -2px;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+
+}
+.button2 {
+  background: #7FC180;
+  border-color: #86C487;
+  border-style: solid;
+  color: white;
+  font-size: 28px;
+  font-family: Arial;
+  height: 80px;
+  margin: -2px;
+  width: 80px;
+}
+.calculatorOutput {
+  background-color: #5FB363;
+  border-color: #86C487;
+  border-style: solid;
+  border-left-width: 1px;
+  border-right-width: 2px;
+  border-top-width: 3px;
+  color: white;
+  font-size: 28px;
+  font-family: Arial;
+  height: 69px;
+  padding-left: 15px;
+
 }
 .tableMain {
   border-collapse: collapse;
