@@ -39,6 +39,7 @@ function nicer(sentence) {
       }
     }
     // return nonBadwordsSentence should log the NON bad words concatenated with spaces EXCEPT for the last word without one.
+    console.log(nonBadwordsSentence);
   }return nonBadwordsSentence
 }
 // remove bad words from sentence string
@@ -104,15 +105,36 @@ function iPutTheFunIn (text){
 
   // created a for loop to add the text to the middle point of the text.
   // I need the look to stop at the middle point and add the "fun".
-  for (var i = 0; i < textArray.length; i++) {
-    var middlePoint = ;
-
-  }
+  // for (var i = 0; i < textArray.length; i++) {
+  //   var middlePoint =
+  //
+  // }
 }
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
 console.assert(iPutTheFunIn("reds") === "refunds")
 
 // PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
+
+function pipeline (value, function1, function2) {
+  function function1 (paragraph) {
+    // function1 need to take the paragraph and delete the bad words.
+    var nonBadwordsSentence = ""
+    var sentenceArray = sentence.split(" ")
+    var badWordsArray = ["heck", "darn", "crappy", "dang"]
+    for (var i = 0; i < sentenceArray.length; i++) {
+      var currentWord = sentenceArray[i]
+        if (badWordsArray.indexOf(currentWord) === -1) {
+          if (i === sentenceArray.length-1) {
+          nonBadwordsSentence += currentWord;
+        }else {
+          nonBadwordsSentence += currentWord + " "
+        }
+      }
+      console.log(nonBadwordsSentence);
+    }return nonBadwordsSentence
+  }
+  // Now need a function to change the first word in the sentence to "Mom"
+}
 
 // the following three tests all correspond to the pipeline() function.
 
