@@ -100,6 +100,7 @@ function iPutTheFunIn (text){
   var textArray = text.split("");
   // count the characters in the array and find the middle.
   var middlePoint = Math.floor((0+textArray.length)/2);
+  
   console.log(middlePoint);
   // I'm trying to splice the "fun" into the middle of the array. I don't think it works like that but I can't concenptualize using a loop to make it work.
 
