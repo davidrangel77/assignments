@@ -64,7 +64,13 @@ document.addEventListener("DOMContentLoaded", function(){
   nameButton0Element.addEventListener("click", function(){
     outputElement.textContent = 0;
   });
+  // make the clear all key:
+  var nameButtonClearElement = document.querySelector("[data-js='buttonClear']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonClearElement.addEventListener("click", function(){
+    outputElement.textContent = "";
+  });
   // Now I want to make the ouput concatenate input in the outputDisplay
-  var outputConcat =
   // Next I need to display the concatenated output in the outputDisplay
+  // Then I need to redisplay that output as a new output
 });
