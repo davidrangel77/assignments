@@ -1,12 +1,12 @@
 // TODO: need to set functions to recall button data for each button
     // to accomplish this:
-      // - first set one button with an eventListener for "click"
-      // - make that eventListener return the button value
-      // - make that value appear in the calculatorOutput element
+      // - first set one button with an eventListener for "click"-DONE
+      // - make that eventListener return the button value -DONE
+      // - make that value appear in the calculatorOutput element -DONE
       // - write *math functions for the calc function buttons
       // - make them interact with the calc number buttons
       // - make the "clear" button reset to data in calculatorOutput element
-      //   to empty
+      //   to empty -DONE
 // first button: click button "7" and have "7" appear in calculatorOutput
 document.addEventListener("DOMContentLoaded", function(){
   // make vars to identify buttons and where to display output
@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function(){
   nameButton3Element.addEventListener("click", function(){
     outputElement.textContent += 3;
   });
+  var nameButtonDecimalElement = document.querySelector("[data-js='buttonDecimal']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonDecimalElement.addEventListener("click", function(){
+    outputElement.textContent += ".";
+  });
   var nameButton0Element = document.querySelector("[data-js='button0']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
   nameButton0Element.addEventListener("click", function(){
@@ -71,9 +76,30 @@ document.addEventListener("DOMContentLoaded", function(){
     outputElement.textContent = "";
   });
   // Need to make the math functions
+  var nameButtonMultiplyElement = document.querySelector("[data-js='buttonMultiply']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonMultiplyElement.addEventListener("click", function(){
+    outputElement.textContent += "*"
+  });
   var nameButtonAddElement = document.querySelector("[data-js='buttonAdd']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
   nameButtonAddElement.addEventListener("click", function(){
-    outputElement.textContent += "+";
+    outputElement.textContent += "+"
+  });
+  var nameButtonMinusElement = document.querySelector("[data-js='buttonMinus']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonMinusElement.addEventListener("click", function(){
+    outputElement.textContent += "-"
+  });
+  var nameButtonDivideElement = document.querySelector("[data-js='buttonDivide']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonDivideElement.addEventListener("click", function(){
+    outputElement.textContent += "/"
+  });
+  var nameButtonEqualElement = document.querySelector("[data-js='buttonEqual']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButtonEqualElement.addEventListener("click", function(){
+    var answer = eval(outputElement.textContent);
+      outputElement.textContent = answer;
   });
 });
