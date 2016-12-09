@@ -5,7 +5,7 @@
       // - make that value appear in the calculatorOutput element -DONE
       // - write *math functions for the calc function buttons
       // - make them interact with the calc number buttons
-      // - make the "clear" button reset to data in calculatorOutput element
+      // - make the "clear" button reset in calculatorOutput element - DONE
       //   to empty -DONE
 // first button: click button "7" and have "7" appear in calculatorOutput
 document.addEventListener("DOMContentLoaded", function(){
@@ -41,65 +41,67 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   var nameButton6Element = document.querySelector("[data-js='button6']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButton6Element.addEventListener("click", function(){
+    nameButton6Element.addEventListener("click", function(){
     outputElement.textContent += 6;
   });
   var nameButton1Element = document.querySelector("[data-js='button1']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButton1Element.addEventListener("click", function(){
+    nameButton1Element.addEventListener("click", function(){
     outputElement.textContent += 1;
   });
   var nameButton2Element = document.querySelector("[data-js='button2']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButton2Element.addEventListener("click", function(){
+    nameButton2Element.addEventListener("click", function(){
     outputElement.textContent += 2;
   });
   var nameButton3Element = document.querySelector("[data-js='button3']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButton3Element.addEventListener("click", function(){
+    nameButton3Element.addEventListener("click", function(){
     outputElement.textContent += 3;
   });
   var nameButtonDecimalElement = document.querySelector("[data-js='buttonDecimal']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonDecimalElement.addEventListener("click", function(){
+    nameButtonDecimalElement.addEventListener("click", function(){
     outputElement.textContent += ".";
   });
   var nameButton0Element = document.querySelector("[data-js='button0']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButton0Element.addEventListener("click", function(){
+    nameButton0Element.addEventListener("click", function(){
     outputElement.textContent += 0;
   });
   // make the clear all key:
-  var nameButtonClearElement = document.querySelector("[data-js='buttonClear']");
+  var nameButtonClearElement =  document.querySelector("[data-js='buttonClear']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonClearElement.addEventListener("click", function(){
+    nameButtonClearElement.addEventListener("click", function(){
     outputElement.textContent = "";
   });
   // Need to make the math functions
   var nameButtonMultiplyElement = document.querySelector("[data-js='buttonMultiply']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonMultiplyElement.addEventListener("click", function(){
+    nameButtonMultiplyElement.addEventListener("click", function(){
     outputElement.textContent += "*"
   });
   var nameButtonAddElement = document.querySelector("[data-js='buttonAdd']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonAddElement.addEventListener("click", function(){
+    nameButtonAddElement.addEventListener("click", function(){
     outputElement.textContent += "+"
   });
   var nameButtonMinusElement = document.querySelector("[data-js='buttonMinus']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonMinusElement.addEventListener("click", function(){
+    nameButtonMinusElement.addEventListener("click", function(){
     outputElement.textContent += "-"
   });
   var nameButtonDivideElement = document.querySelector("[data-js='buttonDivide']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonDivideElement.addEventListener("click", function(){
+    nameButtonDivideElement.addEventListener("click", function(){
     outputElement.textContent += "/"
   });
   var nameButtonEqualElement = document.querySelector("[data-js='buttonEqual']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
-  nameButtonEqualElement.addEventListener("click", function(){
-    var answer = eval(outputElement.textContent);
-      outputElement.textContent = answer;
+    nameButtonEqualElement.addEventListener("click", function(){
+  var answer = eval(outputElement.textContent);
+  outputElement.textContent = answer;
+  var newAnswer = answer.toFixed(3);
+  outputElement.textContent = newAnswer;
   });
 });

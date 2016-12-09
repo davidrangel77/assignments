@@ -9,11 +9,10 @@
   border-style: solid;
   color: white;
   font-size: 28px;
-  font-family: Arial;
+  font-family: sans-serif;
   height: 80px;
   margin: -2px;
   width: 80px;
-
 }
 .button2 {
   background: #7FC180;
@@ -21,10 +20,39 @@
   border-style: solid;
   color: black;
   font-size: 28px;
-  font-family: Arial;
+  font-family: sans-serif;
   height: 80px;
   margin: -2px;
   width: 80px;
+}
+.button3 {
+  background: #5FB363;
+  border-color: #86C487;
+  border-style: solid;
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+  height: 80px;
+  margin: -2px;
+  width: 80px;
+}
+.button:active {
+  background-color: darkgreen;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button2:active {
+  background-color: darkgreen;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button3:hover {
+  background-color: #7FC180;
+}
+.button3:active {
+  background-color: darkgreen;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .calculatorOutput {
   background-color: #5FB363;
@@ -35,14 +63,13 @@
   border-top-width: 3px;
   color: white;
   font-size: 28px;
-  font-family: Arial;
-  height: 69px;
-  padding-left: 15px;
-
+  font-family: sans-serif;
+  max-width: 100px;
+  padding-right: 10px;
 }
 .tableMain {
   border-collapse: collapse;
-  margin-left: 40%;
+  margin-left: 37%;
 }
 .tableRow {
 }
