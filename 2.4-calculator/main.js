@@ -38,5 +38,33 @@ document.addEventListener("DOMContentLoaded", function(){
   var outputElement = document.querySelector("[data-js='outputDisplay']");
   nameButton5Element.addEventListener("click", function(){
     outputElement.textContent = 5;
-  })
-})
+  });
+  var nameButton6Element = document.querySelector("[data-js='button6']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButton6Element.addEventListener("click", function(){
+    outputElement.textContent = 6;
+  });
+  var nameButton1Element = document.querySelector("[data-js='button1']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButton1Element.addEventListener("click", function(){
+    outputElement.textContent = 1;
+  });
+  var nameButton2Element = document.querySelector("[data-js='button2']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButton2Element.addEventListener("click", function(){
+    outputElement.textContent = 2;
+  });
+  var nameButton3Element = document.querySelector("[data-js='button3']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButton3Element.addEventListener("click", function(){
+    outputElement.textContent = 3;
+  });
+  var nameButton0Element = document.querySelector("[data-js='button0']");
+  var outputElement = document.querySelector("[data-js='outputDisplay']");
+  nameButton0Element.addEventListener("click", function(){
+    outputElement.textContent = 0;
+  });
+  // Now I want to make the ouput concatenate input in the outputDisplay
+  var outputConcat =
+  // Next I need to display the concatenated output in the outputDisplay
+});
