@@ -66,6 +66,7 @@
   font-family: sans-serif;
   max-width: 100px;
   padding-right: 10px;
+  text-align: right;
 }
 .tableMain {
   border-collapse: collapse;
