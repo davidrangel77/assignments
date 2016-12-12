@@ -100,7 +100,8 @@ function iPutTheFunIn (text){
   var textArray = text.split("");
   // count the characters in the array and find the middle.
   var middlePoint = Math.floor((0+textArray.length)/2);
-  
+
+
   console.log(middlePoint);
   // I'm trying to splice the "fun" into the middle of the array. I don't think it works like that but I can't concenptualize using a loop to make it work.
 
@@ -125,13 +126,8 @@ function pipeline (value, function1, function2) {
     for (var i = 0; i < sentenceArray.length; i++) {
       var currentWord = sentenceArray[i]
         if (badWordsArray.indexOf(currentWord) === -1) {
-          if (i === sentenceArray.length-1) {
-          nonBadwordsSentence += currentWord;
-        }else {
-          nonBadwordsSentence += currentWord + " "
+          currentWord = ""
         }
-      }
-      console.log(nonBadwordsSentence);
     }return nonBadwordsSentence
   }
   // Now need a function to change the first word in the sentence to "Mom"
