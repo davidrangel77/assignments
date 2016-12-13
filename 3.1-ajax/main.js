@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += "<img src='";
     userDataElement += githubDataResponse.avatar_url;
     userDataElement += "' class=userAvatar>";
-    userDataElement += "<h2>";
+    userDataElement += "<h2 class='userLogin'>";
     userDataElement += githubDataResponse.login;
     userDataElement += "</h2>";
     userDataElement += "</article>";
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += "name='button'";
     userDataElement += ">Edit Profile";
     userDataElement += "</button>";
-    userDataElement += "<p>" + "joined ";
+    userDataElement += "<p class='joined'>" + "joined ";
     userDataElement += githubDataResponse.created_at;
     userDataElement += "</p>";
-    userDataElement += "<a href='";
+    userDataElement += "<a class='organizations' href='";
     userDataElement += githubDataResponse.organizations_url;
     userDataElement += "'>";
-    userDataElement += "organizations"
+    userDataElement += "Organizations"
     userDataElement += "</a>";
     userDataElement += "</article>";
     githubDataElement.innerHTML = userDataElement;
@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function(){
   xhrAside.open("GET", "https://api.github.com/users/davidrangel77");
   xhrAside.addEventListener("load", function(e){
     var githubDataResponseAside = JSON.parse(this.response);
-    console.log(githubDataResponseAside);
     var userDataElementAside = "<article>";
     userDataElementAside += "<a class='javaDataLinks' style='color:grey' href='";
     userDataElementAside += githubDataResponseAside.repos_url;
@@ -79,4 +78,17 @@ document.addEventListener("DOMContentLoaded", function(){
     githubDataElementAside.innerHTML = userDataElementAside;
   });
   xhrAside.send();
+
+  var githubDataElementNav = document.querySelector("[data-js='githubDataNav']");
+  var xhrNav = new XMLHttpRequest();
+  xhrNav.open("GET", "https://api.github.com/users/davidrangel77");
+  xhrNav.addEventListener("load", function(e){
+    var githubDataResponseNav = JSON.parse(this.response);
+    var userDataElementNav = "<img src='";
+      userDataElementNav += githubDataResponseNav.avatar_url;
+      userDataElementNav += "' class=rightCornerAvatar>";
+      console.log(githubDataResponseNav.avatar_url);
+      githubDataElementNav.innerHTML = userDataElementNav;
+  });
+  xhrNav.send();
 });

@@ -8,7 +8,7 @@
   </head>
   <body class="body">
     <nav class="navBar">
-      <img class="GitHubIcon" src="#githugIcon" alt="GitHub Icon">
+      <img class="GitHubIcon" src="http://image.flaticon.com/icons/png/512/25/25231.png" alt="GitHub Icon">
       <input class="searchBar" type="text" name="searchBar" value="Search GitHub">
       <div class="navBarAnchorsRight">
         <ul class="navBarAnchorsRightSeperate">
@@ -21,8 +21,25 @@
         </ul>
       </div>
       <div class="navBarFarRightIcons">
-        <img src="#CreateNew" alt="Creat New">
-        <img src="src=https://avatars.githubusercontent.com/u/23506183?v=3" alt="View Profile">
+        <img src="#CreateNew" alt="+">
+        <select style="display:inline-block">
+          <option value=""></option>
+          <option value="newRepository">New Repository</option>
+          <option value="importRepository">Import Repository</option>
+          <option value="newGist">New Gist</option>
+          <option value="newOrganization">New Organization</option>
+        </select>
+        <div class="rightCornerAvatar" data-js="githubDataNav"></div>
+        <select style="display:inline-block">
+          <option value=""></option>
+          <option value="yourProfile">Your Profile</option>
+          <option value="yourStars">Your Stars</option>
+          <option value="explore">Explore</option>
+          <option value="integrations">Integrations</option>
+          <option value="help">Help</option>
+          <option value="Settings">Settings</option>
+          <option value="signOut">Sign Out</option>
+        </select>
       </div>
     </nav>
     <section class="section" id="section1">

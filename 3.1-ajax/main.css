@@ -53,7 +53,9 @@ a:link {
 }
 .GitHubIcon {
   margin-left: 150px;
-  margin-top: 10px;
+  margin-top: 5px;
+  vertical-align: top;
+  width: 30px;
 }
 .h2 {
   font-family: Arial;
@@ -64,12 +66,22 @@ a:link {
   margin-right: 5px;
   margin-top: 2px;
 }
+.joined {
+  border-bottom: solid 1px #E5E5E5;
+  border-top: solid 1px #E5E5E5;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 250px;
+}
 .largeEditProfileButton {
   background-color: #F5F5F5;
   border-radius: 4px;
   border: solid 1px lightgrey;
   font-size: 14px;
   height: 40px;
+  margin-bottom: 20px;
   width: 250px;
 }
 .navBar {
@@ -99,6 +111,12 @@ a:link {
 }
 .navBarLinksStyle {
   color: black;
+}
+.organizations {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 250px;
 }
 .overviewAnchor {
   margin-left: 25px;
@@ -179,6 +197,10 @@ a:link {
   margin-left: 15px;
   margin-right: 150px;
 }
+.rightCornerAvatar {
+  display: inline-block;
+  width: 25px;
+}
 .userAvatar {
   border-radius: 4px;
   height: 250px;
@@ -207,4 +229,8 @@ a:link {
 .sectionAside {
   display: inline-block;
   vertical-align: top;
+}
+.userLogin {
+  color: grey;
+  font-weight: lighter;
 }
