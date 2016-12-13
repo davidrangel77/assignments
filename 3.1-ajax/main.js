@@ -16,6 +16,13 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += "<h2>";
     userDataElement += githubDataResponse.login;
     userDataElement += "</h2>";
+    userDataElement += "</article>";
+    userDataElement += "<article>";
+    userDataElement += "<button class='largeEditProfileButton'";
+    userDataElement += "type='button'";
+    userDataElement += "name='button'";
+    userDataElement += ">Edit Profile";
+    userDataElement += "</button>";
     userDataElement += "<p>" + "joined ";
     userDataElement += githubDataResponse.created_at;
     userDataElement += "</p>";
@@ -23,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += githubDataResponse.organizations_url;
     userDataElement += "'>";
     userDataElement += "organizations"
-    userDataElement += "</a>"
-    userDataElement += "</article>"
+    userDataElement += "</a>";
+    userDataElement += "</article>";
     githubDataElement.innerHTML = userDataElement;
   });
   // make xhr.send
