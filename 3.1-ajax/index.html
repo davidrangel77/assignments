@@ -6,11 +6,50 @@
     <link rel="stylesheet" href="main.css">
     <title></title>
   </head>
-  <body>
-    <section>
-      <h2 class="h2"> Six pieces of info from github user repo "davidrangel77"</h2>
+  <body class="body">
+    <nav class="navBar">
+      <img class="GitHubIcon" src="#githugIcon" alt="GitHub Icon">
+      <input class="searchBar" type="text" name="searchBar" value="Search GitHub">
+      <div class="navBarAnchorsRight">
+        <ul class="navBarAnchorsRightSeperate">
+          <li class="navBarLinks">
+            <a href="#pull requests">Pull requests</a></li>
+          <li class="navBarLinks">
+            <a href="#issues">Issues</a></li>
+          <li class="navBarLinks">
+            <a href="#Gist">Gist</a></li>
+        </ul>
+      </div>
+      <div class="navBarFarRightIcons">
+        <img src="#CreateNew" alt="Creat New">
+        <img src="#ViewProfile" alt="View Profile">
+      </div>
+    </nav>
+    <section class="section" id="section1">
       <article class="articleText" data-js="githubData">
       </article>
+    </section>
+    <section class="sectionAside" id="section2">
+      <div class="proTipBanner" id="proTipBanner">
+        <button class="editProfileButton" id="proTipBannerRight" type="button" name="Edit Profile">Edit Profile</button>
+        <p class="proTipBannerText" id="proTipBannerLeft">ProTip! Updating your profile with your name, location, and a profile picture helps other GitHub users get to know you.</p>
+      </div>
+      <article class="articleTextAside" data-js="githubDataAside">
+      </article>
+        <div class="pinnedRepositoryHeader">
+          <h2 class="pinnedRepositoryLeft">Popular repositories
+          </h2>
+          <p class="pinnedRepositoryRight">Customize your pinned Repositories
+          </p>
+        </div>
+      <ol class="pinnedReposList">
+        <li class="pinnedRepo"><a href="#pinnedRepo1">PinnedRepo1</a>
+        <p class="pinnedRepoForkedFrom">Forked from</p><a style="font-size:14px"; href="#repoPinnedRepoWasForkedFrom">repoPinnedRepoWasForkedFrom</a></li>
+        <li class="pinnedRepo"><a href="#pinnedRepo2">PinnedRepo2</a><p class="pinnedRepoForkedFrom">Forked from</p><a style="font-size:14px"; href="#repoPinnedRepoWasForkedFrom">repoPinnedRepoWasForkedFrom</li>
+        <li class="pinnedRepo"><a href="#pinnedRepo3">PinnedRepo3</a><p class="pinnedRepoForkedFrom">Forked from</p><a style="font-size:14px"; href="#repoPinnedRepoWasForkedFrom">repoPinnedRepoWasForkedFrom</li>
+        <li class="pinnedRepo"><a href="#pinnedRepo4">PinnedRepo4</a><p class="pinnedRepoForkedFrom">Forked from</p><a style="font-size:14px"; href="#repoPinnedRepoWasForkedFrom">repoPinnedRepoWasForkedFrom</li>
+        <li class="pinnedRepo"><a href="#pinnedRepo5">PinnedRepo5</a><p class="pinnedRepoForkedFrom">Forked from</p><a style="font-size:14px"; href="#repoPinnedRepoWasForkedFrom">repoPinnedRepoWasForkedFrom</li>
+      </ol>
     </section>
   </body>
 </html>

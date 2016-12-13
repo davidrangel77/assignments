@@ -1,9 +1,162 @@
-.articleText {
-  color: red;
+* {
+  box-sizing: border-box;
+  }
+#proTipBanner {
+
+}
+#proTipBannerLeft {
+
+}
+#proTipBannerRight {
+
+}
+#section1 {
+  float: left;
+  margin-top: 20px;
+}
+#section2 {
+  margin-top: 20px;
+  width: 51.5%;
+}
+a:link {
+  text-decoration: none;
+  color: black;
   font-family: Arial;
-  font-size: 20px;
-  margin-top: 15px;
+}
+.articleText {
+  font-family: Arial;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.articleTextAside {
+  margin-top: 20px;
+}
+.articleTextAsideLinks {
+  padding: 20px;
+}
+.body {
+  margin: 0px;
+}
+.editProfileButton {
+  float: right;
+  margin-right: 15px;
+  margin-top: 25px;
+  vertical-align: top;
+}
+.GitHubIcon {
+  margin-left: 150px;
+  margin-top: 10px;
 }
 .h2 {
   font-family: Arial;
+}
+.navBar {
+  background-color: #F5F5F5;
+  border-bottom: solid 1px #E5E5E5;
+  height: 45px;
+}
+.navBarAnchorsRight {
+  display: inline-block;
+  margin-top: 13px;
+  vertical-align: top;
+}
+.navBarAnchorsRightSeperate {
+  margin: 0px;
+  padding: 0;
+}
+.navBarFarRightIcons {
+  margin-top: 12px;
+  margin-right: 150px;
+  float: right;
+  display: inline-block;
+}
+.navBarLinks {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.navBarLinksStyle {
+  color: black;
+}
+.p {
+  display: inline-block;
+}
+.pinnedRepositoryHeader {
+  border-top: solid 1px #E5E5E5;
+  padding-top: 20px;
+}
+.pinnedReposList {
+  display: inline-block;;
+  padding: 0;
+}
+.pinnedRepo {
+  border: solid 1px #E5E5E5;
+  display: inline-block;;
+  height: 150px;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 325px;
+  vertical-align: top;
+}
+.pinnedRepoForkedFrom {
+  font-family: Arial;
+  font-size: 14px;
+  margin: 0px;
+}
+.pinnedRepositoryLeft {
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial;
+  margin-top: 0px;
+}
+.pinnedRepositoryRight {
+  color: grey;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  font-family: Arial;
+  margin-right: 15px;
+  margin-top: 0px;
+}
+.proTipBanner {
+  background-color: #F1F6FB;
+  border: solid 1px #d0e5f8;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 16px;
+  height: 75px;
+  margin-top: 5px;
+  width: 100%;
+}
+.proTipBannerText {
+  margin-left: 15px;
+  margin-right: 150px;
+}
+.userAvatar {
+  height: 250px;
+}
+.searchBar {
+  border: solid 1px #E5E5E5;
+  border-radius: 4px;
+  height: 30px;
+  margin-top: 7px;
+  padding-left: 10px;
+  vertical-align: top;
+  width: 300px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #D5D5D5;
+}
+.searchBarInput {
+  font-size: 14px;
+  font-family: Arial;
+  color: #E5E5E5;
+}
+.section {
+  margin-left: 150px;
+  width: 25%;
+}
+.sectionAside {
+  display: inline-block;
+  vertical-align: top;
 }
