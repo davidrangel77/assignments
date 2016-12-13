@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElementAside += "Repositories";
     userDataElementAside += "</a>";
     userDataElementAside += " ";
-    userDataElementAside += "<p class='p'>"
+    userDataElementAside += "<p class='p2'>"
     userDataElementAside += githubDataResponseAside.public_repos;
     userDataElementAside += "</p>" + "  ";
     userDataElementAside += "<a class='javaDataLinks' style='color:grey' href='";
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElementAside += "Followers";
     userDataElementAside += "</a>";
     userDataElementAside += "  ";
-    userDataElementAside += "<p class='p'>"
+    userDataElementAside += "<p class='p2'>"
     userDataElementAside += githubDataResponseAside.followers;
     userDataElementAside += "</p>" + "  ";
     userDataElementAside += "<a class='javaDataLinks' style='color:grey' href='";
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElementAside += "'>";
     userDataElementAside += "Following";
     userDataElementAside += "</a>" + "  ";
-    userDataElementAside += "<p class='p'>";
+    userDataElementAside += "<p class='p2'>";
     userDataElementAside += githubDataResponseAside.following;
     userDataElementAside += "</p>" + "  ";
     githubDataElementAside.innerHTML = userDataElementAside;
