@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
       outputElement.textContent += this.textContent;
         if (this.textContent === "C") {
           outputElement.textContent = "";
-        // tried to also add an if statement here to change the "X" to "*" but it didn't work the way I wanted. 
+        // tried to also add an if statement here to change the "X" to "*" but it didn't work the way I wanted.
         }
     });
   }
@@ -32,5 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
   var nameButtonDivideElement = document.querySelector("[data-js='buttonDivide']");
   var outputElement = document.querySelector("[data-js='outputDisplay']");
     nameButtonDivideElement.addEventListener("click", function(){
-    outputElement.textContent += "/"
+    outputElement.textContent += "/";
   });
+});
