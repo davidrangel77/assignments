@@ -38,6 +38,9 @@ a:link {
 .body {
   margin: 0px;
 }
+.dropdownsNav {
+  vertical-align: top;
+}
 .editProfileButton {
   background-color: #73BE52;
   border-width: 1px;

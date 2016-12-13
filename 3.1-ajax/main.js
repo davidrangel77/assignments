@@ -23,7 +23,10 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += "name='button'";
     userDataElement += ">Edit Profile";
     userDataElement += "</button>";
-    userDataElement += "<p class='joined'>" + "joined ";
+    userDataElement += "<p class='joined'>";
+    userDataElement += "<i class='fa fa-clock-o'";
+    userDataElement += " aria-hidden='true' style='color:grey'></i>" + "  ";
+    userDataElement += "Joined ";
     userDataElement += githubDataResponse.created_at;
     userDataElement += "</p>";
     userDataElement += "<a class='organizations' href='";
@@ -33,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){
     userDataElement += "</a>";
     userDataElement += "</article>";
     githubDataElement.innerHTML = userDataElement;
+    console.log(githubDataResponse);
   });
   // make xhr.send
   xhr.send();
@@ -87,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function(){
     var userDataElementNav = "<img src='";
       userDataElementNav += githubDataResponseNav.avatar_url;
       userDataElementNav += "' class=rightCornerAvatar>";
-      console.log(githubDataResponseNav.avatar_url);
       githubDataElementNav.innerHTML = userDataElementNav;
   });
   xhrNav.send();
