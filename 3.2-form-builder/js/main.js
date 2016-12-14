@@ -26,6 +26,7 @@ xhr.addEventListener("load", function(e){
       // inputDataPlaceholder += `<label>${inputData.label}</label>`;
       inputDataPlaceholder += `<input class="textInput" placeholder="  ${inputData.label}" type="${inputData.type}"
         id="${inputData.id}" icon="${inputData.icon}">`;
+      // inputDataPlaceholder += `<i class="fa ${inputData.icon}" aria-hidden="true"></i>`;
         console.log(inputData.icon);
     }
     // concat's all inputs into the allInputData (the placeholder from above that holds everything)
