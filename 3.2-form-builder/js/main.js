@@ -23,11 +23,10 @@ xhr.addEventListener("load", function(e){
         })
       // the "else" statement is for all the other inputs that ARE NOT "select"
     }else {
-      // inputDataPlaceholder += `<label>${inputData.label}</label>`;
       inputDataPlaceholder += `<input class="textInput" placeholder="  ${inputData.label}" type="${inputData.type}"
         id="${inputData.id}" icon="${inputData.icon}">`;
+      // commented out the icons because I could not get them to work properly
       // inputDataPlaceholder += `<i class="fa ${inputData.icon}" aria-hidden="true"></i>`;
-        console.log(inputData.icon);
     }
     // concat's all inputs into the allInputData (the placeholder from above that holds everything)
     allInputDataHtml += inputDataPlaceholder;
