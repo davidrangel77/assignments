@@ -2,11 +2,11 @@
   margin-left: 5%;
   margin-right: 5%;
 }
-.accordian {
-  height: 500px;
-}
 .articleInfo {
   height: 70px;
   overflow: hidden;
 
+}
+.accordian {
+  height: 100%;
 }
