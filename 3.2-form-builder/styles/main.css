@@ -59,11 +59,11 @@
   width: 100px;
 }
 .textInput {
-border: solid 1px lightgrey;
-border-radius: 2px;
-display: block;
-font-style: Helvetica;
-height: 30px;
-margin: 20px;
-width: 90%;
+  border: solid 1px lightgrey;
+  border-radius: 2px;
+  display: block;
+  font-style: Helvetica;
+  height: 30px;
+  margin: 20px;
+  width: 90%;
 }

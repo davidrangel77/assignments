@@ -24,7 +24,7 @@ xhr.addEventListener("load", function(e){
       // the "else" statement is for all the other inputs that ARE NOT "select"
     }else {
       // inputDataPlaceholder += `<label>${inputData.label}</label>`;
-      inputDataPlaceholder += `<input class="textInput" placeholder="${inputData.label}" type="${inputData.type}"
+      inputDataPlaceholder += `<input class="textInput" placeholder="  ${inputData.label}" type="${inputData.type}"
         id="${inputData.id}" icon="${inputData.icon}">`;
         console.log(inputData.icon);
     }
