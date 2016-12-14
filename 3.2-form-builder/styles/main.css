@@ -2,6 +2,7 @@
   border: solid 1px #E5E5E5;
   border-radius: 4px;
   margin: 20px 23px 0px 23px;
+  position: relative;
   width: 50%;
 }
 .formFooter {
@@ -33,7 +34,11 @@
   margin-bottom: 0px;
   width: 80%;
 }
-.icon-search {
+.icon {
+  color: lightgrey;
+  margin-left: 25px;
+  margin-top: -45px;
+  position: absolute;
 
 }
 .selector {
@@ -43,7 +48,7 @@
   height: 30px;
   margin-left: 21px;
   margin-right: 23px;
-  width: 91%;
+  width: 92%;
 }
 .submitButton {
   color: white;
@@ -65,5 +70,6 @@
   font-style: Helvetica;
   height: 30px;
   margin: 20px;
-  width: 90%;
+  padding-left: 17px;
+  width: 88.5%;
 }
