@@ -73,3 +73,14 @@
   padding-left: 17px;
   width: 88.5%;
 }
+.textArea {
+  border: solid 1px lightgrey;
+  border-radius: 2px;
+  display: block;
+  font-style: Helvetica;
+  height: 30px;
+  margin: 20px;
+  padding-left: 17px;
+  padding-top: 10px;
+  width: 88.5%;
+}
