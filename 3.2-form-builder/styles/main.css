@@ -1,7 +1,6 @@
 .form {
   border: solid 1px #E5E5E5;
   border-radius: 4px;
-  box-shadow: 10px #EEE;
   margin: 20px 23px 0px 23px;
   width: 50%;
 }
@@ -23,7 +22,7 @@
 }
 .formHeading {
   color: white;
-  font-family: Arial;
+  font-family: Helvetica;
   font-size: 28px;
   font-weight: 100;
   margin-top: 0px;
@@ -34,9 +33,13 @@
   margin-bottom: 0px;
   width: 80%;
 }
+.icon-search {
+
+}
 .selector {
   background-color: white;
   border: solid 1px lightgrey;
+  font-family: Helvetica;
   height: 30px;
   margin-left: 21px;
   margin-right: 23px;
@@ -48,7 +51,7 @@
   border-radius: 4px;
   background-color: #378BC7;
   float left;
-  font-family: Arial;
+  font-family: Helvetica;
   font-size: 12px;
   height: 30px;
   margin-left: 23px;
@@ -58,6 +61,7 @@
 .textInput {
 border: solid 1px lightgrey;
 display: block;
+font-style: Helvetica;
 height: 30px;
 margin: 20px;
 width: 90%;
