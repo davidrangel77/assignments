@@ -15,4 +15,10 @@ $(function() {
   // change the class to expand on click
     $clickedArticle.addClass("accordian");
   });
+  var currentImage = $("[data-js='image']")
+  $imageElements.on("click", function(e){
+    var $clickedImage = $(this);
+
+    $()
+  })
 });
