@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3.4 Gift List</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </head>
+  <!-- TODO: [] - make the basic html and css look like the example
+                [] - make a main and two list items for examples
+                  [] - make elements
+                  [] - give elemets classes
+                  [] - enter data in elemets as examples
+              [] - make js file to extend and replace list items-->
+  <body class="body">
+    <main class="main">
+      <h2 class="h2" >GIFTS TO BUY</h2>
+      <form class="items__form" action="index.html" method="post">
+        <input
+          class="giftInputText"
+          type="text"
+          name="giftInput"
+          placeholder="     type the gift to buy here"
+          value=""></input>
+          <input
+          class="addButton"
+          type="submit"
+          name="submitItemToList"
+          value="ADD">
+        <div class="listItems__div">
+          <article class="listItem">
+            <button class="circleButton"></button>
+            <p class="listItem__text">list item 1</p>
+          </article>
+          <article class="listItem">
+            <button class="circleButton"></button>
+            <p class="listItem__text">list item 2</p>
+          </article>
+          <article class="totalAmount">
+            <p class="p totalTextOnly">Total</p>
+            <p class="p">$Running Total</p>
+          </article>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

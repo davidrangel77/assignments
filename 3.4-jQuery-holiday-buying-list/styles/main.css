@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+}
+.addButton {
+  border: none;
+  color: white;
+  background-color: #7DC476;
+  display: inline-block;
+  font-size: 16px;
+  height: 42px;
+  width: 13.1%;
+}
+.body {
+  margin: 0;
+}
+.circleButton {
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 50%;
+  display: inline-block;;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 25px;
+
+}
+.giftInputText {
+  border: none;
+  height: 35px;
+  width: 86%;
+}
+.h2 {
+  display: inline-block;
+  color: grey;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-left: 40%;
+}
+.items__form {
+  background-color: white;
+  border: solid 1px Gainsboro;
+  font-family: Helvetica;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.listItem {
+  border-top: solid 1px Gainsboro;
+  font-family: Helvetica;
+  font-size: 16px;
+  height: 40px;
+  margin: 0;
+}
+.listItems__article {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+.listItem__text {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+.main {
+  background-color: #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 400px;
+}
+.p {
+  display: inline-block;
+  margin: 0;
+}
+.totalAmount {
+  border-top: solid 1px Gainsboro;
+  color: red;
+  font-family: Helvetica;
+  font-size: 20px;
+  height: 40px;
+  padding-right: 10px;
+  padding-top: 7px;
+  text-align: right;
+  -webkit-appearance; initial;
+}
+.totalTextOnly {
+  color: black;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 350px;
+  float: left;
+  -webkit-appearance: initial;
+}
