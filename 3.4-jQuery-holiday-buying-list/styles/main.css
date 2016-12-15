@@ -11,6 +11,7 @@
   width: 13.1%;
 }
 .body {
+  height: 1000px;
   margin: 0;
 }
 .circleButton {
@@ -40,6 +41,12 @@
 .items__form {
   background-color: white;
   border: solid 1px Gainsboro;
+  box-shadow:
+        0 1px 1px rgba(0,0,0,0.15),
+        0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0,0,0,0.15),
+        0 20px 0 -10px #eee,
+        0 20px 1px -9px rgba(0,0,0,0.15);
   font-family: Helvetica;
   width: 90%;
   margin-top: 50px;
@@ -70,13 +77,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 400px;
+  height: 100%;
 }
 .p {
   display: inline-block;
   margin: 0;
 }
 .totalAmount {
+  background-color: #F5F5F5;
   border-top: solid 1px Gainsboro;
   color: red;
   font-family: Helvetica;
