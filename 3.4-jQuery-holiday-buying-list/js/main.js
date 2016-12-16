@@ -21,15 +21,16 @@ $(function(){
   var $addButton = $body.find("[data-js='submit']");
   var $articleElement = $body.find("[data-js='articles']")
   var $divElement = $body.find("[data-js='divElement']")
-  var $checkButton = $body.find("[type=button]")
+  var $checkButton = $body.find("[data-js='button']")
   $addButton.on("click", function(e){
     e.preventDefault();
-    var textInputValue = $text.val();
+    var textInputValue = $text.val()
     var $circleButton = $("<button>")
       .attr({
         class: "circleButton",
         type: "button",
         value: "line",
+        onclick: "lineThrough"
       });
     var $listTextElement = $("<p>")
       .attr({
@@ -47,11 +48,11 @@ $(function(){
     // // find the prices
     var $price = textInputValue.match(/\d+/);
     // and add to running total
+    console.log($price);
+
   });
-  $checkButton.on("click", function(e){
-    var $clickedArticle = $(this);
-    $articleElement.find("listItem").addClass("lineThrough")
-    console.log($articleElement);
-    // this is where the function to line through the items goes.
-  });
+  // this is where the function to line through the items goes.
+    function lineThrough(){
+    $($listTextElement).addClass("lineThrough",function(){});
+  };
 });
