@@ -23,7 +23,10 @@ $(function(){
   var $divElement = $body.find("[data-js='divElement']")
   $addButton.on("click", function(e){
     e.preventDefault();
-    var textInputValue = $text.val()
+    var textInputValue = $text.val();
+    var textInputArray = textInputValue.split(",");
+    var listTextElement = textInputArray[0];
+    var priceElement = textInputArray[1];
     var $circleButton = $("<button>")
       .attr({
         class: "circleButton",
@@ -35,28 +38,40 @@ $(function(){
       .attr({
         class: "listItem__text",
       })
-      .text(textInputValue);
+      .text(listTextElement);
+      var $priceElement = $("<p>")
+        .attr({
+          class: "priceElement",
+          "data-js": "price",
+        })
+        .text("$" + (priceElement))
       var $articleHTML = $("<article>")
           .attr({
             class: "listItem"
           })
       .append($circleButton)
       .append($listTextElement)
+      .append($priceElement)
     $articleElement.prepend($articleHTML);
     // // find the prices
-    var $totalInputString = textInputValue.split(",");
-    var $price = $totalInputString[1];
-    console.log($price);
-    // and add to running total
-  // $body.on("click", "[data-js='circle']", function(){
-  //   $($listTextElement).addClass("lineThrough");
-  //   $($circleButton).html("&#10003");
-  // });
+    // var $totalInputString = textInputValue.split(",");
+    // var $price = $totalInputString[1];
+    // var $prices = $([])
+    // var totalPrice = 0
+    //
+    // $price.forEach(function(priceEL){
+    //   var $priceEL = $(priceEL);
+    //   val($priceEL) = totalPrice;
+    // });
+    // console.log(totalPrice);
+    // // and add to running total
+
+
   });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
-    console.log($this.next());
-    $($this.next()).addClass("lineThrough");
-    $($this).html("&#10003");
+    // $this.next().addClass("lineThrough");
+    $this.siblings().addClass("lineThrough");
+    $this.html("&#10003");
   });
 });
