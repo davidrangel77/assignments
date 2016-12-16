@@ -54,16 +54,13 @@ $(function(){
       .append($priceElement)
     $articleElement.prepend($articleHTML);
     // // find the prices
-    // var $totalInputString = textInputValue.split(",");
-    // var $price = $totalInputString[1];
-    // var $prices = $([])
-    // var totalPrice = 0
+    var totalPrice = 0
     //
-    // $price.forEach(function(priceEL){
-    //   var $priceEL = $(priceEL);
-    //   val($priceEL) = totalPrice;
-    // });
-    // console.log(totalPrice);
+    $priceElement.forEach(function(priceEL){
+      var $priceEL = $(priceEL);
+      val($priceEL) = totalPrice;
+    });
+    console.log(totalPrice);
     // // and add to running total
 
 
