@@ -74,6 +74,14 @@
   margin-top: 10px;
   vertical-align: top;
 }
+.lineThrough {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  text-decoration: line-through;
+}
 .main {
   background-color: #F5F5F5;
   margin-left: auto;
