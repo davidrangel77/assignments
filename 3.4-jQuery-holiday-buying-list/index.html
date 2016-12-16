@@ -22,24 +22,26 @@
       <form class="items__form" action="index.html" method="post">
         <input
           class="giftInputText"
+          data-js="text_input"
           type="text"
           name="giftInput"
           placeholder="     type the gift to buy here"
           value=""></input>
           <input
           class="addButton"
+          data-js="submit"
           type="submit"
           name="submitItemToList"
           value="ADD">
-        <div class="listItems__div">
-          <article class="listItem">
-            <button class="circleButton"></button>
-            <p class="listItem__text">list item 1</p>
+        <div class="listItems__div" data-js="divElement">
+          <article class="listItem" data-js="articles">
+            <!-- <button class="circleButton"></button>
+            <p class="listItem__text">list item 1</p> -->
           </article>
-          <article class="listItem">
+          <!-- <article class="listItem" data-js="articles">
             <button class="circleButton"></button>
             <p class="listItem__text">list item 2</p>
-          </article>
+          </article> -->
           <article class="totalAmount">
             <p class="p totalTextOnly">Total</p>
             <p class="p">$Running Total</p>
