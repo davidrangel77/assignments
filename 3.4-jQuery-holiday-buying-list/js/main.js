@@ -13,7 +13,7 @@
 // [x] - find the cost of items
 // [] - add those items up
 // [] - insert that in the total field each time an item is added
-// [] - activate button for line-through
+// [x] - activate button for line-through
 
 $(function(){
   var $body = $("body");
@@ -21,7 +21,6 @@ $(function(){
   var $addButton = $body.find("[data-js='submit']");
   var $articleElement = $body.find("[data-js='articles']")
   var $divElement = $body.find("[data-js='divElement']")
-  var $checkButton = $body.find("[data-js='button']")
   $addButton.on("click", function(e){
     e.preventDefault();
     var textInputValue = $text.val()
@@ -30,7 +29,7 @@ $(function(){
         class: "circleButton",
         type: "button",
         value: "line",
-        onclick: "lineThrough"
+        "data-js": "circle"
       });
     var $listTextElement = $("<p>")
       .attr({
@@ -43,16 +42,21 @@ $(function(){
           })
       .append($circleButton)
       .append($listTextElement)
-        $articleElement.filter("listItem__text").addClass("lineThrough")
     $articleElement.prepend($articleHTML);
     // // find the prices
-    var $price = textInputValue.match(/\d+/);
-    // and add to running total
+    var $totalInputString = textInputValue.split(",");
+    var $price = $totalInputString[1];
     console.log($price);
-
+    // and add to running total
+  // $body.on("click", "[data-js='circle']", function(){
+  //   $($listTextElement).addClass("lineThrough");
+  //   $($circleButton).html("&#10003");
+  // });
   });
-  // this is where the function to line through the items goes.
-    function lineThrough(){
-    $($listTextElement).addClass("lineThrough",function(){});
-  };
+  $body.on("click", "[data-js='circle']", function(){
+    var $this = $(this);
+    console.log($this.next());
+    $($this.next()).addClass("lineThrough");
+    $($this).html("&#10003");
+  });
 });

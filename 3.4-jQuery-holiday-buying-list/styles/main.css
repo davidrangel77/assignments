@@ -11,10 +11,10 @@
   width: 13.1%;
 }
 .body {
-  height: 1000px;
   margin: 0;
 }
 .circleButton {
+  color: #7DC476;
   background-color: white;
   border: solid 1px grey;
   border-radius: 50%;
@@ -23,6 +23,8 @@
   margin-left: 5px;
   margin-top: 5px;
   width: 25px;
+}
+.checkedButton {
 
 }
 .giftInputText {
@@ -53,6 +55,9 @@
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+}
+.listItem__div {
+
 }
 .listItem {
   border-top: solid 1px Gainsboro;
@@ -92,6 +97,10 @@
   height: auto;
 }
 .p {
+  display: inline-block;
+  margin: 0;
+}
+.p__totalCost {
   display: inline-block;
   margin: 0;
 }
