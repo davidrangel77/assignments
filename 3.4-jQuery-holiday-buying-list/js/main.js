@@ -11,7 +11,6 @@
         // - var for article
 // [x] - prepend the new article to add to the top of list
 // [x] - find the cost of items
-// [] - add those items up
 // [] - insert that in the total field each time an item is added
 // [x] - activate button for line-through
 
@@ -56,9 +55,7 @@ $(function(){
       .append($priceElement)
     $articleElement.prepend($articleHTML);
     //   // // find the prices
-    var total = "";
     var totalString = "";
-    var numbersOnly = "";
     var totalPrice = "";
     $priceElement.each(function(priceElement) {
       var priceElement = $(".priceElement");
@@ -66,14 +63,15 @@ $(function(){
       var input = totalString;
       var numbers = input.split("$");
       var numberString = numbers.join("+");
-      var totalPrice = eval(numberString)
-      console.log(totalPrice);
-      return totalPrice;
+      var totalOfEval = eval(numberString)
+      totalPrice = totalOfEval
     });
-  $body.on("click", "[data-js='circle']", function(){
-    var $this = $(this);
-    $this.siblings().toggleClass("lineThrough");
-    $this.html("&#10003");
-  });
+    console.log(totalPrice);
+    $totalElement.text(totalPrice);
+});
+$body.on("click", "[data-js='circle']", function(){
+  var $this = $(this);
+  $this.siblings().toggleClass("lineThrough");
+  $this.html("&#10003");
 });
 });
