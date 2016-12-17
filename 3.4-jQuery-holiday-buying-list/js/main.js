@@ -54,20 +54,21 @@ $(function(){
       .append($listTextElement)
       .append($priceElement)
     $articleElement.prepend($articleHTML);
-    // // find the prices
-    console.log($priceElement);
-    console.log(priceElement);
-      var totalPrice = 0;
-      $(".priceElement").each(function(){
-      $priceElement.val();
-      totalPrice += $priceElement.val();
-      console.log(totalPrice);
-  });
+      // // find the prices
+      console.log($priceElement);
+      console.log(priceElement);
+    var total = 0;
+    $priceElement.each(function(priceEl) {
+      var $priceEl = $(priceEl);
+      total += $priceEl.val();
+    });
+    console.log(total);
+
   });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
     // $this.next().addClass("lineThrough");
-    $this.siblings().addClass("lineThrough");
+    $this.siblings().toggleClass("lineThrough");
     $this.html("&#10003");
   });
 });
