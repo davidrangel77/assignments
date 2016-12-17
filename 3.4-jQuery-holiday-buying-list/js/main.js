@@ -21,6 +21,7 @@ $(function(){
   var $addButton = $body.find("[data-js='submit']");
   var $articleElement = $body.find("[data-js='articles']")
   var $divElement = $body.find("[data-js='divElement']")
+  var $totalElement = $body.find("[data-js='total']")
   $addButton.on("click", function(e){
     e.preventDefault();
     var textInputValue = $text.val();
@@ -39,36 +40,44 @@ $(function(){
         class: "listItem__text",
       })
       .text(listTextElement);
-      var $priceElement = $("<p>")
+    var $priceElement = $("<p>")
+      .attr({
+        class: "priceElement",
+        "data-js": "price",
+        value: priceElement
+      })
+      .text(priceElement)
+    var $articleHTML = $("<article>")
         .attr({
-          class: "priceElement",
-          "data-js": "price",
-          value: priceElement
+          class: "listItem"
         })
-        .text("$" + (priceElement))
-      var $articleHTML = $("<article>")
-          .attr({
-            class: "listItem"
-          })
       .append($circleButton)
       .append($listTextElement)
       .append($priceElement)
     $articleElement.prepend($articleHTML);
-      // // find the prices
-      console.log($priceElement);
-      console.log(priceElement);
-    var total = 0;
-    $priceElement.each(function(priceEl) {
-      var $priceEl = $(priceEl);
-      total += $priceEl.val();
+    $totalElement.text(priceElement);
+    //   // // find the prices
+    var totalPrice = "";
+    var totalString = "";
+    var numbersOnly = "";
+    $priceElement.each(function(priceElement) {
+      var priceElement = $(".priceElement");
+      totalString += priceElement.text();
+      var input = totalString;
+      console.log(totalString);
+      var numbers = input.split(" ");
+      console.log(numbers);
+      var totalPrice = numbers.reduce(
+      function(a, b) {
+      return a + b;
     });
-    console.log(total);
-
-  });
+      console.log(totalPrice);
+    });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
     // $this.next().addClass("lineThrough");
     $this.siblings().toggleClass("lineThrough");
     $this.html("&#10003");
   });
+});
 });
