@@ -57,13 +57,12 @@ $(function(){
     // // find the prices
     console.log($priceElement);
     console.log(priceElement);
-    $('.priceElement').each(function(){
-    var totalPrice = 0;
-    $(this).find('input').each(function(){
-    totalPrice += parseInt($(this).val());
-    });
-    });
-
+      var totalPrice = 0;
+      $(".priceElement").each(function(){
+      $priceElement.val();
+      totalPrice += $priceElement.val();
+      console.log(totalPrice);
+  });
   });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
