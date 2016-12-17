@@ -43,6 +43,7 @@ $(function(){
         .attr({
           class: "priceElement",
           "data-js": "price",
+          value: priceElement
         })
         .text("$" + (priceElement))
       var $articleHTML = $("<article>")
@@ -54,15 +55,14 @@ $(function(){
       .append($priceElement)
     $articleElement.prepend($articleHTML);
     // // find the prices
-    var totalPrice = 0
-    //
-    $priceElement.forEach(function(priceEL){
-      var $priceEL = $(priceEL);
-      val($priceEL) = totalPrice;
+    console.log($priceElement);
+    console.log(priceElement);
+    $('.priceElement').each(function(){
+    var totalPrice = 0;
+    $(this).find('input').each(function(){
+    totalPrice += parseInt($(this).val());
     });
-    console.log(totalPrice);
-    // // and add to running total
-
+    });
 
   });
   $body.on("click", "[data-js='circle']", function(){

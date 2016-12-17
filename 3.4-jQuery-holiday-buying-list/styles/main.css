@@ -85,13 +85,24 @@
   width: 100%;
 }
 .listItem__text {
+  color: green;
   display: inline-block;
   margin-bottom: 0px;
   margin-left: 20px;
   margin-top: 10px;
   vertical-align: top;
 }
+.priceElement {
+  color: green;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  vertical-align: top;
+}
 .lineThrough {
+  color: black;
   display: inline-block;
   margin-bottom: 0px;
   margin-left: 20px;
@@ -114,14 +125,6 @@
 .p__totalCost {
   display: inline-block;
   margin: 0;
-}
-.priceElement {
-  display: inline-block;
-  float: right;
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-right: 20px;
-  vertical-align: top;
 }
 .totalAmount {
   background-color: #F5F5F5;
