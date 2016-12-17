@@ -46,7 +46,7 @@ $(function(){
         "data-js": "price",
         value: priceElement
       })
-      .text(priceElement)
+      .text("$"+(priceElement))
     var $articleHTML = $("<article>")
         .attr({
           class: "listItem"
@@ -55,27 +55,23 @@ $(function(){
       .append($listTextElement)
       .append($priceElement)
     $articleElement.prepend($articleHTML);
-    $totalElement.text(priceElement);
     //   // // find the prices
-    var totalPrice = "";
+    var total = "";
     var totalString = "";
     var numbersOnly = "";
+    var totalPrice = "";
     $priceElement.each(function(priceElement) {
       var priceElement = $(".priceElement");
       totalString += priceElement.text();
       var input = totalString;
-      console.log(totalString);
-      var numbers = input.split(" ");
-      console.log(numbers);
-      var totalPrice = numbers.reduce(
-      function(a, b) {
-      return a + b;
-    });
+      var numbers = input.split("$");
+      var numberString = numbers.join("+");
+      var totalPrice = eval(numberString)
       console.log(totalPrice);
+      return totalPrice;
     });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
-    // $this.next().addClass("lineThrough");
     $this.siblings().toggleClass("lineThrough");
     $this.html("&#10003");
   });
