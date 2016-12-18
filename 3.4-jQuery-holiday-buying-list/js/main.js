@@ -80,7 +80,7 @@ $(function(){
 });
 $body.on("click", "[data-js='circle']", function(){
   var $this = $(this);
-  $this.siblings().toggleClass("lineThrough");
+  $this.siblings().addClass("lineThrough");
   $this.html("&#10003");
 $this.each(function(subtractPrice){
   var newSubtractedTotalElement = $totalElement.text() - priceToSubtract;
