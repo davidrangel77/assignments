@@ -29,6 +29,7 @@ $(function(){
   var $totalElement = $body.find("[data-js='total']")
   var totalPriceToSubtractFrom = "";
   var priceToSubtract = "";
+  var newSubtractedTotal = "";
   $addButton.on("click", function(e){
     e.preventDefault();
     var textInputValue = $text.val();
@@ -77,15 +78,23 @@ $(function(){
     $totalElement.text(totalPrice);
     totalPriceToSubtractFrom = totalPrice;
     priceToSubtract = priceElement
+    console.log(priceToSubtract);
 });
 $body.on("click", "[data-js='circle']", function(){
   var $this = $(this);
   $this.siblings().addClass("lineThrough");
   $this.html("&#10003");
+
+// START OF JS AREA TO FIGURE OUT
 $this.each(function(subtractPrice){
+  // need to get the "value" from the clicked .priceElement and
+  // use it as the "priceToSubtract" in the newSubtractedTotalElement
+  var currentPriceElement = $(".priceElement").val();
+  console.log(currentPriceElement);
   var newSubtractedTotalElement = $totalElement.text() - priceToSubtract;
   newSubtractedTotal = newSubtractedTotalElement;
 })
+// END OF WOKRING JS AREA TO FIGURE OUT
 $totalElement.text(newSubtractedTotal);
 var newSubtractedTotalElement = $totalElement.text()
 });

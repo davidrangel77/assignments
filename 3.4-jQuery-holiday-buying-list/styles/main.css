@@ -129,6 +129,7 @@
 .p {
   display: inline-block;
   margin: 0;
+  margin-right: -4px
 }
 .p__totalCost {
   display: inline-block;
@@ -152,7 +153,7 @@
   font-family: Helvetica;
   font-size: 20px;
   height: 40px;
-  margin-left: 350px;
+  margin-left: 432px;
   float: left;
   -webkit-appearance: initial;
 }
