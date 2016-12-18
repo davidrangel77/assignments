@@ -14,9 +14,9 @@
 // [x] - insert that in the total field each time an item is added
 // [x] - activate button for line-through
 // THINGS I NEED TO FIX =
-// - running total needs to subtract properly when item is lined-through
-// THINGS I WANT TO FIX =
+// - running total needs to subtract properly when item is lined-through.
 // - when I add a new item after reducing total with the line-through it adds it to the original total, not the ammended one
+// THINGS I WANT TO FIX =
 // - I want the text input box ti clear when I hit ADD or push return
 // - If I keep pushing the "checkButton" it keeps reducing the total by that amount.
 // - Want to make a forEach loop or .each event for the dblclick events to edit input fields.
