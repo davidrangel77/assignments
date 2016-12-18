@@ -66,7 +66,6 @@ $(function(){
       var totalOfEval = eval(numberString)
       totalPrice = totalOfEval
     });
-    console.log(totalPrice);
     $totalElement.text(totalPrice);
 });
 $body.on("click", "[data-js='circle']", function(){
