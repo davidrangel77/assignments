@@ -21,6 +21,8 @@ $(function(){
   var $articleElement = $body.find("[data-js='articles']")
   var $divElement = $body.find("[data-js='divElement']")
   var $totalElement = $body.find("[data-js='total']")
+  var totalPriceToSubtractFrom = "";
+  var priceToSubtract = "";
   $addButton.on("click", function(e){
     e.preventDefault();
     var textInputValue = $text.val();
@@ -37,6 +39,7 @@ $(function(){
     var $listTextElement = $("<p>")
       .attr({
         class: "listItem__text",
+        "data-js": "itemName"
       })
       .text(listTextElement);
     var $priceElement = $("<p>")
@@ -54,7 +57,6 @@ $(function(){
       .append($listTextElement)
       .append($priceElement)
     $articleElement.prepend($articleHTML);
-    //   // // find the prices
     var totalString = "";
     var totalPrice = "";
     $priceElement.each(function(priceElement) {
@@ -64,13 +66,34 @@ $(function(){
       var numbers = input.split("$");
       var numberString = numbers.join("+");
       var totalOfEval = eval(numberString)
-      totalPrice = totalOfEval
+      totalPrice = totalOfEval;
     });
     $totalElement.text(totalPrice);
+    totalPriceToSubtractFrom = totalPrice;
+    priceToSubtract = priceElement
 });
 $body.on("click", "[data-js='circle']", function(){
   var $this = $(this);
   $this.siblings().toggleClass("lineThrough");
   $this.html("&#10003");
+$this.each(function(subtractPrice){
+  var newSubtractedTotalElement = $totalElement.text() - priceToSubtract;
+  newSubtractedTotal = newSubtractedTotalElement;
+})
+$totalElement.text(newSubtractedTotal);
+var newSubtractedTotalElement = $totalElement.text()
+console.log($totalElement.text());
+});
+$body.on("dblclick", "[data-js='itemName']", function(){
+  var $this = $(this);
+  $this.get(0).contentEditable = "true";
+});
+$body.on("dblclick", "[data-js='price']", function(){
+  var $this = $(this);
+  $this.get(0).contentEditable = "true";
+});
+$body.on("dblclick", "[data-js='total']", function(){
+  var $this = $(this);
+  $this.get(0).contentEditable = "true";
 });
 });
