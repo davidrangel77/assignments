@@ -1,4 +1,4 @@
-// checlist for js fir gift form:
+// checlist for js for gift form:
 // [x] - factory call the doc to start
 // [x] - factory call to $body to $ through body element
 // [x] - write vars for things to ref in html elements
@@ -11,8 +11,14 @@
         // - var for article
 // [x] - prepend the new article to add to the top of list
 // [x] - find the cost of items
-// [] - insert that in the total field each time an item is added
+// [x] - insert that in the total field each time an item is added
 // [x] - activate button for line-through
+// THINGS I WANT TO FIX =
+// - when I add a new item after reducing total with the line-through it adds it to the original total, not the ammended one
+// - I want the text input box ti clear when I hit ADD or push return
+// - If I keep pushing the "checkButton" it keeps reducing the total by that amount.
+// - Want to make a forEach loop or .each event for the dblclick events to edit input fields.
+// - Want the totalElement to reflect the editing pricing data in real time
 
 $(function(){
   var $body = $("body");
@@ -82,7 +88,6 @@ $this.each(function(subtractPrice){
 })
 $totalElement.text(newSubtractedTotal);
 var newSubtractedTotalElement = $totalElement.text()
-console.log($totalElement.text());
 });
 $body.on("dblclick", "[data-js='itemName']", function(){
   var $this = $(this);
