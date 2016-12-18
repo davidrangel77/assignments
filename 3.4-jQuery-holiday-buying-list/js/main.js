@@ -13,6 +13,8 @@
 // [x] - find the cost of items
 // [x] - insert that in the total field each time an item is added
 // [x] - activate button for line-through
+// THINGS I NEED TO FIX =
+// - running total needs to subtract properly when item is lined-through
 // THINGS I WANT TO FIX =
 // - when I add a new item after reducing total with the line-through it adds it to the original total, not the ammended one
 // - I want the text input box ti clear when I hit ADD or push return
@@ -86,18 +88,15 @@ $body.on("click", "[data-js='circle']", function(){
   $this.html("&#10003");
 
 // START OF JS AREA TO FIGURE OUT
-$this.each(function(subtractPrice){
-  // need to get the "value" from the clicked .priceElement and
-  // use it as the "priceToSubtract" in the newSubtractedTotalElement
-  var currentPriceElement = $(".priceElement").val();
-  console.log(currentPriceElement);
-  var newSubtractedTotalElement = $totalElement.text() - priceToSubtract;
-  newSubtractedTotal = newSubtractedTotalElement;
-})
-// END OF WOKRING JS AREA TO FIGURE OUT
+
+
+
+var newSubtractedTotalElement = $totalElement.text() - priceToSubtract;
+newSubtractedTotal = newSubtractedTotalElement;
 $totalElement.text(newSubtractedTotal);
 var newSubtractedTotalElement = $totalElement.text()
-});
+})
+// END OF WORkING JS AREA TO FIGURE OUT
 $body.on("dblclick", "[data-js='itemName']", function(){
   var $this = $(this);
   $this.get(0).contentEditable = "true";
