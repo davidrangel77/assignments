@@ -48,13 +48,16 @@
 }
 .album__selection_buttons {
   margin-top: 50%;
-  height: 525px;
+  height: 522px;
 }
 .albumButton {
   background-color: white;
-  border: solid 1px grey;
-  height: 8%;
-  margin: 5% 5%;
+  border: solid 1px black;
+  border-radius: 3px;
+  font-family: Helvetica;
+  font-size: 16px;
+  height: 9%;
+  margin: 3% 5%;
   width: 90%;
 }
 .aside {
@@ -63,6 +66,17 @@
 }
 .body {
   margin: 0;
+}
+.button__backToAlbum {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 3px;
+  /*display: block;*/
+  font-family: Helvetica;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 .footer1 {
   background-color: lightgrey;
@@ -82,7 +96,13 @@
   padding-top: 27px;
   width: 21%;
   text-align: center;
-
+}
+.image__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
 }
 .left__aside {
   background-color: grey;
@@ -95,4 +115,9 @@
   margin-top: 40px;
   margin-bottom: 50px;
   width: 100%;
+}
+.photo__Modal--Backgroud {
+  position: relative;
+  background-color: grey;
+  height: 100vh;
 }
