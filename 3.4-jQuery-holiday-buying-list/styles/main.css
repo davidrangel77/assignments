@@ -77,7 +77,7 @@
   margin-right: auto;
 }
 .listItem__div {
-
+margin-top: -2px;
 }
 .listItem {
   border-top: solid 1px Gainsboro;
