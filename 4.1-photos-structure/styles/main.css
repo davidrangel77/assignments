@@ -1,3 +1,98 @@
 *{
   box-sizing: border-box;
 }
+#body {
+  margin: 0;
+}
+#main {
+  float: right;
+}
+#aside {
+  height: 100%;
+  width: 21.6%;
+}
+.album__image-preview {
+  border-bottom: solid 1px grey;
+  margin-top: auto;
+  /*height: 150px;*/
+  width: 150px;
+}
+.album__header {
+  background-color: lightgrey;
+  height: 125px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.album__name {
+  font-family: Helvetica;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+.album__preview {
+  border: solid 2px grey;
+  display: inline-block;
+  margin: 25px 85px;
+}
+.album__preview-row {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.album__list {
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+.album__selection_buttons {
+  margin-top: 50%;
+  height: 525px;
+}
+.albumButton {
+  background-color: white;
+  border: solid 1px grey;
+  height: 8%;
+  margin: 5% 5%;
+  width: 90%;
+}
+.aside {
+  border: solid 2px grey;
+  height: 100%;
+}
+.body {
+  margin: 0;
+}
+.footer1 {
+  background-color: lightgrey;
+  height: 25px;
+  margin-top: 50px;
+}
+.footer2 {
+  background-color: lightgrey;
+  height: 25px;
+}
+.h1 {
+  font-family: Helvetica;
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 27px;
+  width: 21%;
+  text-align: center;
+
+}
+.left__aside {
+  background-color: grey;
+  display: inline-block;
+  width: 15%
+}
+.myAlbums__header {
+  background-color: lightgrey;
+  height: 125px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 100%;
+}
