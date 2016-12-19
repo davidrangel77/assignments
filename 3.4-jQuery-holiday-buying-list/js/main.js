@@ -79,9 +79,7 @@ $(function(){
     $this.html("&#10003");
     var siblingsArray = $this.siblings();
     var pPriceElement = siblingsArray[1];
-    var $pPriceElement = $(pPriceElement);
-    var currentPriceElement = $(pPriceElement).attr("value");
-    var currentPriceToSubtract = currentPriceElement;
+    var currentPriceToSubtract = $(pPriceElement).attr("value");
     var newSubtractedTotal = $totalElement.text() - currentPriceToSubtract;
     $totalElement.text(newSubtractedTotal);
   });
