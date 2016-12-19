@@ -82,16 +82,13 @@ $(function(){
     var $this = $(this);
     $this.siblings().addClass("lineThrough");
     $this.html("&#10003");
-  // START OF JS AREA TO FIGURE OUT SUBTRACTION
   var siblingsArray = $this.siblings();
   var pPriceElement = siblingsArray[1];
   var $pPriceElement = $(pPriceElement);
   var currentPriceElement = $(pPriceElement).attr("value");
   var currentPriceToSubtract = currentPriceElement;
-  var newSubtractedTotalElement = $totalElement.text() - currentPriceToSubtract;
-  newSubtractedTotal = newSubtractedTotalElement;
+  var newSubtractedTotal = $totalElement.text() - currentPriceToSubtract;
   $totalElement.text(newSubtractedTotal);
-  var newSubtractedTotalElement = $totalElement.text()
   })
   $body.on("dblclick", "[data-js='itemName']", function(){
     var $this = $(this);
