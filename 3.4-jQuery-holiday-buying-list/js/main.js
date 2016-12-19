@@ -72,7 +72,7 @@ $(function(){
       totalPrice = totalOfEval;
     });
     $totalElement.text(totalPrice);
-});
+  });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
     $this.siblings().addClass("lineThrough");
