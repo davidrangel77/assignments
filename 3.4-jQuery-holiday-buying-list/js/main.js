@@ -14,8 +14,8 @@
 // [x] - insert that in the total field each time an item is added
 // [x] - activate button for line-through
 // THINGS I WANT TO FIX =
-// - I want the text input box ti clear when I hit ADD or push return
-// - If I keep pushing the "checkButton" it keeps reducing the total by that amount.
+// - I want the text input box to clear when I hit ADD or push return
+// - If I keep pushing the "checkButton" it keeps reducing the total by that amount into the negative.
 // - Want to make a forEach loop or .each event for the dblclick events to edit input fields.
 // - Want the totalElement to reflect the editing pricing data in real time
 
@@ -26,9 +26,6 @@ $(function(){
   var $articleElement = $body.find("[data-js='articles']")
   var $divElement = $body.find("[data-js='divElement']")
   var $totalElement = $body.find("[data-js='total']")
-  var totalPriceToSubtractFrom = "";
-  var priceToSubtract = "";
-  var newSubtractedTotal = "";
   $addButton.on("click", function(e){
     e.preventDefault();
     var textInputValue = $text.val();
@@ -75,21 +72,19 @@ $(function(){
       totalPrice = totalOfEval;
     });
     $totalElement.text(totalPrice);
-    totalPriceToSubtractFrom = totalPrice;
-    priceToSubtract = priceElement
 });
   $body.on("click", "[data-js='circle']", function(){
     var $this = $(this);
     $this.siblings().addClass("lineThrough");
     $this.html("&#10003");
-  var siblingsArray = $this.siblings();
-  var pPriceElement = siblingsArray[1];
-  var $pPriceElement = $(pPriceElement);
-  var currentPriceElement = $(pPriceElement).attr("value");
-  var currentPriceToSubtract = currentPriceElement;
-  var newSubtractedTotal = $totalElement.text() - currentPriceToSubtract;
-  $totalElement.text(newSubtractedTotal);
-  })
+    var siblingsArray = $this.siblings();
+    var pPriceElement = siblingsArray[1];
+    var $pPriceElement = $(pPriceElement);
+    var currentPriceElement = $(pPriceElement).attr("value");
+    var currentPriceToSubtract = currentPriceElement;
+    var newSubtractedTotal = $totalElement.text() - currentPriceToSubtract;
+    $totalElement.text(newSubtractedTotal);
+  });
   $body.on("dblclick", "[data-js='itemName']", function(){
     var $this = $(this);
     $this.get(0).contentEditable = "true";
