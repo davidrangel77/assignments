@@ -32,14 +32,14 @@ $(function (){
   var $buttonForward4 = $body.find("[data-js='buttonForward4']");
   var $buttonForward5 = $body.find("[data-js='buttonForward5']");
   var $buttonForward6 = $body.find("[data-js='buttonForward6']");
-  var $modalClose = $body.find("[data-js='modalClose']");
-  var $modalContent = $body.find("[data-js='modal__content']");
   var $album1button = $body.find("[data-js='goToAlbum1']");
   var $album2button = $body.find("[data-js='goToAlbum2']");
   var $album3button = $body.find("[data-js='goToAlbum3']");
   var $album4button = $body.find("[data-js='goToAlbum4']");
   var $album5button = $body.find("[data-js='goToAlbum5']");
   var $album6button = $body.find("[data-js='goToAlbum6']");
+  var $modalClose = $body.find("[data-js='modalClose']");
+  var $modalContent = $body.find("[data-js='modal__content']");
   // Album Buttons for all album pages
   $album1button.on("click", function(){
     $albumPageElement.removeClass("hide");

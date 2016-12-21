@@ -3,6 +3,7 @@
 }
 #body {
   margin: 0;
+  position: relative;
 }
 #main {
   float: right;
@@ -10,6 +11,11 @@
 #aside {
   height: 100%;
   width: 21.6%;
+}
+#modal{
+  position: absolute;
+  top: 0;
+  left: 0,
 }
 .album__image-preview {
   border-bottom: solid 1px grey;
@@ -126,6 +132,7 @@
   transform: translate(-50%,-50%);
   width: 50%;
 }
+
 .left__aside {
   background-color: grey;
   display: inline-block;

@@ -1,4 +1,3 @@
-var $ = require("jquery");
 var album1 = require("./album1");
 var album2 = require("./album2");
 var album3 = require("./album3");

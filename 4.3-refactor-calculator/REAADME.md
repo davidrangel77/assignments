@@ -1,0 +1,16 @@
+TO DO FOR REFACTOR OF CALCULATOR ASSIGNMENT
+- [x] make 4.3 in assignments repo
+- [x] npm init
+- [x] install jquery and webpack with npm
+- [x] touch .gitignore file
+- [x] add .DS_Store and node_modules to .gitignore
+- [x] create webpack.config.js
+- [x] enter=modules code in webpack.config
+- [x] webpack --watch
+- [ ] commit
+- [ ] create button.js to hold js to run
+- [ ] comment out old js from main js and use to "require" button.js
+- [ ] require jquery in button.js
+- [ ] commit
+- [ ] psuedo code html to indicate refactoring points as To Do
+- [ ] psuedo code js to indicate refactoring points as To Do
