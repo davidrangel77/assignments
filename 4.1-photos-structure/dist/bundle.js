@@ -45,8 +45,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
-	var album = __webpack_require__(2);
-	var modal = __webpack_require__(3);
+	var album = __webpack_require__(4);
+	var modal = __webpack_require__(5);
+	var modal = __webpack_require__(6);
+	var modal = __webpack_require__(7);
+	var modal = __webpack_require__(8);
+	var modal = __webpack_require__(9);
 
 
 /***/ },
@@ -10276,76 +10280,104 @@
 
 
 /***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(1);
-
-
-/***/ },
-/* 3 */
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
 
 	$(function (){
 	  var $body = $("body");
-	  var $albumPageElement = $body.find("[data-js='albumPage']");
+	  var $albumPageElement = $body.find("[data-js='albumPage1']");
 	  var $albumPageElementAlbum2 = $body.find("[data-js='albumPageAlbum2']");
+	  var $albumPageElementAlbum3 = $body.find("[data-js='albumPageAlbum3']");
+	  var $albumPageElementAlbum4 = $body.find("[data-js='albumPageAlbum4']");
+	  var $albumPageElementAlbum5 = $body.find("[data-js='albumPageAlbum5']");
+	  var $albumPageElementAlbum6 = $body.find("[data-js='albumPageAlbum6']");
 	  var $modalArticle1 = $body.find("[data-js='modal1']");
 	  var $modalArticle2 = $body.find("[data-js='modal2']");
 	  var $modalArticle3 = $body.find("[data-js='modal3']");
 	  var $modalArticle4 = $body.find("[data-js='modal4']");
 	  var $modalArticle5 = $body.find("[data-js='modal5']");
 	  var $modalArticle6 = $body.find("[data-js='modal6']");
-	  var $modalArticle1Album2 = $body.find("[data-js='modal1Album2']");
-	  var $modalArticle2Album2 = $body.find("[data-js='modal2Album2']");
-	  var $modalArticle3Album2 = $body.find("[data-js='modal3Album2']");
-	  var $modalArticle4Album2 = $body.find("[data-js='modal4Album2']");
-	  var $modalArticle5Album2 = $body.find("[data-js='modal5Album2']");
-	  var $modalArticle6Album2 = $body.find("[data-js='modal6Album2']");
 	  var $photoClick1 = $body.find("[data-js='thumbnailPhoto1']");
 	  var $photoClick2 = $body.find("[data-js='thumbnailPhoto2']");
 	  var $photoClick3 = $body.find("[data-js='thumbnailPhoto3']");
 	  var $photoClick4 = $body.find("[data-js='thumbnailPhoto4']");
 	  var $photoClick5 = $body.find("[data-js='thumbnailPhoto5']");
 	  var $photoClick6 = $body.find("[data-js='thumbnailPhoto6']");
-	  var $photoClick1Album2 = $body.find("[data-js='thumbnailPhoto1Album2']");
-	  var $photoClick2Album2 = $body.find("[data-js='thumbnailPhoto2Album2']");
-	  var $photoClick3Album2 = $body.find("[data-js='thumbnailPhoto3Album2']");
-	  var $photoClick4Album2 = $body.find("[data-js='thumbnailPhoto4Album2']");
-	  var $photoClick5Album2 = $body.find("[data-js='thumbnailPhoto5Album2']");
-	  var $photoClick6Album2 = $body.find("[data-js='thumbnailPhoto6Album2']");
 	  var $buttonBack1 = $body.find("[data-js='buttonBack1']");
 	  var $buttonBack2 = $body.find("[data-js='buttonBack2']");
 	  var $buttonBack3 = $body.find("[data-js='buttonBack3']");
 	  var $buttonBack4 = $body.find("[data-js='buttonBack4']");
 	  var $buttonBack5 = $body.find("[data-js='buttonBack5']");
 	  var $buttonBack6 = $body.find("[data-js='buttonBack6']");
-	  var $buttonBack1Album2 = $body.find("[data-js='buttonBack1Album2']");
-	  var $buttonBack2Album2 = $body.find("[data-js='buttonBack2Album2']");
-	  var $buttonBack3Album2 = $body.find("[data-js='buttonBack3Album2']");
-	  var $buttonBack4Album2 = $body.find("[data-js='buttonBack4Album2']");
-	  var $buttonBack5Album2 = $body.find("[data-js='buttonBack5Album2']");
-	  var $buttonBack6Album2 = $body.find("[data-js='buttonBack6Album2']");
 	  var $buttonForward1 = $body.find("[data-js='buttonForward1']");
 	  var $buttonForward2 = $body.find("[data-js='buttonForward2']");
 	  var $buttonForward3 = $body.find("[data-js='buttonForward3']");
 	  var $buttonForward4 = $body.find("[data-js='buttonForward4']");
 	  var $buttonForward5 = $body.find("[data-js='buttonForward5']");
 	  var $buttonForward6 = $body.find("[data-js='buttonForward6']");
-	  var $buttonForward1Album2 = $body.find("[data-js='buttonForward1Album2']");
-	  var $buttonForward2Album2 = $body.find("[data-js='buttonForward2Album2']");
-	  var $buttonForward3Album2 = $body.find("[data-js='buttonForward3Album2']");
-	  var $buttonForward4Album2 = $body.find("[data-js='buttonForward4Album2']");
-	  var $buttonForward5Album2 = $body.find("[data-js='buttonForward5Album2']");
-	  var $buttonForward6Album2 = $body.find("[data-js='buttonForward6Album2']");
 	  var $modalClose = $body.find("[data-js='modalClose']");
-	  var $modalCloseAlbum2 = $body.find("[data-js='modalCloseAlbum2']");
 	  var $modalContent = $body.find("[data-js='modal__content']");
-	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
-	// Actually two loops, one for the $photoClick and one for the $albumPageElement
-	// for ALBUM 1
+	  var $album1button = $body.find("[data-js='goToAlbum1']");
+	  var $album2button = $body.find("[data-js='goToAlbum2']");
+	  var $album3button = $body.find("[data-js='goToAlbum3']");
+	  var $album4button = $body.find("[data-js='goToAlbum4']");
+	  var $album5button = $body.find("[data-js='goToAlbum5']");
+	  var $album6button = $body.find("[data-js='goToAlbum6']");
+	  // Album Buttons for all album pages
+	  $album1button.on("click", function(){
+	    $albumPageElement.removeClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $album2button.on("click", function(){
+	    $albumPageElement.addClass("hide");
+	    $albumPageElementAlbum2.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $album3button.on("click", function(){
+	    $albumPageElement.addClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $album4button.on("click", function(){
+	    $albumPageElement.addClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $album5button.on("click", function(){
+	    $albumPageElement.addClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $album6button.on("click", function(){
+	    $albumPageElement.addClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  // NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	  // Actually two loops, one for the $photoClick and one for the $albumPageElement
 	  $photoClick1.on("click", function(e){
 	    $modalArticle1.removeClass("hide");
 	    $albumPageElement.addClass("hide");
@@ -10436,7 +10468,46 @@
 	    $modalArticle6.addClass("hide");
 	    $modalArticle5.removeClass("hide");
 	  })
-	  // for ALBUM 2
+	});
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+
+	$(function (){
+	  var $body = $("body");
+	  var $albumPageElementAlbum2 = $body.find("[data-js='albumPageAlbum2']");
+	  var $modalArticle1Album2 = $body.find("[data-js='modal1Album2']");
+	  var $modalArticle2Album2 = $body.find("[data-js='modal2Album2']");
+	  var $modalArticle3Album2 = $body.find("[data-js='modal3Album2']");
+	  var $modalArticle4Album2 = $body.find("[data-js='modal4Album2']");
+	  var $modalArticle5Album2 = $body.find("[data-js='modal5Album2']");
+	  var $modalArticle6Album2 = $body.find("[data-js='modal6Album2']");
+	  var $photoClick1Album2 = $body.find("[data-js='thumbnailPhoto1Album2']");
+	  var $photoClick2Album2 = $body.find("[data-js='thumbnailPhoto2Album2']");
+	  var $photoClick3Album2 = $body.find("[data-js='thumbnailPhoto3Album2']");
+	  var $photoClick4Album2 = $body.find("[data-js='thumbnailPhoto4Album2']");
+	  var $photoClick5Album2 = $body.find("[data-js='thumbnailPhoto5Album2']");
+	  var $photoClick6Album2 = $body.find("[data-js='thumbnailPhoto6Album2']");
+	  var $buttonBack1Album2 = $body.find("[data-js='buttonBack1Album2']");
+	  var $buttonBack2Album2 = $body.find("[data-js='buttonBack2Album2']");
+	  var $buttonBack3Album2 = $body.find("[data-js='buttonBack3Album2']");
+	  var $buttonBack4Album2 = $body.find("[data-js='buttonBack4Album2']");
+	  var $buttonBack5Album2 = $body.find("[data-js='buttonBack5Album2']");
+	  var $buttonBack6Album2 = $body.find("[data-js='buttonBack6Album2']");
+	  var $buttonForward1Album2 = $body.find("[data-js='buttonForward1Album2']");
+	  var $buttonForward2Album2 = $body.find("[data-js='buttonForward2Album2']");
+	  var $buttonForward3Album2 = $body.find("[data-js='buttonForward3Album2']");
+	  var $buttonForward4Album2 = $body.find("[data-js='buttonForward4Album2']");
+	  var $buttonForward5Album2 = $body.find("[data-js='buttonForward5Album2']");
+	  var $buttonForward6Album2 = $body.find("[data-js='buttonForward6Album2']");
+	  var $modalCloseAlbum2 = $body.find("[data-js='modalCloseAlbum2']");
+	  var $modalContent = $body.find("[data-js='modal__content']");
+	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	// Actually two loops, one for the $photoClick and one for the $albumPageElement
 	  $photoClick1Album2.on("click", function(e){
 	    $modalArticle1Album2.removeClass("hide");
 	    $albumPageElementAlbum2.addClass("hide");
@@ -10515,7 +10586,7 @@
 	    $modalArticle3Album2.addClass("hide");
 	    $modalArticle2Album2.removeClass("hide");
 	  })
-	  $buttonBack4.on("click", function(){
+	  $buttonBack4Album2.on("click", function(){
 	    $modalArticle4Album2.addClass("hide");
 	    $modalArticle3Album2.removeClass("hide");
 	  })
@@ -10526,6 +10597,530 @@
 	  $buttonBack6Album2.on("click", function(){
 	    $modalArticle6Album2.addClass("hide");
 	    $modalArticle5Album2.removeClass("hide");
+	  })
+	});
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+
+	$(function (){
+	  var $body = $("body");
+	  var $albumPageElementAlbum3 = $body.find("[data-js='albumPageAlbum3']");
+	  var $modalArticle1Album3 = $body.find("[data-js='modal1Album3']");
+	  var $modalArticle2Album3 = $body.find("[data-js='modal2Album3']");
+	  var $modalArticle3Album3 = $body.find("[data-js='modal3Album3']");
+	  var $modalArticle4Album3 = $body.find("[data-js='modal4Album3']");
+	  var $modalArticle5Album3 = $body.find("[data-js='modal5Album3']");
+	  var $modalArticle6Album3 = $body.find("[data-js='modal6Album3']");
+	  var $photoClick1Album3 = $body.find("[data-js='thumbnailPhoto1Album3']");
+	  var $photoClick2Album3 = $body.find("[data-js='thumbnailPhoto2Album3']");
+	  var $photoClick3Album3 = $body.find("[data-js='thumbnailPhoto3Album3']");
+	  var $photoClick4Album3 = $body.find("[data-js='thumbnailPhoto4Album3']");
+	  var $photoClick5Album3 = $body.find("[data-js='thumbnailPhoto5Album3']");
+	  var $photoClick6Album3 = $body.find("[data-js='thumbnailPhoto6Album3']");
+	  var $buttonBack1Album3 = $body.find("[data-js='buttonBack1Album3']");
+	  var $buttonBack2Album3 = $body.find("[data-js='buttonBack2Album3']");
+	  var $buttonBack3Album3 = $body.find("[data-js='buttonBack3Album3']");
+	  var $buttonBack4Album3 = $body.find("[data-js='buttonBack4Album3']");
+	  var $buttonBack5Album3 = $body.find("[data-js='buttonBack5Album3']");
+	  var $buttonBack6Album3 = $body.find("[data-js='buttonBack6Album3']");
+	  var $buttonForward1Album3 = $body.find("[data-js='buttonForward1Album3']");
+	  var $buttonForward2Album3 = $body.find("[data-js='buttonForward2Album3']");
+	  var $buttonForward3Album3 = $body.find("[data-js='buttonForward3Album3']");
+	  var $buttonForward4Album3 = $body.find("[data-js='buttonForward4Album3']");
+	  var $buttonForward5Album3 = $body.find("[data-js='buttonForward5Album3']");
+	  var $buttonForward6Album3 = $body.find("[data-js='buttonForward6Album3']");
+	  var $modalCloseAlbum3 = $body.find("[data-js='modalCloseAlbum3']");
+	  var $modalContent = $body.find("[data-js='modal__content']");
+	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	// Actually two loops, one for the $photoClick and one for the $albumPageElement
+	  $photoClick1Album3.on("click", function(e){
+	    $modalArticle1Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle1Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  $photoClick2Album3.on("click", function(e){
+	    $modalArticle2.removeClass("hide");
+	    $albumPageElement.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle2Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  $photoClick3Album3.on("click", function(e){
+	    $modalArticle3Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle3Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  $photoClick4Album3.on("click", function(e){
+	    $modalArticle4Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle4Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  $photoClick5Album3.on("click", function(e){
+	    $modalArticle5Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle5Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  $photoClick6Album3.on("click", function(e){
+	    $modalArticle6Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
+	  });
+	  $modalCloseAlbum3.on("click", function(e){
+	    $modalArticle6Album3.addClass("hide");
+	    $albumPageElementAlbum3.removeClass("hide");
+	  });
+	  // Making button js functions below
+	  // need loops for the buttons, forward and back
+	  $buttonForward1Album3.on("click", function(){
+	    $modalArticle1Album3.addClass("hide");
+	    $modalArticle2Album3.removeClass("hide");
+	  })
+	  $buttonForward2Album3.on("click", function(){
+	    $modalArticle2Album3.addClass("hide");
+	    $modalArticle3Album3.removeClass("hide");
+	  })
+	  $buttonForward3Album3.on("click", function(){
+	    $modalArticle3Album3.addClass("hide");
+	    $modalArticle4Album3.removeClass("hide");
+	  })
+	  $buttonForward4Album3.on("click", function(){
+	    $modalArticle4Album3.addClass("hide");
+	    $modalArticle5Album3.removeClass("hide");
+	  })
+	  $buttonForward5Album3.on("click", function(){
+	    $modalArticle5Album3.addClass("hide");
+	    $modalArticle6Album3.removeClass("hide");
+	  })
+	  $buttonBack2Album3.on("click", function(){
+	    $modalArticle2Album3.addClass("hide");
+	    $modalArticle1Album3.removeClass("hide");
+	  })
+	  $buttonBack3Album3.on("click", function(){
+	    $modalArticle3Album3.addClass("hide");
+	    $modalArticle2Album3.removeClass("hide");
+	  })
+	  $buttonBack4Album3.on("click", function(){
+	    $modalArticle4Album3.addClass("hide");
+	    $modalArticle3Album3.removeClass("hide");
+	  })
+	  $buttonBack5Album3.on("click", function(){
+	    $modalArticle5Album3.addClass("hide");
+	    $modalArticle4Album3.removeClass("hide");
+	  })
+	  $buttonBack6Album3.on("click", function(){
+	    $modalArticle6Album3.addClass("hide");
+	    $modalArticle5Album3.removeClass("hide");
+	  })
+	});
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+
+	$(function (){
+	  var $body = $("body");
+	  var $albumPageElementAlbum4 = $body.find("[data-js='albumPageAlbum4']");
+	  var $modalArticle1Album4 = $body.find("[data-js='modal1Album4']");
+	  var $modalArticle2Album4 = $body.find("[data-js='modal2Album4']");
+	  var $modalArticle3Album4 = $body.find("[data-js='modal3Album4']");
+	  var $modalArticle4Album4 = $body.find("[data-js='modal4Album4']");
+	  var $modalArticle5Album4 = $body.find("[data-js='modal5Album4']");
+	  var $modalArticle6Album4 = $body.find("[data-js='modal6Album4']");
+	  var $photoClick1Album4 = $body.find("[data-js='thumbnailPhoto1Album4']");
+	  var $photoClick2Album4 = $body.find("[data-js='thumbnailPhoto2Album4']");
+	  var $photoClick3Album4 = $body.find("[data-js='thumbnailPhoto3Album4']");
+	  var $photoClick4Album4 = $body.find("[data-js='thumbnailPhoto4Album4']");
+	  var $photoClick5Album4 = $body.find("[data-js='thumbnailPhoto5Album4']");
+	  var $photoClick6Album4 = $body.find("[data-js='thumbnailPhoto6Album4']");
+	  var $buttonBack1Album4 = $body.find("[data-js='buttonBack1Album4']");
+	  var $buttonBack2Album4 = $body.find("[data-js='buttonBack2Album4']");
+	  var $buttonBack3Album4 = $body.find("[data-js='buttonBack3Album4']");
+	  var $buttonBack4Album4 = $body.find("[data-js='buttonBack4Album4']");
+	  var $buttonBack5Album4 = $body.find("[data-js='buttonBack5Album4']");
+	  var $buttonBack6Album4 = $body.find("[data-js='buttonBack6Album4']");
+	  var $buttonForward1Album4 = $body.find("[data-js='buttonForward1Album4']");
+	  var $buttonForward2Album4 = $body.find("[data-js='buttonForward2Album4']");
+	  var $buttonForward3Album4 = $body.find("[data-js='buttonForward3Album4']");
+	  var $buttonForward4Album4 = $body.find("[data-js='buttonForward4Album4']");
+	  var $buttonForward5Album4 = $body.find("[data-js='buttonForward5Album4']");
+	  var $buttonForward6Album4 = $body.find("[data-js='buttonForward6Album4']");
+	  var $modalCloseAlbum4 = $body.find("[data-js='modalCloseAlbum4']");
+	  var $modalContent = $body.find("[data-js='modal__content']");
+	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	// Actually two loops, one for the $photoClick and one for the $albumPageElement
+	  $photoClick1Album4.on("click", function(e){
+	    $modalArticle1Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle1Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  $photoClick2Album4.on("click", function(e){
+	    $modalArticle2.removeClass("hide");
+	    $albumPageElement.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle2Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  $photoClick3Album4.on("click", function(e){
+	    $modalArticle3Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle3Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  $photoClick4Album4.on("click", function(e){
+	    $modalArticle4Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle4Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  $photoClick5Album4.on("click", function(e){
+	    $modalArticle5Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle5Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  $photoClick6Album4.on("click", function(e){
+	    $modalArticle6Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
+	  });
+	  $modalCloseAlbum4.on("click", function(e){
+	    $modalArticle6Album4.addClass("hide");
+	    $albumPageElementAlbum4.removeClass("hide");
+	  });
+	  // Making button js functions below
+	  // need loops for the buttons, forward and back
+	  $buttonForward1Album4.on("click", function(){
+	    $modalArticle1Album4.addClass("hide");
+	    $modalArticle2Album4.removeClass("hide");
+	  })
+	  $buttonForward2Album4.on("click", function(){
+	    $modalArticle2Album4.addClass("hide");
+	    $modalArticle3Album4.removeClass("hide");
+	  })
+	  $buttonForward3Album4.on("click", function(){
+	    $modalArticle3Album4.addClass("hide");
+	    $modalArticle4Album4.removeClass("hide");
+	  })
+	  $buttonForward4Album4.on("click", function(){
+	    $modalArticle4Album4.addClass("hide");
+	    $modalArticle5Album4.removeClass("hide");
+	  })
+	  $buttonForward5Album4.on("click", function(){
+	    $modalArticle5Album4.addClass("hide");
+	    $modalArticle6Album4.removeClass("hide");
+	  })
+	  $buttonBack2Album4.on("click", function(){
+	    $modalArticle2Album4.addClass("hide");
+	    $modalArticle1Album4.removeClass("hide");
+	  })
+	  $buttonBack3Album4.on("click", function(){
+	    $modalArticle3Album4.addClass("hide");
+	    $modalArticle2Album4.removeClass("hide");
+	  })
+	  $buttonBack4Album4.on("click", function(){
+	    $modalArticle4Album4.addClass("hide");
+	    $modalArticle3Album4.removeClass("hide");
+	  })
+	  $buttonBack5Album4.on("click", function(){
+	    $modalArticle5Album4.addClass("hide");
+	    $modalArticle4Album4.removeClass("hide");
+	  })
+	  $buttonBack6Album4.on("click", function(){
+	    $modalArticle6Album4.addClass("hide");
+	    $modalArticle5Album4.removeClass("hide");
+	  })
+	});
+
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+
+	$(function (){
+	  var $body = $("body");
+	  var $albumPageElement = $body.find("[data-js='albumPage1']");
+	  var $albumPageElementAlbum2 = $body.find("[data-js='albumPageAlbum2']");
+	  var $albumPageElementAlbum3 = $body.find("[data-js='albumPageAlbum3']");
+	  var $albumPageElementAlbum4 = $body.find("[data-js='albumPageAlbum4']");
+	  var $albumPageElementAlbum5 = $body.find("[data-js='albumPageAlbum5']");
+	  var $modalArticle1Album5 = $body.find("[data-js='modal1Album5']");
+	  var $modalArticle2Album5 = $body.find("[data-js='modal2Album5']");
+	  var $modalArticle3Album5 = $body.find("[data-js='modal3Album5']");
+	  var $modalArticle4Album5 = $body.find("[data-js='modal4Album5']");
+	  var $modalArticle5Album5 = $body.find("[data-js='modal5Album5']");
+	  var $modalArticle6Album5 = $body.find("[data-js='modal6Album5']");
+	  var $photoClick1Album5 = $body.find("[data-js='thumbnailPhoto1Album5']");
+	  var $photoClick2Album5 = $body.find("[data-js='thumbnailPhoto2Album5']");
+	  var $photoClick3Album5 = $body.find("[data-js='thumbnailPhoto3Album5']");
+	  var $photoClick4Album5 = $body.find("[data-js='thumbnailPhoto4Album5']");
+	  var $photoClick5Album5 = $body.find("[data-js='thumbnailPhoto5Album5']");
+	  var $photoClick6Album5 = $body.find("[data-js='thumbnailPhoto6Album5']");
+	  var $buttonBack1Album5 = $body.find("[data-js='buttonBack1Album5']");
+	  var $buttonBack2Album5 = $body.find("[data-js='buttonBack2Album5']");
+	  var $buttonBack3Album5 = $body.find("[data-js='buttonBack3Album5']");
+	  var $buttonBack4Album5 = $body.find("[data-js='buttonBack4Album5']");
+	  var $buttonBack5Album5 = $body.find("[data-js='buttonBack5Album5']");
+	  var $buttonBack6Album5 = $body.find("[data-js='buttonBack6Album5']");
+	  var $buttonForward1Album5 = $body.find("[data-js='buttonForward1Album5']");
+	  var $buttonForward2Album5 = $body.find("[data-js='buttonForward2Album5']");
+	  var $buttonForward3Album5 = $body.find("[data-js='buttonForward3Album5']");
+	  var $buttonForward4Album5 = $body.find("[data-js='buttonForward4Album5']");
+	  var $buttonForward5Album5 = $body.find("[data-js='buttonForward5Album5']");
+	  var $buttonForward6Album5 = $body.find("[data-js='buttonForward6Album5']");
+	  var $modalCloseAlbum5 = $body.find("[data-js='modalCloseAlbum5']");
+	  var $modalContent = $body.find("[data-js='modal__content']");
+	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	// Actually two loops, one for the $photoClick and one for the $albumPageElement
+	  $photoClick1Album5.on("click", function(e){
+	    $modalArticle1Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle1Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  $photoClick2Album5.on("click", function(e){
+	    $modalArticle2.removeClass("hide");
+	    $albumPageElement.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle2Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  $photoClick3Album5.on("click", function(e){
+	    $modalArticle3Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle3Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  $photoClick4Album5.on("click", function(e){
+	    $modalArticle4Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle4Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  $photoClick5Album5.on("click", function(e){
+	    $modalArticle5Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle5Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  $photoClick6Album5.on("click", function(e){
+	    $modalArticle6Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
+	  });
+	  $modalCloseAlbum5.on("click", function(e){
+	    $modalArticle6Album5.addClass("hide");
+	    $albumPageElementAlbum5.removeClass("hide");
+	  });
+	  // Making button js functions below
+	  // need loops for the buttons, forward and back
+	  $buttonForward1Album5.on("click", function(){
+	    $modalArticle1Album5.addClass("hide");
+	    $modalArticle2Album5.removeClass("hide");
+	  })
+	  $buttonForward2Album5.on("click", function(){
+	    $modalArticle2Album5.addClass("hide");
+	    $modalArticle3Album5.removeClass("hide");
+	  })
+	  $buttonForward3Album5.on("click", function(){
+	    $modalArticle3Album5.addClass("hide");
+	    $modalArticle4Album5.removeClass("hide");
+	  })
+	  $buttonForward4Album5.on("click", function(){
+	    $modalArticle4Album5.addClass("hide");
+	    $modalArticle5Album5.removeClass("hide");
+	  })
+	  $buttonForward5Album5.on("click", function(){
+	    $modalArticle5Album5.addClass("hide");
+	    $modalArticle6Album5.removeClass("hide");
+	  })
+	  $buttonBack2Album5.on("click", function(){
+	    $modalArticle2Album5.addClass("hide");
+	    $modalArticle1Album5.removeClass("hide");
+	  })
+	  $buttonBack3Album5.on("click", function(){
+	    $modalArticle3Album5.addClass("hide");
+	    $modalArticle2Album5.removeClass("hide");
+	  })
+	  $buttonBack4Album5.on("click", function(){
+	    $modalArticle4Album5.addClass("hide");
+	    $modalArticle3Album5.removeClass("hide");
+	  })
+	  $buttonBack5Album5.on("click", function(){
+	    $modalArticle5Album5.addClass("hide");
+	    $modalArticle4Album5.removeClass("hide");
+	  })
+	  $buttonBack6Album5.on("click", function(){
+	    $modalArticle6Album5.addClass("hide");
+	    $modalArticle5Album5.removeClass("hide");
+	  })
+	});
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(1);
+
+	$(function (){
+	  var $body = $("body");
+	  var $albumPageElementAlbum6 = $body.find("[data-js='albumPageAlbum6']");
+	  var $modalArticle1Album6 = $body.find("[data-js='modal1Album6']");
+	  var $modalArticle2Album6 = $body.find("[data-js='modal2Album6']");
+	  var $modalArticle3Album6 = $body.find("[data-js='modal3Album6']");
+	  var $modalArticle4Album6 = $body.find("[data-js='modal4Album6']");
+	  var $modalArticle5Album6 = $body.find("[data-js='modal5Album6']");
+	  var $modalArticle6Album6 = $body.find("[data-js='modal6Album6']");
+	  var $photoClick1Album6 = $body.find("[data-js='thumbnailPhoto1Album6']");
+	  var $photoClick2Album6 = $body.find("[data-js='thumbnailPhoto2Album6']");
+	  var $photoClick3Album6 = $body.find("[data-js='thumbnailPhoto3Album6']");
+	  var $photoClick4Album6 = $body.find("[data-js='thumbnailPhoto4Album6']");
+	  var $photoClick5Album6 = $body.find("[data-js='thumbnailPhoto5Album6']");
+	  var $photoClick6Album6 = $body.find("[data-js='thumbnailPhoto6Album6']");
+	  var $buttonBack1Album6 = $body.find("[data-js='buttonBack1Album6']");
+	  var $buttonBack2Album6 = $body.find("[data-js='buttonBack2Album6']");
+	  var $buttonBack3Album6 = $body.find("[data-js='buttonBack3Album6']");
+	  var $buttonBack4Album6 = $body.find("[data-js='buttonBack4Album6']");
+	  var $buttonBack5Album6 = $body.find("[data-js='buttonBack5Album6']");
+	  var $buttonBack6Album6 = $body.find("[data-js='buttonBack6Album6']");
+	  var $buttonForward1Album6 = $body.find("[data-js='buttonForward1Album6']");
+	  var $buttonForward2Album6 = $body.find("[data-js='buttonForward2Album6']");
+	  var $buttonForward3Album6 = $body.find("[data-js='buttonForward3Album6']");
+	  var $buttonForward4Album6 = $body.find("[data-js='buttonForward4Album6']");
+	  var $buttonForward5Album6 = $body.find("[data-js='buttonForward5Album6']");
+	  var $buttonForward6Album6 = $body.find("[data-js='buttonForward6Album6']");
+	  var $modalCloseAlbum6 = $body.find("[data-js='modalCloseAlbum6']");
+	  var $modalContent = $body.find("[data-js='modal__content']");
+	// NEED A LOOP HERE BUT I WAS TOO TIRED TO MAKE IT
+	// Actually two loops, one for the $photoClick and one for the $albumPageElement
+	  $photoClick1Album6.on("click", function(e){
+	    $modalArticle1Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle1Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  $photoClick2Album6.on("click", function(e){
+	    $modalArticle2.removeClass("hide");
+	    $albumPageElement.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle2Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  $photoClick3Album6.on("click", function(e){
+	    $modalArticle3Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle3Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  $photoClick4Album6.on("click", function(e){
+	    $modalArticle4Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle4Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  $photoClick5Album6.on("click", function(e){
+	    $modalArticle5Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle5Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  $photoClick6Album6.on("click", function(e){
+	    $modalArticle6Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
+	  });
+	  $modalCloseAlbum6.on("click", function(e){
+	    $modalArticle6Album6.addClass("hide");
+	    $albumPageElementAlbum6.removeClass("hide");
+	  });
+	  // Making button js functions below
+	  // need loops for the buttons, forward and back
+	  $buttonForward1Album6.on("click", function(){
+	    $modalArticle1Album6.addClass("hide");
+	    $modalArticle2Album6.removeClass("hide");
+	  })
+	  $buttonForward2Album6.on("click", function(){
+	    $modalArticle2Album6.addClass("hide");
+	    $modalArticle3Album6.removeClass("hide");
+	  })
+	  $buttonForward3Album6.on("click", function(){
+	    $modalArticle3Album6.addClass("hide");
+	    $modalArticle4Album6.removeClass("hide");
+	  })
+	  $buttonForward4Album6.on("click", function(){
+	    $modalArticle4Album6.addClass("hide");
+	    $modalArticle5Album6.removeClass("hide");
+	  })
+	  $buttonForward5Album6.on("click", function(){
+	    $modalArticle5Album6.addClass("hide");
+	    $modalArticle6Album6.removeClass("hide");
+	  })
+	  $buttonBack2Album6.on("click", function(){
+	    $modalArticle2Album6.addClass("hide");
+	    $modalArticle1Album6.removeClass("hide");
+	  })
+	  $buttonBack3Album6.on("click", function(){
+	    $modalArticle3Album6.addClass("hide");
+	    $modalArticle2Album6.removeClass("hide");
+	  })
+	  $buttonBack4Album6.on("click", function(){
+	    $modalArticle4Album6.addClass("hide");
+	    $modalArticle3Album6.removeClass("hide");
+	  })
+	  $buttonBack5Album6.on("click", function(){
+	    $modalArticle5Album6.addClass("hide");
+	    $modalArticle4Album6.removeClass("hide");
+	  })
+	  $buttonBack6Album6.on("click", function(){
+	    $modalArticle6Album6.addClass("hide");
+	    $modalArticle5Album6.removeClass("hide");
 	  })
 	});
 
