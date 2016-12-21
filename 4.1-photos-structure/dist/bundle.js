@@ -10868,10 +10868,6 @@
 
 	$(function (){
 	  var $body = $("body");
-	  var $albumPageElement = $body.find("[data-js='albumPage1']");
-	  var $albumPageElementAlbum2 = $body.find("[data-js='albumPageAlbum2']");
-	  var $albumPageElementAlbum3 = $body.find("[data-js='albumPageAlbum3']");
-	  var $albumPageElementAlbum4 = $body.find("[data-js='albumPageAlbum4']");
 	  var $albumPageElementAlbum5 = $body.find("[data-js='albumPageAlbum5']");
 	  var $modalArticle1Album5 = $body.find("[data-js='modal1Album5']");
 	  var $modalArticle2Album5 = $body.find("[data-js='modal2Album5']");
