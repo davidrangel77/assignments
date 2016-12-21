@@ -40,8 +40,8 @@ $(function (){
     $albumPageElementAlbum3.removeClass("hide");
   });
   $photoClick2Album3.on("click", function(e){
-    $modalArticle2.removeClass("hide");
-    $albumPageElement.addClass("hide");
+    $modalArticle2Album3.removeClass("hide");
+    $albumPageElementAlbum3.addClass("hide");
   });
   $modalCloseAlbum3.on("click", function(e){
     $modalArticle2Album3.addClass("hide");

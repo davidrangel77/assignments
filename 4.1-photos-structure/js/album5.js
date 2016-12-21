@@ -44,8 +44,8 @@ $(function (){
     $albumPageElementAlbum5.removeClass("hide");
   });
   $photoClick2Album5.on("click", function(e){
-    $modalArticle2.removeClass("hide");
-    $albumPageElement.addClass("hide");
+    $modalArticle2Album5.removeClass("hide");
+    $albumPageElementAlbum5.addClass("hide");
   });
   $modalCloseAlbum5.on("click", function(e){
     $modalArticle2Album5.addClass("hide");

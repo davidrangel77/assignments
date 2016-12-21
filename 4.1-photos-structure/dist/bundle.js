@@ -45,12 +45,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
-	var album = __webpack_require__(4);
-	var modal = __webpack_require__(5);
-	var modal = __webpack_require__(6);
-	var modal = __webpack_require__(7);
-	var modal = __webpack_require__(8);
-	var modal = __webpack_require__(9);
+	var album1 = __webpack_require__(2);
+	var album2 = __webpack_require__(3);
+	var album3 = __webpack_require__(4);
+	var album4 = __webpack_require__(5);
+	var album5 = __webpack_require__(6);
+	var album6 = __webpack_require__(7);
 
 
 /***/ },
@@ -10280,9 +10280,7 @@
 
 
 /***/ },
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -10472,7 +10470,7 @@
 
 
 /***/ },
-/* 5 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -10517,8 +10515,9 @@
 	    $albumPageElementAlbum2.removeClass("hide");
 	  });
 	  $photoClick2Album2.on("click", function(e){
-	    $modalArticle2.removeClass("hide");
-	    $albumPageElement.addClass("hide");
+	    $modalArticle2Album2.removeClass("hide");
+	    $albumPageElementAlbum2.addClass("hide");
+	    console.log("working?");
 	  });
 	  $modalCloseAlbum2.on("click", function(e){
 	    $modalArticle2Album2.addClass("hide");
@@ -10602,7 +10601,7 @@
 
 
 /***/ },
-/* 6 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -10647,8 +10646,8 @@
 	    $albumPageElementAlbum3.removeClass("hide");
 	  });
 	  $photoClick2Album3.on("click", function(e){
-	    $modalArticle2.removeClass("hide");
-	    $albumPageElement.addClass("hide");
+	    $modalArticle2Album3.removeClass("hide");
+	    $albumPageElementAlbum3.addClass("hide");
 	  });
 	  $modalCloseAlbum3.on("click", function(e){
 	    $modalArticle2Album3.addClass("hide");
@@ -10732,7 +10731,7 @@
 
 
 /***/ },
-/* 7 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -10777,8 +10776,8 @@
 	    $albumPageElementAlbum4.removeClass("hide");
 	  });
 	  $photoClick2Album4.on("click", function(e){
-	    $modalArticle2.removeClass("hide");
-	    $albumPageElement.addClass("hide");
+	    $modalArticle2Album4.removeClass("hide");
+	    $albumPageElementAlbum4.addClass("hide");
 	  });
 	  $modalCloseAlbum4.on("click", function(e){
 	    $modalArticle2Album4.addClass("hide");
@@ -10862,7 +10861,7 @@
 
 
 /***/ },
-/* 8 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -10911,8 +10910,8 @@
 	    $albumPageElementAlbum5.removeClass("hide");
 	  });
 	  $photoClick2Album5.on("click", function(e){
-	    $modalArticle2.removeClass("hide");
-	    $albumPageElement.addClass("hide");
+	    $modalArticle2Album5.removeClass("hide");
+	    $albumPageElementAlbum5.addClass("hide");
 	  });
 	  $modalCloseAlbum5.on("click", function(e){
 	    $modalArticle2Album5.addClass("hide");
@@ -10996,7 +10995,7 @@
 
 
 /***/ },
-/* 9 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
@@ -11041,8 +11040,8 @@
 	    $albumPageElementAlbum6.removeClass("hide");
 	  });
 	  $photoClick2Album6.on("click", function(e){
-	    $modalArticle2.removeClass("hide");
-	    $albumPageElement.addClass("hide");
+	    $modalArticle2Album6.removeClass("hide");
+	    $albumPageElementAlbum6.addClass("hide");
 	  });
 	  $modalCloseAlbum6.on("click", function(e){
 	    $modalArticle2Album6.addClass("hide");
