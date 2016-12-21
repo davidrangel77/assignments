@@ -7,6 +7,7 @@
     <script src="dist/bundle.js" charset="utf-8"></script>
   </head>
   <body id="body">
+  <div class="albumPage" data-js="albumPage">
     <main id="main">
       <header class="album__header">
         <h1 class="h1">Album 1</h1>
@@ -15,34 +16,34 @@
         <ul class="album__list">
           <div class="album__preview-row">
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto1"
                 src="http://s1.cdn.autoevolution.com/images/gallery/VOLVO-245-2432_11.jpg" alt="image1">
               <p class="album__name">Photo 1</p>
             </li>
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto2"
                 src="https://www.rei.com/media/3c18f88d-b4b0-4a72-8cd0-2c8c51ca7174" alt="image1">
               <p class="album__name">Photo 2</p>
             </li>
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto3"
                 src="https://static.pexels.com/photos/28452/pexels-photo-28452.jpg" alt="image1">
               <p class="album__name">Photo 3</p>
             </li>
           </div>
           <div class="album__preview-row">
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto4"
                 src="https://i.ytimg.com/vi/NCO36DCleZ8/hqdefault.jpg" alt="image1">
               <p class="album__name">Photo 4</p>
             </li>
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto5"
                 src="http://screenplay.biz/wp-content/uploads/2016/05/Live-music.jpg" alt="image1">
               <p class="album__name">Photo 5</p>
             </li>
             <li class="album__preview">
-              <img class="album__image-preview" data-js="thumbnailPhoto"
+              <img class="album__image-preview" data-js="thumbnailPhoto6"
                 src="http://www.barringtonbooksretold.com/sites/barringtonbooksretold.com/files/book-club-recomendations.jpg" alt="image1">
               <p class="album__name">Photo 6</p>
             </li>
@@ -68,12 +69,53 @@
     </aside>
     <footer class="footer2">
     </footer>
-    <article id="myModal" class="photo__Modal--Background modal" data-js="modal">
+  </div>
+    <article class="photo__Modal--Background modal hide" data-js="modal1">
       <button class ="button__backToAlbum close" data-js="modalClose"
         type="button" name="backToAlbum">< Back to Album 1
       </button>
-      <img id=""myModal" class="image__modal" data-js="modal__content"
+      <img class="image__modal" data-js="modal__content"
         src="http://s1.cdn.autoevolution.com/images/gallery/VOLVO-245-2432_11.jpg"
+        alt="#">
+    </article>
+    <article class="photo__Modal--Background modal hide" data-js="modal2">
+      <button class ="button__backToAlbum close" data-js="modalClose"
+        type="button" name="backToAlbum">< Back to Album 1
+      </button>
+      <img class="image__modal" data-js="modal__content"
+        src="https://www.rei.com/media/3c18f88d-b4b0-4a72-8cd0-2c8c51ca7174"
+        alt="#">
+    </article>
+    <article class="photo__Modal--Background modal hide" data-js="modal3">
+      <button class ="button__backToAlbum close" data-js="modalClose"
+        type="button" name="backToAlbum">< Back to Album 1
+      </button>
+      <img class="image__modal" data-js="modal__content"
+        src="https://static.pexels.com/photos/28452/pexels-photo-28452.jpg"
+        alt="#">
+    </article>
+    <article class="photo__Modal--Background modal hide" data-js="modal4">
+      <button class ="button__backToAlbum close" data-js="modalClose"
+        type="button" name="backToAlbum">< Back to Album 1
+      </button>
+      <img class="image__modal" data-js="modal__content"
+        src="https://i.ytimg.com/vi/NCO36DCleZ8/hqdefault.jpg"
+        alt="#">
+    </article>
+    <article class="photo__Modal--Background modal hide" data-js="modal5">
+      <button class ="button__backToAlbum close" data-js="modalClose"
+        type="button" name="backToAlbum">< Back to Album 1
+      </button>
+      <img class="image__modal" data-js="modal__content"
+        src="http://screenplay.biz/wp-content/uploads/2016/05/Live-music.jpg"
+        alt="#">
+    </article>
+    <article class="photo__Modal--Background modal hide" data-js="modal6">
+      <button class ="button__backToAlbum close" data-js="modalClose"
+        type="button" name="backToAlbum">< Back to Album 1
+      </button>
+      <img class="image__modal" data-js="modal__content"
+        src="http://www.barringtonbooksretold.com/sites/barringtonbooksretold.com/files/book-club-recomendations.jpg"
         alt="#">
     </article>
   </body>
