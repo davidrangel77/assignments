@@ -10303,6 +10303,12 @@
 	  var $photoClick4 = $body.find("[data-js='thumbnailPhoto4']");
 	  var $photoClick5 = $body.find("[data-js='thumbnailPhoto5']");
 	  var $photoClick6 = $body.find("[data-js='thumbnailPhoto6']");
+	  var $buttonBack1 = $body.find("[data-js='buttonBack1']");
+	  var $buttonBack2 = $body.find("[data-js='buttonBack2']");
+	  var $buttonBack3 = $body.find("[data-js='buttonBack3']");
+	  var $buttonBack4 = $body.find("[data-js='buttonBack4']");
+	  var $buttonBack5 = $body.find("[data-js='buttonBack5']");
+	  var $buttonBack6 = $body.find("[data-js='buttonBack6']");
 	  var $modalClose = $body.find("[data-js='modalClose']");
 	  var $modalContent = $body.find("[data-js='modal__content']");
 	  $photoClick1.on("click", function(e){

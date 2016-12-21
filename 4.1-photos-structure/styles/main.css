@@ -78,6 +78,24 @@
   top: 20px;
   left: 10px;
 }
+.buttonBack {
+  border: solid 2px lightgrey;
+  border-radius: 12px;
+  height: 100px;
+  margin-left: 5%;
+  margin-top: 24%;
+  width: 50px;
+}
+.buttonForward{
+  border: solid 2px lightgrey;
+  border-radius: 12px;
+  height: 100px;
+  float: right;
+  margin-right: 5%;
+  margin-top: 24%;
+  width: 50px;
+
+}
 .footer1 {
   background-color: lightgrey;
   height: 25px;
