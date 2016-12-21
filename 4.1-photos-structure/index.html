@@ -55,7 +55,7 @@
       <div class="album__selection_buttons">
         <button class="albumButton" type="button" name="albumButton">
           Album 1</button>
-        <button class="albumButton" type="button" name="albumButton">
+        <button class="albumButton" data-js= "goToAlbum2" type="button" name="albumButton">
           Album 2</button>
         <button class="albumButton" type="button" name="albumButton">
           Album 3</button>
@@ -74,13 +74,13 @@
       <button class ="button__backToAlbum close" data-js="modalClose"
         type="button" name="backToAlbum">< Back to Album 1
       </button>
-      <button class="buttonBack" data-js="buttonBack1" type="button" name="back"> < </button>
+      <!-- <button class="buttonBack" data-js="buttonBack1" type="button" name="back"> < </button> -->
       <button class="buttonForward" data-js="buttonForward1" type="button" name="button"> > </button>
       <img class="image__modal" data-js="modal__content"
         src="http://s1.cdn.autoevolution.com/images/gallery/VOLVO-245-2432_11.jpg"
         alt="#">
     </article>
-    <article class="photo__Modal--Background modal" data-js="modal2">
+    <article class="photo__Modal--Background modal hide" data-js="modal2">
       <button class ="button__backToAlbum close" data-js="modalClose"
         type="button" name="backToAlbum">< Back to Album 1
       </button>
@@ -125,10 +125,133 @@
         type="button" name="backToAlbum">< Back to Album 1
       </button>
       <button class="buttonBack" data-js="buttonBack6" type="button" name="back"> < </button>
-      <button class="buttonForward" data-js="buttonForward6" type="button" name="button"> > </button>
+      <!-- <button class="buttonForward" data-js="buttonForward6" type="button" name="button"> > </button> -->
       <img class="image__modal" data-js="modal__content"
         src="http://www.barringtonbooksretold.com/sites/barringtonbooksretold.com/files/book-club-recomendations.jpg"
         alt="#">
     </article>
+    <div class="albumPage" data-js="albumPageAlbum2">
+      <main id="main">
+        <header class="album__header">
+          <h1 class="h1">Album 2</h1>
+        </header>
+        <section class="album__section">
+          <ul class="album__list">
+            <div class="album__preview-row">
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto1Album2"
+                  src="https://c.tadst.com/gfx/750w/sunrise-sunset-sun-calculator.jpg?1" alt="image1">
+                <p class="album__name">Photo 1</p>
+              </li>
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto2Album2"
+                  src="http://cartoonbros.com/wp-content/uploads/2016/05/Batman-15.jpg" alt="image1">
+                <p class="album__name">Photo 2</p>
+              </li>
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto3Album2"
+                  src="http://sawadacoffee.com/wp-content/uploads/Sawada-Coffee-10DEC2015-003.jpg" alt="image1">
+                <p class="album__name">Photo 3</p>
+              </li>
+            </div>
+            <div class="album__preview-row">
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto4Album2"
+                  src="http://kingofwallpapers.com/chandelier/chandelier-011.jpg" alt="image1">
+                <p class="album__name">Photo 4</p>
+              </li>
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto5Album2"
+                  src="http://www1.nyc.gov/assets/opa/images/content/hero/nyc-aerial-skyline.jpg" alt="image1">
+                <p class="album__name">Photo 5</p>
+              </li>
+              <li class="album__preview">
+                <img class="album__image-preview" data-js="thumbnailPhoto6Album2"
+                  src="http://event-carnival.com/files/image/photo1/575/4.jpg" alt="image1">
+                <p class="album__name">Photo 6</p>
+              </li>
+            </div>
+          </ul>
+        </section>
+      </main>
+      <aside id="aside" class="left__aside">
+        <div class="album__selection_buttons">
+          <button class="albumButton" type="button" name="albumButton">
+            Album 1</button>
+          <button class="albumButton" type="button" name="albumButton">
+            Album 2</button>
+          <button class="albumButton" type="button" name="albumButton">
+            Album 3</button>
+          <button class="albumButton" type="button" name="albumButton">
+            Album 4</button>
+          <button class="albumButton" type="button" name="albumButton">
+            Album 5</button>
+          <button class="albumButton" type="button" name="albumButton">
+            Album 6</button>
+        </div>
+      </aside>
+      <footer class="footer2">
+      </footer>
+    </div>
+      <article class="photo__Modal--Background modal hide" data-js="modal1Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <!-- <button class="buttonBack" data-js="buttonBack1" type="button" name="back"> < </button> -->
+        <button class="buttonForward" data-js="buttonForward1Album2" type="button" name="button"> > </button>
+        <img class="image__modal" data-js="modal__content"
+          src="https://c.tadst.com/gfx/750w/sunrise-sunset-sun-calculator.jpg?1"
+          alt="#">
+      </article>
+      <article class="photo__Modal--Background modal hide" data-js="modal2Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <button class="buttonBack" data-js="buttonBack2Album2" type="button" name="back"> < </button>
+        <button class="buttonForward" data-js="buttonForward2Album2" type="button" name="button"> > </button>
+        <img class="image__modal" data-js="modal__content"
+          src="http://cartoonbros.com/wp-content/uploads/2016/05/Batman-15.jpg"
+          alt="#">
+      </article>
+      <article class="photo__Modal--Background modal hide" data-js="modal3Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <button class="buttonBack" data-js="buttonBack3Album2" type="button" name="back"> < </button>
+        <button class="buttonForward" data-js="buttonForward3Album2" type="button" name="button"> > </button>
+        <img class="image__modal" data-js="modal__content"
+          src="http://sawadacoffee.com/wp-content/uploads/Sawada-Coffee-10DEC2015-003.jpg"
+          alt="#">
+      </article>
+      <article class="photo__Modal--Background modal hide" data-js="modal4Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <button class="buttonBack" data-js="buttonBack4Album2" type="button" name="back"> < </button>
+        <button class="buttonForward" data-js="buttonForward4Album2" type="button" name="button"> > </button>
+        <img class="image__modal" data-js="modal__content"
+          src="http://kingofwallpapers.com/chandelier/chandelier-011.jpg"
+          alt="#">
+      </article>
+      <article class="photo__Modal--Background modal hide" data-js="modal5Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <button class="buttonBack" data-js="buttonBack5Album2" type="button" name="back"> < </button>
+        <button class="buttonForward" data-js="buttonForward5Album2" type="button" name="button"> > </button>
+        <img class="image__modal" data-js="modal__content"
+          src="http://www1.nyc.gov/assets/opa/images/content/hero/nyc-aerial-skyline.jpg"
+          alt="#">
+      </article>
+      <article class="photo__Modal--Background modal hide" data-js="modal6Album2">
+        <button class ="button__backToAlbum close" data-js="modalCloseAlbum2"
+          type="button" name="backToAlbum">< Back to Album 2
+        </button>
+        <button class="buttonBack" data-js="buttonBack6Album2" type="button" name="back"> < </button>
+        <!-- <button class="buttonForward" data-js="buttonForward6" type="button" name="button"> > </button> -->
+        <img class="image__modal" data-js="modal__content"
+          src="http://event-carnival.com/files/image/photo1/575/4.jpg"
+          alt="#">
+      </article>
   </body>
 </html>
