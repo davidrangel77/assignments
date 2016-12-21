@@ -1,0 +1,13 @@
+Checklist for 4.2 Assignment:
+- [] prepare to begin project:
+  - [x] Make the checklist
+  - [x] Create HTML
+  - [x] Link the script tag
+  - [x] Link the CSS
+  - [x] Install jQuery with NPM
+  - [x] Install webpack with NPM
+  - [x] Research how to configure webpack
+  - [x] Install webpack CLI
+  - [x] Rename JS folder
+  - [x] Configure webpack
+  - [] Hook webpack CLI into package json....??
