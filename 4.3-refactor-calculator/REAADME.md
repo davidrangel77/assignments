@@ -7,10 +7,11 @@ TO DO FOR REFACTOR OF CALCULATOR ASSIGNMENT
 - [x] create webpack.config.js
 - [x] enter=modules code in webpack.config
 - [x] webpack --watch
-- [ ] commit
-- [ ] create button.js to hold js to run
-- [ ] comment out old js from main js and use to "require" button.js
-- [ ] require jquery in button.js
+- [x] commit
+- [x] create js folder
+- [x] create button.js to hold js to run
+- [x] move out old js from main js and use to "require" button.js
+- [x] require jquery in button.js
 - [ ] commit
 - [ ] psuedo code html to indicate refactoring points as To Do
 - [ ] psuedo code js to indicate refactoring points as To Do

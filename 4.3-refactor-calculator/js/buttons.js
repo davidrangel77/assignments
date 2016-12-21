@@ -1,3 +1,5 @@
+// require jquery to start using it with this code
+var $ = require("jquery");
 
 document.addEventListener("DOMContentLoaded", function(){
   var nameButtonElements = document.querySelectorAll("[data-js='buttonNum']");
