@@ -13,5 +13,7 @@ TO DO FOR REFACTOR OF CALCULATOR ASSIGNMENT
 - [x] move out old js from main js and use to "require" button.js
 - [x] require jquery in button.js
 - [ ] commit
-- [ ] psuedo code html to indicate refactoring points as To Do
-- [ ] psuedo code js to indicate refactoring points as To Do
+- [x] psuedo code html to indicate refactoring points as To Do
+- [x] psuedo code js to indicate refactoring points as To Do
+- [ ] commit
+- [ ]
