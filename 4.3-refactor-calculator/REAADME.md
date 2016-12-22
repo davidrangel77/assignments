@@ -18,9 +18,9 @@ TO DO FOR REFACTOR OF CALCULATOR ASSIGNMENT
 - [x] commit
 - [x] work through html initial refactor
 - [ ] work through .js refactor
-  - [ ] replace vars with $ vars
-  - [ ] commit
-  - [ ] use .on(click) events instead of eventListeners
-  - [ ] commit
-  - [ ] remove code as it's changed and and commit after each mini-refactor
-  - [ ] commit
+  - [x] replace vars with $ vars
+  - [x] commit
+  - [x] use .on(click) events instead of eventListeners
+  - [x] commit
+  - [x] remove code as it's changed and and commit after each mini-refactor
+  - [x] commit

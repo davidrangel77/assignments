@@ -31,6 +31,6 @@ $(function (){
   })
   $equalButtonElement.on("click", function(){
     var answer = eval($outputElement.html());
-    $outputElement.text(answer);
+    $outputElement.text(answer.toFixed(3));
   });
 });
