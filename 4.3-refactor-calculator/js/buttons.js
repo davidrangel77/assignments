@@ -6,7 +6,6 @@ $(function (){
   var $body = $("body");
   var $nameButtonElements = $body.find("[data-js='buttonNum']");
   var $outputElement = $body.find("[data-js='outputDisplay']");
-  var $clearButtonElement = $body.find("[data-js='buttonClear']");
   var $equalButtonElement = $body.find("[data-js='buttonEqual']")
   var $multiplyButtonElement = $body.find("[data-js='buttonMultiply']")
   var $multiplyDivideElement = $body.find("[data-js='buttonDivide']")
@@ -15,9 +14,9 @@ $(function (){
     var currentOutputDigits = $outputElement.text();
     var currentDigit = $this.text();
     $outputElement.text(currentOutputDigits+currentDigit);
-  });
-  $clearButtonElement.on("click", function(){
-    $outputElement.text("");
+    if ($this.text() === "C") {
+      $outputElement.text("");
+    }
   });
   $multiplyButtonElement.on("click", function(){
     var $this = $(this);
@@ -31,6 +30,6 @@ $(function (){
   })
   $equalButtonElement.on("click", function(){
     var answer = eval($outputElement.html());
-    $outputElement.text(answer.toFixed(3));
+    $outputElement.text(answer.toPrecision(4));
   });
 });
