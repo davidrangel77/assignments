@@ -51,11 +51,8 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// require jquery to start using it with this code
 	var $ = __webpack_require__(2);
-	// use jQuery document ready function
 	$(function (){
-	  // leave these vars the same but use $body.find instead
 	  var $body = $("body");
 	  var $nameButtonElements = $body.find("[data-js='buttonNum']");
 	  var $outputElement = $body.find("[data-js='outputDisplay']");

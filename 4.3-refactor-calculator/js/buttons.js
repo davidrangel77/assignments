@@ -1,8 +1,5 @@
-// require jquery to start using it with this code
 var $ = require("jquery");
-// use jQuery document ready function
 $(function (){
-  // leave these vars the same but use $body.find instead
   var $body = $("body");
   var $nameButtonElements = $body.find("[data-js='buttonNum']");
   var $outputElement = $body.find("[data-js='outputDisplay']");
