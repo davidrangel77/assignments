@@ -56,41 +56,22 @@
 	// use jQuery document ready function
 	$(function (){
 	  // leave these vars the same but use $body.find instead
-	  var nameButtonElements = document.querySelectorAll("[data-js='buttonNum']");
-	  var outputElement = document.querySelector("[data-js='outputDisplay']");
-	  // use .on(click) and $(this) to listen for click event for each number button
-	  for(i = 0; i < nameButtonElements.length; i++){
-	    nameButtonElements[i].addEventListener("click", function(){
-	      outputElement.textContent += this.textContent;
-	        if (this.textContent === "C") {
-	          outputElement.textContent = "";
-	        }
-	    });
-	  }
-	  // use $body.find for var here as well but more up to top with others
-	  var nameButtonEqualElement = document.querySelector("[data-js='buttonEqual']");
-	  // don't need this var
-	  var outputElement = document.querySelector("[data-js='outputDisplay']");
-	  // use .on(click) and $(this) to listen for click event for each number button
-	    nameButtonEqualElement.addEventListener("click", function(){
-	  var answer = eval(outputElement.textContent);
-	  outputElement.textContent = answer;
-	  var newAnswer = answer.toFixed(3);
-	  outputElement.textContent = newAnswer;
+	  var $body = $("body");
+	  var $nameButtonElements = $body.find("[data-js='buttonNum']");
+	  var $outputElement = $body.find("[data-js='outputDisplay']");
+	  var $clearButtonElement = $body.find("[data-js='buttonClear']");
+	  var $equalButtonElement = $body.find("[data-js='buttonEqual']")
+	  $nameButtonElements.on("click", function(){
+	    var $this = $(this);
+	    var currentOutputDigits = $outputElement.text();
+	    var currentDigit = $this.text();
+	    $outputElement.text(currentOutputDigits+currentDigit);
 	  });
-	  // use $body.find for var here as well but more up to top with others
-	  var nameButtonMuliplyElement = document.querySelector("[data-js='buttonMultiply']");
-	  // use .on(click) and $(this) to listen for click event for each number button
-	  var outputElement = document.querySelector("[data-js='outputDisplay']");
-	    nameButtonMuliplyElement.addEventListener("click", function(){
-	    outputElement.textContent += "*"
+	  $clearButtonElement.on("click", function(){
+	    $outputElement.text("");
 	  });
-	  // use $body.find for var here as well but more up to top with others
-	  var nameButtonDivideElement = document.querySelector("[data-js='buttonDivide']");
-	  // use .on(click) and $(this) to listen for click event for each number button
-	  var outputElement = document.querySelector("[data-js='outputDisplay']");
-	    nameButtonDivideElement.addEventListener("click", function(){
-	    outputElement.textContent += "/";
+	  $equalButtonElement.on("click", function(){
+	    
 	  });
 	});
 

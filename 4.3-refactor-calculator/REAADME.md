@@ -15,5 +15,12 @@ TO DO FOR REFACTOR OF CALCULATOR ASSIGNMENT
 - [ ] commit
 - [x] psuedo code html to indicate refactoring points as To Do
 - [x] psuedo code js to indicate refactoring points as To Do
-- [ ] commit
-- [ ]
+- [x] commit
+- [x] work through html initial refactor
+- [ ] work through .js refactor
+  - [ ] replace vars with $ vars
+  - [ ] commit
+  - [ ] use .on(click) events instead of eventListeners
+  - [ ] commit
+  - [ ] remove code as it's changed and and commit after each mini-refactor
+  - [ ] commit
