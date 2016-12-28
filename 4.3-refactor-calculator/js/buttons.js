@@ -15,9 +15,6 @@ $(function (){
     if ($this.text() === "X") {
       $outputElement.text(currentOutputDigits+"*");
     }
-    if ($this.text() === "/") {
-      $outputElement.text(currentOutputDigits+"/");
-    }
   });
   $equalButtonElement.on("click", function(){
     var answer = eval($outputElement.html());

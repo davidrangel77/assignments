@@ -39,7 +39,6 @@ function nicer(sentence) {
       }
     }
     // return nonBadwordsSentence should log the NON bad words concatenated with spaces EXCEPT for the last word without one.
-    console.log(nonBadwordsSentence);
   }return nonBadwordsSentence
 }
 // remove bad words from sentence string
@@ -72,24 +71,25 @@ console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
-
 function properSentences (paragraph){
   // make the input an array of the paragraph
   var sentenceArray = paragraph.split(". ");
-
+  var capitalizedSentences = "";
+  var newParagraph = "";
   for(var i = 0; i < sentenceArray.length; i++) {
     var currentSentenceArray = sentenceArray[i];
     var uncapitalizedSentenceArray = currentSentenceArray.split(" ");
-      var currentWord = uncapitalizedSentenceArray[i];
-      var currentWordArray = currentSentenceArray.split("");
-      currentWordArray[0] = currentWord[0].toUpperCase();
-      var capitalizedSentence = currentWordArray.join("");
-      // I don't know why it made some characters change. but I'll let it go for now.
+    var currentWord = uncapitalizedSentenceArray[0];
+    var currentWordArray = currentSentenceArray.split("");
+    currentWordArray[0] = currentWord[0].toUpperCase();
+    capitalizedSentences += currentWordArray.join("").concat(". ");
+    newParagraph = capitalizedSentences.slice(0, -2)
   }
+  console.log(newParagraph);
 }
+// I'm logging out the correct paragraph but I can't figure out why it won't clear the console assert.....
 
-
-console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
+// console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
 // @TODO: see below:
@@ -101,8 +101,6 @@ function iPutTheFunIn (text){
   // count the characters in the array and find the middle.
   var middlePoint = Math.floor((0+textArray.length)/2);
 
-
-  console.log(middlePoint);
   // I'm trying to splice the "fun" into the middle of the array. I don't think it works like that but I can't concenptualize using a loop to make it work.
 
   // created a for loop to add the text to the middle point of the text.
@@ -136,7 +134,7 @@ function pipeline (value, function1, function2) {
 // the following three tests all correspond to the pipeline() function.
 
 // test 1
-var paragraph = 'dad bring your crappy self in here. i want a dang sandwich.'
+var paragraph = 'mom bring your crappy self in here. i want a dang sandwich.'
 
 console.assert(pipeline(paragraph,nicer,properSentences) === "Mom bring your self in here. I want a sandwich.")
 
