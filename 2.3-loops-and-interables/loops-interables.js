@@ -75,7 +75,6 @@ function properSentences (paragraph){
   // make the input an array of the paragraph
   var sentenceArray = paragraph.split(". ");
   var capitalizedSentences = "";
-  var newParagraph = "";
   for(var i = 0; i < sentenceArray.length; i++) {
     var currentSentenceArray = sentenceArray[i];
     var uncapitalizedSentenceArray = currentSentenceArray.split(" ");
@@ -83,13 +82,12 @@ function properSentences (paragraph){
     var currentWordArray = currentSentenceArray.split("");
     currentWordArray[0] = currentWord[0].toUpperCase();
     capitalizedSentences += currentWordArray.join("").concat(". ");
-    newParagraph = capitalizedSentences.slice(0, -2)
   }
-  console.log(newParagraph);
+  var newParagraph = capitalizedSentences.slice(0, -2)
+  return newParagraph;
 }
-// I'm logging out the correct paragraph but I can't figure out why it won't clear the console assert.....
 
-// console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
+console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
 // @TODO: see below:
@@ -100,35 +98,19 @@ function iPutTheFunIn (text){
   var textArray = text.split("");
   // count the characters in the array and find the middle.
   var middlePoint = Math.floor((0+textArray.length)/2);
-
-  // I'm trying to splice the "fun" into the middle of the array. I don't think it works like that but I can't concenptualize using a loop to make it work.
-
-  // created a for loop to add the text to the middle point of the text.
-  // I need the look to stop at the middle point and add the "fun".
-  // for (var i = 0; i < textArray.length; i++) {
-  //   var middlePoint =
-  //
-  // }
+  var newFunWord = text.slice(0, middlePoint) + "fun" +text.slice(middlePoint);
+  return newFunWord;
 }
+
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
 console.assert(iPutTheFunIn("reds") === "refunds")
 
 // PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
 
-function pipeline (value, function1, function2) {
-  function function1 (paragraph) {
-    // function1 need to take the paragraph and delete the bad words.
-    var nonBadwordsSentence = ""
-    var sentenceArray = sentence.split(" ")
-    var badWordsArray = ["heck", "darn", "crappy", "dang"]
-    for (var i = 0; i < sentenceArray.length; i++) {
-      var currentWord = sentenceArray[i]
-        if (badWordsArray.indexOf(currentWord) === -1) {
-          currentWord = ""
-        }
-    }return nonBadwordsSentence
-  }
-  // Now need a function to change the first word in the sentence to "Mom"
+function pipeline (paragraph, nicer, properSentences) {
+  var newParagraph = properSentences(paragraph);
+  var nicerParagraph = nicer(newParagraph);
+  return nicerParagraph;
 }
 
 // the following three tests all correspond to the pipeline() function.
@@ -138,6 +120,11 @@ var paragraph = 'mom bring your crappy self in here. i want a dang sandwich.'
 
 console.assert(pipeline(paragraph,nicer,properSentences) === "Mom bring your self in here. I want a sandwich.")
 
+function pipeline (n, squareNum, addOne){
+  var newSquare = squareNum(n);
+  var plusOne = addOne(newSquare);
+  return plusOne;
+}
 // test 2
 var squareNum = function(n){
     return n * n
@@ -149,6 +136,11 @@ var addOne = function(n) {
 
 console.assert(pipeline(7,squareNum,addOne) === 50)
 
+// function pipeline (numbersArray, squareDance, exclaimAll){
+//   var squaredNumber = squareDance(numbersArray);
+//   console.log(squaredNumber);
+//   var exclaimedNumber = exclaimAll(squaredNumber);
+// }
 // test 3
 var exclaimAll = function(arr) {
     var newArr = []
