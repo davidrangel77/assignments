@@ -15,9 +15,9 @@ $(function (){
     if ($this.text() === "X") {
       $outputElement.text(currentOutputDigits+"*");
     }
-  });
-  $equalButtonElement.on("click", function(){
-    var answer = eval($outputElement.html());
-    $outputElement.text(answer.toFixed(3));
+    if ($this.text() === "=") {
+      var answer = eval($outputElement.html());
+      $outputElement.text(answer.toFixed(3));
+    }
   });
 });
