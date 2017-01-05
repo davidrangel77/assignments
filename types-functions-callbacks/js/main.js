@@ -132,8 +132,14 @@ console.assert(minimum(1000,-2,99,50) === -2)
 // Using logical operators, write a function that will
 // return true if either input is a string, but not
 // both or neither.
-function justOneString(){
-  
+function justOneString(input1, input2){
+  if (typeof(input1) === 'string' && typeof(input2) === 'string'){
+    return false;
+  }else if (typeof(input1) === 'string' || typeof(input2) === 'string'){
+    return true;
+  }else if (typeof(input1) != 'string' && typeof(input2) != 'string'){
+    return false;
+  }
 }
 
 console.assert(justOneString('a',5) === true)
