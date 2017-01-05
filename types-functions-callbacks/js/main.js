@@ -65,9 +65,7 @@ console.assert(average(100,200) === 150)
      return num1 + num2;
    }
  }
-console.log(sum('867', 5309));
 console.assert(sum(867, 5309) === 6176);
-console.log(sum(867, 5309));
 console.assert(sum('867', 5309) === null);
 console.assert(sum(true, 5) === null);
 
@@ -76,6 +74,11 @@ console.assert(sum(true, 5) === null);
 
 // Write a function called isNegative that will tell
 // whether a number is negative or not.
+function isNegative (num){
+  if (num < 0){
+    return true;
+  }else {return false;}
+}
 
 console.assert(isNegative(10) === false)
 console.assert(isNegative(0) === false)
@@ -87,6 +90,16 @@ console.assert(isNegative(-999) === true)
 // To avoid repeating yourself, use your isNegative
 // function inside your sum funciton ***
 
+function sum(num1, num2){
+  if (Number.isInteger(num1||num2)===false){
+    return null;
+  }else if (isNegative(num1)||isNegative(num2)){
+    return null;
+  }
+  else{
+    return num1 + num2;
+  }
+}
 console.assert(sum(5,-5) === null)
 
 
@@ -95,6 +108,8 @@ console.assert(sum(5,-5) === null)
 // Write a function that will find the minimum of four
 // input numbers. You can do it using nested if statements,
 // boolean operators, or both (but not neither).
+
+
 
 console.assert(minimum(1,2,4,0) === 0)
 console.assert(minimum(1000,-2,-99,50) === -99)
