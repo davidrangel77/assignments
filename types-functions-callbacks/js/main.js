@@ -159,7 +159,6 @@ console.assert(justOneString(8,null) === false)
 // pattern for production code.
 
 var NUMBER = 10
-
 var incrementGlobalNumber = function(){
     NUMBER = NUMBER + 1
 }
@@ -167,21 +166,22 @@ var incrementGlobalNumber = function(){
 var doubleGlobalNumber = function() {
     NUMBER = NUMBER * 2
 }
-function doTwice(incrementGlobalNumber){
-  incrementGlobalNumber(NUMBER) && doubleGlobalNumber(NUMBER);
+
+var doTwice = function(NUM){
+  incrementGlobalNumber(incrementGlobalNumber());
   return NUMBER;
 }
 
-
 doTwice(incrementGlobalNumber)
-console.log(doTwice(incrementGlobalNumber));
 console.assert(NUMBER === 12)
 
+var doTwice = function(NUM){
+  doubleGlobalNumber(doubleGlobalNumber());
+  return NUMBER;
+}
 doTwice(doubleGlobalNumber)
-console.log(doTwice(doubleGlobalNumber));
 console.assert(NUMBER === 48)
 
-// I don't understand why this works only when I have the console logs in place, but it does- DR
 
 // Part 9
 
@@ -192,7 +192,7 @@ console.assert(NUMBER === 48)
 
 function conditionallyInvoke (){
   if (ORACLE === 'YES'){
-    return doTwice(doubleGlobalNumber);
+    return doubleGlobalNumber(NUMBER);
   }else {return null}
 }
 
@@ -223,6 +223,13 @@ console.assert(factory()() === 'hello world')  // INCEPTION!
 // Part 11
 
 // Want more?
+var factory2 = function() {
+    var innerFunc = function(arg2) {
+        return arg2;
+    }
+    return innerFunc;
+  }
+
 
 console.assert(factory2()('you sly dog') === 'you sly dog')
 console.assert(factory2()(999) === 999)
@@ -230,6 +237,13 @@ console.assert(factory2()(999) === 999)
 // Part 12
 
 // This can't be healthy...
+var factory3 = function(arg1) {
+    var innerFunc = function() {
+      return arg1;
+    }
+    return innerFunc;
+  }
+
 
 console.assert(factory3('i have reached function nirvana')() === 'i have reached function nirvana')
 console.assert(factory3(100)() === 100)
