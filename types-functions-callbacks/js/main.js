@@ -132,6 +132,7 @@ console.assert(minimum(1000,-2,99,50) === -2)
 // Using logical operators, write a function that will
 // return true if either input is a string, but not
 // both or neither.
+
 function justOneString(input1, input2){
   if (typeof(input1) === 'string' && typeof(input2) === 'string'){
     return false;
@@ -166,12 +167,21 @@ var incrementGlobalNumber = function(){
 var doubleGlobalNumber = function() {
     NUMBER = NUMBER * 2
 }
+function doTwice(incrementGlobalNumber){
+  incrementGlobalNumber(NUMBER) && doubleGlobalNumber(NUMBER);
+  return NUMBER;
+}
+
 
 doTwice(incrementGlobalNumber)
+console.log(doTwice(incrementGlobalNumber));
 console.assert(NUMBER === 12)
 
 doTwice(doubleGlobalNumber)
+console.log(doTwice(doubleGlobalNumber));
 console.assert(NUMBER === 48)
+
+// I don't understand why this works only when I have the console logs in place, but it does- DR
 
 // Part 9
 
@@ -179,6 +189,13 @@ console.assert(NUMBER === 48)
 // as input. It should invoke that input function only if
 // the value of a certain global variable, called ORACLE, is
 // "YES." Otherwise, it will does nothing.
+
+function conditionallyInvoke (){
+  if (ORACLE === 'YES'){
+    return doTwice(doubleGlobalNumber);
+  }else {return null}
+}
+
 
 var ORACLE = 'NO'
 
