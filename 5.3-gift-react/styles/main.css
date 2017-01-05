@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+.addButton {
+  border: none;
+  color: white;
+  background-color: #7DC476;
+  display: inline-block;
+  font-size: 16px;
+  height: 42px;
+  width: 13.1%;
+}
+.body {
+  margin: 0;
+}
+.circleButton {
+  color: #7DC476;
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 50%;
+  display: inline-block;;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 25px;
+}
+.clearButton {
+  color: red;
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 50%;
+  display: inline-block;;
+  height: 25px;
+  margin-left: 350px;
+  margin-top: 5px;
+  width: 25px;
+}
+.deleteButton {
+  background-color: white;
+  border: none;
+  color: red;
+  display: inline-block;
+  font-size: 16px;
+  height: 25px;
+  margin-top: 5px;
+  vertical-align: top
+}
+.giftInputText {
+  border: none;
+  height: 35px;
+  width: 86.8%;
+}
+.h2 {
+  display: inline-block;
+  color: grey;
+  font-family: Helvetica;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 1%;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+.items__form {
+  background-color: white;
+  border: solid 1px Gainsboro;
+  box-shadow:
+        0 1px 1px rgba(0,0,0,0.15),
+        0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0,0,0,0.15),
+        0 20px 0 -10px #eee,
+        0 20px 1px -9px rgba(0,0,0,0.15);
+  font-family: Helvetica;
+  width: 90%;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.listItem__div {
+margin-top: -2px;
+}
+.listItem {
+  border-top: solid 1px Gainsboro;
+  font-family: Helvetica;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  margin-top: : 0px;
+  margin-bottom: 5px;
+}
+.listItems__article {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+.listItem__text {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+.priceElement {
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.lineThrough {
+  color: green;
+  display: inline-block;
+  font-style: italic;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  text-decoration: line-through;
+}
+.main {
+  background-color: #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1px;
+  width: 50%;
+  height: auto;
+}
+.p {
+  display: inline-block;
+  margin: 0;
+  margin-right: -4px
+}
+.p__totalCost {
+  display: inline-block;
+  margin: 0;
+}
+.totalAmount {
+  background-color: #F5F5F5;
+  border-top: solid 1px Gainsboro;
+  color: red;
+  font-family: Helvetica;
+  font-size: 20px;
+  height: 40px;
+  padding-right: 10px;
+  padding-top: 7px;
+  text-align: right;
+  -webkit-appearance; initial;
+}
+.totalTextOnly {
+  color: black;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 432px;
+  float: left;
+  -webkit-appearance: initial;
+}
