@@ -57,9 +57,17 @@ console.assert(average(100,200) === 150)
  * Modify your sum function so that if either of its
  inputs is not a number, it will return "null."
  */
-
-
+ function sum(num1, num2){
+   if (Number.isInteger(num1||num2)===false){
+     return null;
+   }
+   else{
+     return num1 + num2;
+   }
+ }
+console.log(sum('867', 5309));
 console.assert(sum(867, 5309) === 6176);
+console.log(sum(867, 5309));
 console.assert(sum('867', 5309) === null);
 console.assert(sum(true, 5) === null);
 
