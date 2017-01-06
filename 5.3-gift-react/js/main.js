@@ -14,12 +14,12 @@ export default React.createClass({
     var textInputArray = currentInputValue.split(",");
     var listTextElement = textInputArray[0];
     var priceElement = textInputArray[1];
-    this.refs.listItem.insertAdjacentHTML("afterbegin",
+    this.refs.listItems.insertAdjacentHTML("afterbegin",
     `<article class="listItem">
       <button class="circleButton" type="button" value="line"></button>
       <p class="listItem__text">${listTextElement}</p>
       <p class="priceElement">$${priceElement}</p>
-      </article>`)
+      </article>`);
   },
   updateInputValue: function(evt) {
     this.setState({
@@ -35,7 +35,6 @@ export default React.createClass({
           <input className="giftInputText" type="text" name="giftInput" placeholder="     name of gift, price" value={ this.state.inputValue } onChange={ this.updateInputValue }></input>
           <input className="addButton" type="submit" name="submitItemToList" value="ADD" onClick={ this.onADDButtonClick }></input>
           <div className="listItems__div" ref="listItems">
-            <article className="listItem" ref="listItem"></article>
             <article className="totalAmount">
               <p className="p totalTextOnly">Total</p>
               <p className="p">$</p>
