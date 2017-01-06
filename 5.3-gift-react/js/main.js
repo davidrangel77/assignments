@@ -14,7 +14,12 @@ export default React.createClass({
     var textInputArray = currentInputValue.split(",");
     var listTextElement = textInputArray[0];
     var priceElement = textInputArray[1];
-    this.refs.listItem.prepend(listTextElement + priceElement)
+    this.refs.listItem.insertAdjacentHTML("afterbegin",
+    `<article class="listItem">
+      <button class="circleButton" type="button" value="line"></button>
+      <p class="listItem__text">${listTextElement}</p>
+      <p class="priceElement">$${priceElement}</p>
+      </article>`)
   },
   updateInputValue: function(evt) {
     this.setState({
