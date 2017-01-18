@@ -16,8 +16,8 @@
     "babel-preset-react": "^6.16.0",
     "jasmine": "^2.5.2",
     "jsdom": "^9.9.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "webpack": "^1.14.0"
   }
 }

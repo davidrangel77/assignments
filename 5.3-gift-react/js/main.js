@@ -3,7 +3,8 @@ import React from 'react'
 export default React.createClass({
   getInitialState: function() {
     return {
-      inputValue: ''
+      inputValue: '',
+      priceValue: 0
     };
   },
 
@@ -18,14 +19,18 @@ export default React.createClass({
     `<article class="listItem">
       <button class="circleButton" type="button" value="line"></button>
       <p class="listItem__text">${listTextElement}</p>
-      <p class="priceElement">$${priceElement}</p>
-      </article>`);
+      <p class="priceElement" ref="priceElement">$${priceElement}</p>
+      </article>`)
+
+    this.refs.totalPrice.innerHTML = priceElement;
   },
+
   updateInputValue: function(evt) {
     this.setState({
       inputValue: evt.target.value
     });
   },
+
 
   render (){
     return (
@@ -38,7 +43,7 @@ export default React.createClass({
             <article className="totalAmount">
               <p className="p totalTextOnly">Total</p>
               <p className="p">$</p>
-              <p className="p__totalCost"> 0</p>
+              <p className="p__totalCost" ref="totalPrice">0</p>
             </article>
           </div>
         </form>

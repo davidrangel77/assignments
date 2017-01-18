@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;;
+}
+.body {
+  margin: 0;
+}
+.boldUserName {
+  font-family: helvetica;
+  display: inline-block;
+  margin-bottom: 6px;
+  vertical-align: bottom;
+}
+.articlesFeed {
+  background-color: #E9EBEE;
+  width: 50%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.commentText {
+  font-family: helvetica;
+  display: inline;
+}
+.mainArticle {
+  font-family: helvetica;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-bottom: solid 1px lightgrey;
+}
+.mainArticleFooter {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mainArticleText {
+  font-family: helvetica;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.newComment {
+  font-family: helvetica;
+  background-color: #F6F7F9;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-bottom: solid 1px lightgrey;
+}
+.footerIcon {
+  display: inline-block;
+}
+.footerText {
+  display: inline-block;
+}
+.profilePic {
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  margin: 10px;
+}
+.profilePicSmall {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.datePosted {
+  display: inline-block;
+  margin: 0;
+}
+.userName {
+  font-family: helvetica;
+  display: block;
+  vertical-align: top;
+  margin: 0;
+}
+.posterInfo {
+  font-family: Helvetica;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
