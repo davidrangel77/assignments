@@ -9,7 +9,7 @@ export default React.createClass({
         <h2>Contact</h2>
         <section>
           <p>{this.props.params.name}</p>
-          <p>{this.props.params.email}</p>
+          <a href={"mailto:" +this.props.params.email}>{this.props.params.email}</a>
           <p>{this.props.params.phone}</p>
           <p>{this.props.params.location}</p>
         </section>
