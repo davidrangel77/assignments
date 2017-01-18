@@ -35,7 +35,7 @@ export default React.createClass({
           this.props.contacts.map(
             (contact, i)=>{
               return (
-                <Link to={`contact/${contact.name}/${contact.email}/${contact.phone}/${contact.location}`}key={i}>
+                <Link to={`${contact.name}/${contact.email}/${contact.phone}/${contact.location}`}key={i} className="contactLink">
                   {contact.name}
                 </Link>
               )
