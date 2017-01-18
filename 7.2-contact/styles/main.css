@@ -2,3 +2,12 @@
   display: block;
   margin-bottom: 5px;
 }
+
+.backToContacts {
+  border-radius: 4px;
+  border: solid 1px black;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: red;
+  padding: 5px;
+}

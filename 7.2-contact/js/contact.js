@@ -13,7 +13,7 @@ export default React.createClass({
           <p>{this.props.params.phone}</p>
           <p>{this.props.params.location}</p>
         </section>
-        <Link to={`/`}>Back to Contacts</Link>
+        <Link to={`/`} className="backToContacts">Back to Contacts</Link>
       </div>
     )
   }
