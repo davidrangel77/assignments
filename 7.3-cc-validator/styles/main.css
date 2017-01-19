@@ -1,0 +1,9 @@
+.valid {
+  font-size: 44px;
+  color: green;
+}
+
+.invalid {
+  font-size: 44px;
+  color: red;
+}
