@@ -6,9 +6,11 @@ import Contact from './contact'
 
 render(
   (
-    <Router history={hashHistory}>
+    <Router history={ hashHistory }>
       <Route path="/" component={ Home }></Route>
-      <Route path="/:name/:email/:phone/:location" component={ Contact }></Route>
+      <Route
+        path="/:name/:email/:phone/:location"
+        component={ Contact }></Route>
     </Router>
    ),
   document.getElementById('app')
