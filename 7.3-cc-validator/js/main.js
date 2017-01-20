@@ -6,16 +6,20 @@ export default React.createClass({
   getInitialState(){
     return {
       isCreditCardValid: false,
-      validityOutput: ""
+      validityOutput: "",
+      currentCardInput: ""
     }
   },
   onCreditCardChange (e){
-    var validCard = Validator.isCreditCard(e.target.value)
-    this.setState({isCreditCardValid:validCard})
+    var newCardInput = e.target.value;
+    this.setState({currentCardInput:newCardInput})
   },
-  logOutValidity(e){
+  isThisCardValid(e){
     e.preventDefault();
-    if (this.state.isCreditCardValid === false){
+    var validCard = Validator.isCreditCard(this.state.currentCardInput);
+    this.setState({isCreditCardValid:validCard})
+
+    if (validCard === false){
       return this.setState({validityOutput:"Hell No!"})
     } else {
       return this.setState({validityOutput:"Good To Go!"})
@@ -26,7 +30,7 @@ export default React.createClass({
       <form>
         <h3>Enter Card Number Here</h3>
         <input type="text" pattern="[0-9]{13,16}" maxLength="16" onChange={this.onCreditCardChange} required/>
-        <input type="submit" onClick={this.logOutValidity}/>
+        <input type="submit" onClick={this.isThisCardValid}/>
         <h3> Is this card valid?</h3>
         <h2 className={this.state.isCreditCardValid ? "valid" : "invalid"}>{this.state.validityOutput}</h2>
       </form>
