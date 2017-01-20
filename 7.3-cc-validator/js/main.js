@@ -20,7 +20,7 @@ export default React.createClass({
     this.setState({isCreditCardValid:validCard})
 
     if (validCard === false) {
-      return this.setState({validityOutput:"Hell No!"})
+      return this.setState({validityOutput:"Try Again!"})
     } else {
       return this.setState({validityOutput:"Good To Go!"})
     }
