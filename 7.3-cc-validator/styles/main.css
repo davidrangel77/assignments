@@ -14,7 +14,7 @@
 }
 
 .creditCardSim {
-  background-color: #F1F1F1;
+  background-image: url("https://www.merchantonthemove.com/PC/master03_background.gif");
   border: solid 1px lightgrey;
   border-radius: 6px;
   width: 300px;
@@ -22,7 +22,8 @@
 }
 
 .fakeCardName {
-  color: grey;
+  color: white;
+  font-size: 20px;
   margin-left: 25px;
 }
 
