@@ -3,14 +3,15 @@ export default React.createClass({
 
   render (){
     return (
-      <div>
+      <section className="chatAppBody">
         <div className="chatMessagesDisplay">
-
         </div>
         <form>
-          <input/>
+          <input className="userNameInput" type="text" placeholder="User Name"/>
+          <textarea className="messageText" type="text" placeholder="Message Text"/>
+          <input className="submitMessage" type="submit"/>
         </form>
-      </div>
+      </section>
     )
   }
 
