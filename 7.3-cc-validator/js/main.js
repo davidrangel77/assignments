@@ -37,13 +37,15 @@ export default React.createClass({
           type="text"
           pattern="[0-9.-]{19}"
           maxLength="19"
+          title="Credit card number should contain only numbers and dashes."
           onChange={this.onCreditCardChange}
           placeholder="xxxx-xxxx-xxxx-xxxx"/>
-      </form>
       <input
         className="submitButton"
         type="submit"
+        value="Push Here to Submit"
         onClick={this.isThisCardValid}/>
+      </form>
       <h3
         className="validationPrompt"> Is this card valid?
       </h3>

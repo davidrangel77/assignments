@@ -1,0 +1,17 @@
+import React from 'react'
+export default React.createClass({
+
+  render (){
+    return (
+      <div>
+        <div className="chatMessagesDisplay">
+
+        </div>
+        <form>
+          <input/>
+        </form>
+      </div>
+    )
+  }
+
+})
