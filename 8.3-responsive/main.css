@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+.body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.leadImage {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  height: 175px;
+  margin-bottom: 40px;
+}
+.imageOneText {
+  width: 100%;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.optionsWrapper {
+  margin-left: 5px;
+  height: 500px;
+  width: 29%;
+}
+.optionsTypeElement {
+  position: relative;
+  height: 200px;
+  background-color: #519251;
+}
+.optionsPriceElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.optionsName {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+.optionsPrice {
+  margin: 0;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+.optionsPeriod {
+  color: lightgrey;
+  margin: 0;
+  text-align: center;
+}
+.optionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.optionsListItem {
+  color: grey;
+  border-bottom: solid 1px lightgrey;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+.optionsListWrapper {
+  border: solid 1px lightgrey;
+  border-top: none;
+  text-align: center;
+}
+.chooseButton {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  border: solid 2px lightgrey;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wrapper {
+}

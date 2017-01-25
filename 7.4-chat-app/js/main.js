@@ -69,7 +69,16 @@ export default React.createClass({
         <div className="chatMessagesDisplay">
           {
             this.state.chatJsonData.map((currentPost, i)=>{
-              return <p key={i} className="currentPost"> <span className="userNameStyle" >{currentPost.currentUser}</span> <span className="userMessageStyle">{currentPost.currentMessage}</span></p>
+              return (
+                <div key={i} className="currentPost" id={currentPost._id}>
+                  <span className="userNameStyle">
+                    {currentPost.currentUser}
+                  </span>
+                  <span className="userMessageStyle">
+                    {currentPost.currentMessage}
+                  </span>
+                </div>
+              )
             })
           }
         </div>
@@ -82,5 +91,4 @@ export default React.createClass({
       </section>
     )
   }
-
 })
