@@ -9,10 +9,12 @@ a {
   margin: 0;
   font-family: sans-serif;
 }
+.wrapper {
+  width: 60%
+}
 .leadImage {
   position: relative;
   overflow: hidden;
-  width: 30%;
   height: 175px;
   margin-bottom: 40px;
 }
@@ -29,13 +31,23 @@ a {
 }
 .optionsWrapper {
   margin-left: 5px;
+  margin-bottom: 100px;
   height: 500px;
-  width: 29%;
 }
 .optionsTypeElement {
   position: relative;
   height: 200px;
   background-color: #519251;
+}
+.optionsTypeElementBlue {
+  position: relative;
+  height: 200px;
+  background-color: #2C4985;
+}
+.optionsTypeElementBlack {
+  position: relative;
+  height: 200px;
+  background-color: black;
 }
 .optionsPriceElement {
   position: absolute;
@@ -86,5 +98,86 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.wrapper {
+.detailsPane {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+.detailsHeader {
+  font-weight: lighter;
+}
+.footer {
+  background-color: black;
+  height: 75px;
+}
+.footerText {
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (min-width: 479px) {
+    /* Style adjustments for viewports that meet the condition */
+
+    .wrapper {
+      width: 60%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+
+    .optionsWrapper {
+      display: inline-block;
+      margin-left: 0px;
+      margin-right: 2px;
+      margin-bottom: 100px;
+      height: 500px;
+      width: 32.5%;
+    }
+    .wrapper {
+      width: 700px;
+    }
+    .detailsPane {
+      display: inline-block;
+      margin-left: 20px;
+      width: 40%;
+      vertical-align: top;
+    }
+}
+@media only screen and (min-width: 979px) {
+    /* Style adjustments for viewports that meet the condition */
+    .leadImage {
+      position: relative;
+      overflow: hidden;
+      height: 225px;
+      margin-bottom: 40px;
+    }
+    .optionsWrapper {
+      display: inline-block;
+      margin-left: 0px;
+      margin-right: 2px;
+      margin-bottom: 100px;
+      height: 500px;
+      width: 32.5%;
+    }
+    .optionsAll{
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .detailsAll{
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .wrapper {
+      width: 900px;
+    }
+    .detailsPane {
+      display: inline-block;
+      margin-left: 20px;
+      width: 40%;
+      vertical-align: top;
+    }
 }
