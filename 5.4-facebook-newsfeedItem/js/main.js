@@ -1,9 +1,11 @@
 import React from 'react'
+import Post from './post'
 
 export default React.createClass({
 
-  return (){
-
+  render (){
+    return (
+      <Post/>
+    )
   }
-
 })

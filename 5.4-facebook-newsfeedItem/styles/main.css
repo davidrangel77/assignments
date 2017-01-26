@@ -12,14 +12,20 @@
 }
 .articlesFeed {
   background-color: #E9EBEE;
+  border-top: solid 1px lightgrey;
   width: 50%;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
 }
 .commentText {
+  margin-left: 10px;
   font-family: helvetica;
   display: inline;
+}
+.commenterName {
+  padding: 0px 2px;
 }
 .mainArticle {
   font-family: helvetica;
@@ -31,22 +37,33 @@
 }
 .mainArticleFooter {
   margin-left: 10px;
+  margin-bottom: 10px;
   margin-right: 10px;
+  padding-left: 10px;
 }
 .mainArticleText {
   font-family: helvetica;
   margin-left: 10px;
   margin-right: 10px;
+  padding-left: 10px;
 }
 .newComment {
   font-family: helvetica;
   background-color: #F6F7F9;
   margin-left: 10px;
   margin-right: 15px;
+  padding-left: 10px;
   border-bottom: solid 1px lightgrey;
 }
-.footerIcon {
+.footerButton {
+  background-color: #22A7F0;
+  color: white;
+  font-size: 16px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 4px;
   display: inline-block;
+  -webkit-appearance: none;
 }
 .footerText {
   display: inline-block;
@@ -62,6 +79,7 @@
   height: 50px;
   width: 50px;
   margin: 10px;
+  margin-bottom: 0px;
 }
 .datePosted {
   display: inline-block;
