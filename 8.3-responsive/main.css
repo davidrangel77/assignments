@@ -10,7 +10,9 @@ a {
   font-family: sans-serif;
 }
 .wrapper {
-  width: 60%
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .leadImage {
   position: relative;
@@ -36,17 +38,17 @@ a {
 }
 .optionsTypeElement {
   position: relative;
-  height: 200px;
+  height: 150px;
   background-color: #519251;
 }
 .optionsTypeElementBlue {
   position: relative;
-  height: 200px;
+  height: 150px;
   background-color: #2C4985;
 }
 .optionsTypeElementBlack {
   position: relative;
-  height: 200px;
+  height: 150px;
   background-color: black;
 }
 .optionsPriceElement {
@@ -122,6 +124,23 @@ a {
 
     .wrapper {
       width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .optionsTypeElement {
+      position: relative;
+      height: 200px;
+      background-color: #519251;
+    }
+    .optionsTypeElementBlue {
+      position: relative;
+      height: 200px;
+      background-color: #2C4985;
+    }
+    .optionsTypeElementBlack {
+      position: relative;
+      height: 200px;
+      background-color: black;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -145,6 +164,8 @@ a {
     }
     .wrapper {
       width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .detailsPane {
       display: inline-block;
@@ -181,6 +202,8 @@ a {
     }
     .wrapper {
       width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .detailsPane {
       display: inline-block;
