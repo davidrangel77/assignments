@@ -10,7 +10,7 @@ a {
   font-family: sans-serif;
 }
 .wrapper {
-  width: 50%;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -123,7 +123,7 @@ a {
     /* Style adjustments for viewports that meet the condition */
 
     .wrapper {
-      width: 60%;
+      width: 300px;
       margin-left: auto;
       margin-right: auto;
     }
